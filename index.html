@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
+<meta name="color-scheme" content="light">
 <title>Yorkshire Wolds Dyslexia Service — Website Mockup</title>
 </head>
 <body>
@@ -27,38 +28,8 @@
     --shadow:0 2px 10px rgba(34,56,74,.07), 0 10px 30px rgba(34,56,74,.06);
     --focus:#274A68;
   }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --cream:#16222E;
-      --cream-deep:#121C26;
-      --sky:#1B2A38;
-      --sage:#7E9A79;
-      --sage-soft:#3A4A3D;
-      --sage-tint:#1E2B26;
-      --olive:#8FAF8E;
-      --olive-deep:#A5C2A2;
-      --navy:#A9C6DE;
-      --navy-deep:#C2D8EA;
-      --ink:#E7E4D8;
-      --ink-soft:#AAB6BC;
-      --card:#1E2C3A;
-      --line:#2E3E4C;
-      --hero-grad:linear-gradient(180deg,#182835 0%,#16222E 100%);
-      --shadow:0 2px 10px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.25);
-      --focus:#A9C6DE;
-    }
-  }
-  :root[data-theme="dark"]{
-    --cream:#16222E; --cream-deep:#121C26; --sky:#1B2A38;
-    --sage:#7E9A79; --sage-soft:#3A4A3D; --sage-tint:#1E2B26;
-    --olive:#8FAF8E; --olive-deep:#A5C2A2;
-    --navy:#A9C6DE; --navy-deep:#C2D8EA;
-    --ink:#E7E4D8; --ink-soft:#AAB6BC;
-    --card:#1E2C3A; --line:#2E3E4C;
-    --hero-grad:linear-gradient(180deg,#182835 0%,#16222E 100%);
-    --shadow:0 2px 10px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.25);
-    --focus:#A9C6DE;
-  }
+  
+  
   :root[data-theme="light"]{
     --cream:#F7F4EC; --cream-deep:#EFEADD; --sky:#E3EBEE;
     --sage:#93AA8C; --sage-soft:#C4D1BE; --sage-tint:#E7ECE0;
@@ -117,7 +88,6 @@
     font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
     text-align:center;padding:6px 12px;
   }
-  :root[data-theme="dark"] .mockribbon{background:#0F1B26;color:var(--sage)}
 
   /* ---------- header ---------- */
   header.site{
@@ -141,13 +111,11 @@
   }
   nav.main a:hover{background:var(--sage-tint);color:var(--navy)}
   nav.main a[aria-current="page"]{background:var(--navy);color:var(--cream)}
-  :root[data-theme="dark"] nav.main a[aria-current="page"]{background:var(--sage);color:#12202C}
   .cta-mini{
     margin-left:8px;background:var(--olive);color:#fff !important;
     padding:9px 16px !important;border-radius:999px;white-space:nowrap;
   }
   .cta-mini:hover{background:var(--olive-deep) !important;color:#fff}
-  :root[data-theme="dark"] .cta-mini{color:#12202C !important}
   .menu-btn{
     display:none;margin-left:auto;background:none;border:1.5px solid var(--line);
     border-radius:10px;padding:8px 12px;color:var(--navy);font-size:1.05rem;cursor:pointer;
@@ -193,12 +161,10 @@
   }
   .btn.primary{background:var(--navy);color:var(--cream)}
   .btn.primary:hover{background:var(--navy-deep)}
-  :root[data-theme="dark"] .btn.primary{background:var(--sage);color:#12202C}
   .btn.ghost{border-color:var(--navy);color:var(--navy);background:transparent}
   .btn.ghost:hover{background:var(--sage-tint)}
   .btn.green{background:var(--olive);color:#fff}
   .btn.green:hover{background:var(--olive-deep)}
-  :root[data-theme="dark"] .btn.green{color:#12202C}
 
   /* rolling hills divider */
   .hills{display:block;width:100%;height:auto;margin-bottom:-1px}
@@ -311,7 +277,6 @@
   }
   @media (max-width:820px){.bookpanel{grid-template-columns:1fr}}
   .bookinfo{background:var(--navy);color:#EDF2EC;padding:34px 32px}
-  :root[data-theme="dark"] .bookinfo{background:#101E2B}
   .bookinfo h3{color:#fff;font-size:1.35rem}
   .bookinfo p{color:#C9D6D0;font-size:.92rem}
   .bookinfo .meta{display:flex;gap:10px;align-items:center;font-size:.88rem;margin-top:1.4em;color:#AECBB9}
@@ -337,7 +302,6 @@
 
   /* ---------- footer ---------- */
   footer.site{background:var(--navy-deep);color:#C9D6D0;padding:48px 0 30px;margin-top:0}
-  :root[data-theme="dark"] footer.site{background:#0E1A25}
   footer.site .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}
   @media (max-width:760px){footer.site .cols{grid-template-columns:1fr}}
   footer.site h4{color:#fff;font-size:.95rem;margin-bottom:.7em}
