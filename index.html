@@ -206,9 +206,8 @@
   .herologo{width:min(340px,74vw);height:auto;filter:drop-shadow(0 12px 30px rgba(34,56,74,.14))}
   @media (max-width:800px){.herologo{width:min(240px,62vw)}}
   img.photo{
-    width:100%;height:auto;display:block;border-radius:12px;
-    background:var(--card);padding:10px;border:1px solid var(--line);
-    box-shadow:var(--shadow);box-sizing:border-box;
+    width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 35%;
+    border-radius:20px;box-shadow:var(--shadow);display:block;
   }
   .photo-ph{
     aspect-ratio:4/5;border-radius:20px;background:linear-gradient(160deg,var(--sage-soft),var(--sage));
