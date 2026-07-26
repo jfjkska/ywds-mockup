@@ -406,8 +406,22 @@
 
       <div class="split" style="margin-top:3em">
         <div>
-          <h2>Prefer to write?</h2>
-          <p>Use the booking calendar above to arrange a free call at a time that suits you — or reach out via the contact form, coming shortly.</p>
+          <h2>Send a message</h2>
+          <div id="sent-note" style="display:none;background:var(--sage-tint);border:1.5px solid var(--sage);border-radius:12px;padding:14px 18px;margin-bottom:14px;font-size:.95rem">Thank you — your message has been sent. I'll get back to you soon.</div>
+          <form class="contact" action="https://formsubmit.co/natjlangley@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Website enquiry — Yorkshire Wolds Dyslexia Service">
+            <input type="hidden" name="_next" value="https://www.yorkshirewoldsdyslexiaservice.co.uk/contact/?sent=1">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            <div class="row">
+              <div><label for="fn">First name *</label><input id="fn" name="first_name" required></div>
+              <div><label for="ln">Last name *</label><input id="ln" name="last_name" required></div>
+            </div>
+            <div><label for="em">Email *</label><input id="em" name="email" type="email" required></div>
+            <div><label for="sub">Subject</label><input id="sub" name="subject"></div>
+            <div><label for="msg">Message *</label><textarea id="msg" name="message" rows="5" required></textarea></div>
+            <div><button class="btn primary" type="submit">Send message</button></div>
+          </form>
+          <script>if(new URLSearchParams(location.search).get('sent')){document.getElementById('sent-note').style.display='block'}</script>
         </div>
         <div>
           <h2>Details</h2>
