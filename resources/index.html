@@ -76,6 +76,18 @@
   a{color:var(--navy);text-underline-offset:3px}
   :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
   img{max-width:100%}
+
+  /* ---------- skip link ---------- */
+  .skip{
+    position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;
+  }
+  .skip:focus{
+    position:fixed;left:12px;top:12px;width:auto;height:auto;overflow:visible;
+    z-index:200;background:var(--navy);color:var(--cream);
+    padding:13px 26px;border-radius:999px;text-decoration:none;
+    font-family:"Segoe UI",Verdana,sans-serif;font-weight:700;font-size:.98rem;
+    box-shadow:var(--shadow);
+  }
   ul{padding-left:1.2em}
   li{margin-bottom:.4em}
 
@@ -332,6 +344,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business", "name": "Yorkshire Wolds Dyslexia Service", "alternateName": "YWDS", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "logo": "https://yorkshirewoldsdyslexiaservice.co.uk/img/logo.webp", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "email": "natalie@ywds.co.uk", "description": "Specialist literacy support, dyslexia intervention and learning needs assessments for children and young people in East Yorkshire.", "priceRange": "££", "address": {"@type": "PostalAddress", "addressLocality": "Pocklington", "addressRegion": "East Yorkshire", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Pocklington"}, {"@type": "City", "name": "York"}, {"@type": "City", "name": "Market Weighton"}, {"@type": "City", "name": "Driffield"}, {"@type": "City", "name": "Beverley"}, {"@type": "AdministrativeArea", "name": "East Riding of Yorkshire"}], "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties", "Dyslexia Action Literacy Programme", "Learning Needs Assessment", "Speech, language and communication needs"], "founder": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "priceCurrency": "GBP", "price": "300", "itemOffered": {"@type": "Service", "name": "Learning Needs Assessment", "description": "A two-hour standardised psychometric assessment with a detailed written report, for ages 6-15."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "1-to-1 Literacy Intervention", "description": "Weekly hour-long structured, multi-sensory sessions using the Dyslexia Action Literacy Programme, for ages 7-16."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "Staff Support and Consultancy", "description": "1-to-1 consultancy for SENDCos, senior leadership teams, teachers and parents."}}]}}, {"@type": "WebPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/resources/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/resources/", "name": "Resources | Yorkshire Wolds Dyslexia Service", "description": "Evidence-based resources: What Works for literacy difficulties, the EEF, assistive technology, study skills and useful websites.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "about": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}}, {"@type": "WebSite", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "name": "Yorkshire Wolds Dyslexia Service", "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "inLanguage": "en-GB"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Resources", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/resources/"}]}]}</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site">
   <div class="bar">
     <a class="brand" href="../">
@@ -377,7 +390,7 @@
     </nav>
   </div>
 </header>
-<main>
+<main id="main">
 
   <div class="pagehead">
     <div class="wrap">
@@ -445,16 +458,16 @@
         <p style="max-width:66ch">There are many ways to record ideas and show learning that don't rely on writing everything down. These visual tools can transform how a learner plans, remembers and expresses ideas.</p>
         <div class="signcols" style="align-items:start">
           <figure style="margin:0" class="signcard">
-            <img src="../img/recording-ideas.webp" alt="Wheel diagram of alternatives to written recording: images, charts, spoken word, ready-made text, ICT, sorting and labelling, symbols, scribing and numbers" style="border-radius:10px">
+            <img src="../img/recording-ideas.webp" alt="Wheel diagram of alternatives to written recording: images, charts, spoken word, ready-made text, ICT, sorting and labelling, symbols, scribing and numbers" style="border-radius:10px" width="620" height="638" loading="lazy" decoding="async">
             <figcaption style="font-size:.82rem;color:var(--ink-soft);margin-top:10px">Alternatives to written recording: many routes to showing what you know.</figcaption>
           </figure>
           <div style="display:grid;gap:20px">
             <figure style="margin:0" class="signcard">
-              <img src="../img/mindmap.webp" alt="Colourful mind map showing how to build mind maps using colour, images, lines and key words" style="border-radius:10px">
+              <img src="../img/mindmap.webp" alt="Colourful mind map showing how to build mind maps using colour, images, lines and key words" style="border-radius:10px" width="874" height="426" loading="lazy" decoding="async">
               <figcaption style="font-size:.82rem;color:var(--ink-soft);margin-top:10px">Mind maps: colour, images and key words instead of sentences.</figcaption>
             </figure>
             <figure style="margin:0" class="signcard">
-              <img src="../img/wordweb.webp" alt="Word web diagram for exploring vocabulary around a central word" style="border-radius:10px">
+              <img src="../img/wordweb.webp" alt="Word web diagram for exploring vocabulary around a central word" style="border-radius:10px" width="980" height="556" loading="lazy" decoding="async">
               <figcaption style="font-size:.82rem;color:var(--ink-soft);margin-top:10px">Word webs: building vocabulary out from a central idea.</figcaption>
             </figure>
           </div>

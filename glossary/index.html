@@ -76,6 +76,18 @@
   a{color:var(--navy);text-underline-offset:3px}
   :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
   img{max-width:100%}
+
+  /* ---------- skip link ---------- */
+  .skip{
+    position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;
+  }
+  .skip:focus{
+    position:fixed;left:12px;top:12px;width:auto;height:auto;overflow:visible;
+    z-index:200;background:var(--navy);color:var(--cream);
+    padding:13px 26px;border-radius:999px;text-decoration:none;
+    font-family:"Segoe UI",Verdana,sans-serif;font-weight:700;font-size:.98rem;
+    box-shadow:var(--shadow);
+  }
   ul{padding-left:1.2em}
   li{margin-bottom:.4em}
 
@@ -192,6 +204,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business", "name": "Yorkshire Wolds Dyslexia Service", "alternateName": "YWDS", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "logo": "https://yorkshirewoldsdyslexiaservice.co.uk/img/logo.webp", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "email": "natalie@ywds.co.uk", "description": "Specialist literacy support, dyslexia intervention and learning needs assessments for children and young people in East Yorkshire.", "priceRange": "££", "address": {"@type": "PostalAddress", "addressLocality": "Pocklington", "addressRegion": "East Yorkshire", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Pocklington"}, {"@type": "City", "name": "York"}, {"@type": "City", "name": "Market Weighton"}, {"@type": "City", "name": "Driffield"}, {"@type": "City", "name": "Beverley"}, {"@type": "AdministrativeArea", "name": "East Riding of Yorkshire"}], "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties", "Dyslexia Action Literacy Programme", "Learning Needs Assessment", "Speech, language and communication needs"], "founder": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie"}}, {"@type": "WebPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/glossary/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/glossary/", "name": "Glossary | Yorkshire Wolds Dyslexia Service", "description": "Plain-English explanations of the terms you'll meet in assessment reports and school meetings.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "about": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}}, {"@type": "WebSite", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "name": "Yorkshire Wolds Dyslexia Service", "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "inLanguage": "en-GB"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Glossary", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/glossary/"}]}]}</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site">
   <div class="bar">
     <a class="brand" href="../">
@@ -237,7 +250,7 @@
     </nav>
   </div>
 </header>
-<main>
+<main id="main">
 
   <div class="pagehead">
     <div class="wrap">

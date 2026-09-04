@@ -76,6 +76,18 @@
   a{color:var(--navy);text-underline-offset:3px}
   :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
   img{max-width:100%}
+
+  /* ---------- skip link ---------- */
+  .skip{
+    position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;
+  }
+  .skip:focus{
+    position:fixed;left:12px;top:12px;width:auto;height:auto;overflow:visible;
+    z-index:200;background:var(--navy);color:var(--cream);
+    padding:13px 26px;border-radius:999px;text-decoration:none;
+    font-family:"Segoe UI",Verdana,sans-serif;font-weight:700;font-size:.98rem;
+    box-shadow:var(--shadow);
+  }
   ul{padding-left:1.2em}
   li{margin-bottom:.4em}
 
@@ -332,10 +344,25 @@
   /* ---------- blog posts ---------- */
   article.post{max-width:780px}
   article.post + article.post{border-top:1px solid var(--line);margin-top:3.2em;padding-top:3.2em}
+
+  .postlist{max-width:780px}
+  .postcard + .postcard{border-top:1px solid var(--line);margin-top:2.4em;padding-top:2.4em}
+  .postcard .eyebrow{margin-bottom:.5em}
+  .postcard h2{font-size:clamp(1.35rem,2.9vw,1.85rem);margin-bottom:.4em}
+  .postcard h2 a{text-decoration:none;color:var(--navy)}
+  .postcard h2 a:hover{text-decoration:underline}
+  .postcard p{color:var(--ink-soft);font-size:.98rem}
+  .postcard a.more{font-size:.9rem;font-weight:700;text-decoration:none}
+  .postcard a.more::after{content:" \2192"}
+  .postcard a.more:hover{text-decoration:underline}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business", "name": "Yorkshire Wolds Dyslexia Service", "alternateName": "YWDS", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "logo": "https://yorkshirewoldsdyslexiaservice.co.uk/img/logo.webp", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "email": "natalie@ywds.co.uk", "description": "Specialist literacy support, dyslexia intervention and learning needs assessments for children and young people in East Yorkshire.", "priceRange": "££", "address": {"@type": "PostalAddress", "addressLocality": "Pocklington", "addressRegion": "East Yorkshire", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Pocklington"}, {"@type": "City", "name": "York"}, {"@type": "City", "name": "Market Weighton"}, {"@type": "City", "name": "Driffield"}, {"@type": "City", "name": "Beverley"}, {"@type": "AdministrativeArea", "name": "East Riding of Yorkshire"}], "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties", "Dyslexia Action Literacy Programme", "Learning Needs Assessment", "Speech, language and communication needs"], "founder": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "priceCurrency": "GBP", "price": "300", "itemOffered": {"@type": "Service", "name": "Learning Needs Assessment", "description": "A two-hour standardised psychometric assessment with a detailed written report, for ages 6-15."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "1-to-1 Literacy Intervention", "description": "Weekly hour-long structured, multi-sensory sessions using the Dyslexia Action Literacy Programme, for ages 7-16."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "Staff Support and Consultancy", "description": "1-to-1 consultancy for SENDCos, senior leadership teams, teachers and parents."}}]}}, {"@type": "WebPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/", "name": "Blog | Yorkshire Wolds Dyslexia Service", "description": "News and articles on literacy, dyslexia and supporting young people.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "about": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}}, {"@type": "WebSite", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "name": "Yorkshire Wolds Dyslexia Service", "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "inLanguage": "en-GB"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business", "name": "Yorkshire Wolds Dyslexia Service", "alternateName": "YWDS", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "logo": "https://yorkshirewoldsdyslexiaservice.co.uk/img/logo.webp", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "email": "natalie@ywds.co.uk", "description": "Specialist literacy support, dyslexia intervention and learning needs assessments for children and young people in East Yorkshire.", "priceRange": "££", "address": {"@type": "PostalAddress", "addressLocality": "Pocklington", "addressRegion": "East Yorkshire", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Pocklington"}, {"@type": "City", "name": "York"}, {"@type": "City", "name": "Market Weighton"}, {"@type": "City", "name": "Driffield"}, {"@type": "City", "name": "Beverley"}, {"@type": "AdministrativeArea", "name": "East Riding of Yorkshire"}], "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties", "Dyslexia Action Literacy Programme", "Learning Needs Assessment", "Speech, language and communication needs"], "founder": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "priceCurrency": "GBP", "price": "300", "itemOffered": {"@type": "Service", "name": "Learning Needs Assessment", "description": "A two-hour standardised psychometric assessment with a detailed written report, for ages 6-15."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "1-to-1 Literacy Intervention", "description": "Weekly hour-long structured, multi-sensory sessions using the Dyslexia Action Literacy Programme, for ages 7-16."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "Staff Support and Consultancy", "description": "1-to-1 consultancy for SENDCos, senior leadership teams, teachers and parents."}}]}}, {"@type": ["WebPage", "CollectionPage"], "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/", "name": "Blog | Yorkshire Wolds Dyslexia Service", "description": "News and articles on literacy, dyslexia and supporting young people.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "about": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}}, {"@type": "WebSite", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "name": "Yorkshire Wolds Dyslexia Service", "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "inLanguage": "en-GB"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/"}]}]}</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<script>
+(function(){var p=(location.hash||'').replace('#','');var posts=['spld-send-reforms','gcse-gap-2026','spld-identification-study','lost-in-the-system','send-pressure-nfer'];if(posts.indexOf(p)>-1){location.replace(p+'/');}})();
+</script>
 <header class="site">
   <div class="bar">
     <a class="brand" href="../">
@@ -381,7 +408,7 @@
     </nav>
   </div>
 </header>
-<main>
+<main id="main">
 
   <div class="pagehead">
     <div class="wrap">
@@ -392,75 +419,38 @@
   </div>
   <section class="block" style="padding-top:20px">
     <div class="wrap">
-      <article class="post" id="spld-send-reforms">
-        <p class="eyebrow">22 August 2026 · News</p>
-        <h2>Where do specific learning difficulties fit in the SEND reforms?</h2>
+      <div class="postlist">
+      <article class="postcard">
+        <p class="eyebrow"><time datetime="2026-08-22">22 August 2026</time> &middot; News</p>
+        <h2><a href="spld-send-reforms/">Where do specific learning difficulties fit in the SEND reforms?</a></h2>
         <p>The proposed SEND reforms have generated plenty of discussion, but one important question has received far less attention than it deserves: where do specific learning difficulties actually fit in the new framework?</p>
-        <p>A recent episode of The SENDcast tackled exactly this. Host Dale Pickles was joined by dyslexia specialist Louise Selby and SpLD specialist Janet Goring for a lively, thought-provoking look at what the proposed move from four broad areas of need to five areas of development could mean for children and young people with dyslexia, dyscalculia and other specific learning difficulties.</p>
-        <p>The heart of the discussion was a striking omission: "cognition and learning" has disappeared from the new framework. Dyslexia, dyscalculia and maths-related SpLDs don't fit neatly into any of the categories that remain, and the panel explored why that could prove such a significant oversight.</p>
-        <p>They also asked whether a stronger universal offer, better teaching for every child in every classroom, can really make up for losing a dedicated cognition and learning category. And they reflected on an important distinction: a diagnosis that unlocks funding is one thing, but a diagnosis that helps a child understand their difficulties are real, recognised and not their fault is quite another. Both matter.</p>
-        <p>Perhaps most concerning was the conversation about the children who are quiet, compliant and struggling. These children have always been at risk of being overlooked, precisely because they are not disruptive or demanding attention. Without clear recognition of cognition and learning needs, there is a real danger they become even less visible.</p>
-        <h3>What this means for families</h3>
-        <p>The reforms are still proposals, and how they land in practice remains to be seen. But the direction of travel matters: if the system's categories stop naming your child's kind of difficulty, recognition will depend even more on the adults around them noticing and pushing. If your child is one of the quiet ones, working hard, keeping their head down, and still struggling, don't wait for the system to spot them. Trust what you're seeing at home, talk to school, and get a clear picture of what's going on.</p>
-        <div class="btnrow">
-          <a class="btn ghost" href="https://podcasts.apple.com/gb/podcast/where-are-specific-learning-difficulties-in-the-send/id1502326007?i=1000777976139" target="_blank" rel="noopener">Listen to the episode</a>
-          <a class="btn green" href="../splds/">More about SpLDs</a>
-        </div>
+        <p><a class="more" href="spld-send-reforms/">Read more</a></p>
       </article>
-      <article class="post" id="gcse-gap-2026">
-        <p class="eyebrow">27 July 2026 · News</p>
-        <h2>The GCSE gap for dyslexic pupils: a decade without progress</h2>
-        <p>The British Dyslexia Association has published a new analysis of Department for Education data, and its title says it all: <em>GCSE attainment: A decade without progress</em>. Last summer, only two in ten pupils with dyslexia achieved a grade 5 or above in GCSE English and maths, compared with five in ten pupils with no identified special educational need. Even at the standard pass (grade 4), just four in ten pupils with a specific learning difficulty got there, against seven in ten of their peers.</p>
-        <p>What makes this report so hard to read is not any single number, it's the trend. The gap has barely moved in three years, and more than a decade of national data tells the same story: thousands of capable young people leaving school every year with lower qualifications than they deserve.</p>
-        <p>As the BDA's chief executive Ellen Broomé put it: "Dyslexia is not linked to intelligence." Dyslexic young people are just as capable as their classmates. The gap is about whether their difficulties are recognised, and whether the right support arrives in time.</p>
-        <p>The BDA is calling on government to address dyslexia explicitly in the SEND reforms, to shift towards early identification rather than making support depend on a diagnosis, and to improve teacher training so mainstream classrooms work for dyslexic learners.</p>
-        <h3>What this means for families</h3>
-        <p>A gap that holds steady for a decade is not about the children, it's about the system around them. The pupils who do well despite dyslexia are usually the ones whose difficulties were spotted early and who received structured, specialist support well before exam years. If your child is heading towards GCSEs and something isn't right with their reading, spelling or writing stamina, the earlier you act the more difference it makes.</p>
-        <div class="btnrow">
-          <a class="btn ghost" href="https://www.bdadyslexia.org.uk/news/new-report-gcse-attainment-gap-for-dyslexic-pupils-unchanged-after-more-than-a-decade" target="_blank" rel="noopener">Read the BDA report</a>
-          <a class="btn green" href="https://cal.com/natalie-langley-1sztkj/15min" target="_blank" rel="noopener">Book a free 15-minute call</a>
-        </div>
+      <article class="postcard">
+        <p class="eyebrow"><time datetime="2026-07-27">27 July 2026</time> &middot; News</p>
+        <h2><a href="gcse-gap-2026/">The GCSE gap for dyslexic pupils: a decade without progress</a></h2>
+        <p>The British Dyslexia Association has published a new analysis of Department for Education data, and its title says it all: <em>GCSE attainment: A decade without progress</em>.</p>
+        <p><a class="more" href="gcse-gap-2026/">Read more</a></p>
       </article>
-      <article class="post" id="spld-identification-study">
-        <p class="eyebrow">20 July 2026 · Research</p>
-        <h2>Who gets spotted? Big inequalities in identifying learning difficulties</h2>
-        <p>A major study from Durham University and the University of Oxford, published in the <em>Journal of Learning Disabilities</em>, looked at over 540,000 Year 6 pupils across 14,800 schools in England and asked a simple question: which children get identified with a specific learning difficulty, and which get missed?</p>
-        <p>The answer is uncomfortable. Two children with identical test scores can have very different chances of being identified, depending on who they are and where they go to school. Pupils in high-achieving schools were more likely to be identified than pupils with the same scores in lower-achieving schools, because "underachievement" tends to be judged against the school's average rather than the child's potential. Schools with more children from disadvantaged areas identified fewer pupils, which the researchers link in part to families' unequal access to private assessments.</p>
-        <p>The pattern holds for who the child is, too. Boys had about twice the odds of being identified as girls with similar maths attainment, and children who speak English as an additional language were substantially less likely to be identified than classmates with the same reading or maths scores. Professor Steve Strand, one of the authors, described the variation between primary schools as huge, with much of it unexplained.</p>
-        <h3>What this means for families</h3>
-        <p>If your child is a girl, speaks English as an additional language, or attends a school where they're "doing okay" against the class average, a genuine difficulty can slip through unnoticed. You know your child best. If the effort going in at home doesn't match the results coming out at school, it is reasonable to ask questions, and an independent assessment looks at your child as an individual rather than against a school average.</p>
-        <div class="btnrow">
-          <a class="btn ghost" href="https://www.education.ox.ac.uk/news/major-study-reveals-inequalities-in-spotting-learning-difficulties-in-schoolchildren/" target="_blank" rel="noopener">Read about the study</a>
-          <a class="btn green" href="../dyslexia/">See the signs of dyslexia</a>
-        </div>
+      <article class="postcard">
+        <p class="eyebrow"><time datetime="2026-07-20">20 July 2026</time> &middot; Research</p>
+        <h2><a href="spld-identification-study/">Who gets spotted? Big inequalities in identifying learning difficulties</a></h2>
+        <p>A major study from Durham University and the University of Oxford looked at over 540,000 Year 6 pupils across 14,800 schools in England and asked a simple question: which children get identified with a specific learning difficulty, and which get missed?</p>
+        <p><a class="more" href="spld-identification-study/">Read more</a></p>
       </article>
-      <article class="post" id="lost-in-the-system">
-        <img src="../img/bda-lost-in-system.jpg" alt="British Dyslexia Association report banner: Lost in the system: councils' blind spot on dyslexia" style="width:100%;border-radius:18px;box-shadow:var(--shadow);margin-bottom:1.6em">
-        <p class="eyebrow">13 July 2026 · News</p>
-        <h2>Lost in the system: Councils' blind spot on dyslexia</h2>
-        <p>A new report from the British Dyslexia Association makes for sobering reading. <em>Lost in the system: Councils' blind spot on dyslexia</em> found that although around 900,000 schoolchildren in England have dyslexia, roughly three in every classroom, fewer than 2% of local authorities could say how many dyslexic children live in their area. Only three councils could provide any figures at all.</p>
-        <p>The gaps don't stop at counting. Fewer than half of local authorities employ specialists to assess and support dyslexic learners, and around a third provide no guidance at all on identifying or supporting dyslexia. Support depends far too much on where you happen to live.</p>
-        <p>The impact shows up clearly in attainment. In 2024, 26% of 11-year-olds left primary school without meeting the expected reading standard. For pupils with specific learning difficulties, only 21% met expected standards at Key Stage 2, and just one in five achieved a Grade 5 or above in GCSE English and maths.</p>
-        <p>As the BDA's chief executive Ellen Broomé put it: "Dyslexia cannot remain invisible in our schools." The BDA is calling on government and local authorities to record dyslexia consistently in education data, so support can be planned and targeted properly.</p>
-        <h3>What this means for families</h3>
-        <p>If the system isn't set up to spot dyslexic children, it falls to the adults around them (parents, carers and teachers) to notice the signs early and push for support. If something doesn't feel right about your child's reading, spelling or confidence, you don't have to wait: talk to your school's SENDCo, and consider an assessment to identify exactly where the barriers are.</p>
-        <div class="btnrow">
-          <a class="btn ghost" href="https://www.bdadyslexia.org.uk/news/new-report-reveals-dyslexic-children-are-invisible-in-most-english-local-authorities" target="_blank" rel="noopener">Read the full BDA report</a>
-          <a class="btn green" href="https://cal.com/natalie-langley-1sztkj/15min" target="_blank" rel="noopener">Talk to me about your child</a>
-        </div>
+      <article class="postcard">
+        <p class="eyebrow"><time datetime="2026-07-13">13 July 2026</time> &middot; News</p>
+        <h2><a href="lost-in-the-system/">Lost in the system: Councils' blind spot on dyslexia</a></h2>
+        <p>A new report from the British Dyslexia Association found that although around 900,000 schoolchildren in England have dyslexia, fewer than 2% of local authorities could say how many dyslexic children live in their area.</p>
+        <p><a class="more" href="lost-in-the-system/">Read more</a></p>
       </article>
-      <article class="post" id="send-pressure-nfer">
-        <p class="eyebrow">6 July 2026 · News</p>
-        <h2>Schools "at breaking point": what growing SEND pressure means for families</h2>
-        <p>Schools Week has reported on an interim study by the National Foundation for Educational Research (NFER) into how pupils with special educational needs and disabilities are spread across England's schools. The short version: very unevenly, and the gap is growing.</p>
-        <p>Primary schools in the top quartile for Education, Health and Care Plans had on average six times as many pupils with plans as those in the lowest quartile, 7% of pupils compared with 1%. That works out at around 17 pupils per school in the highest group against just three in the lowest, and the gap has widened since 2018-19. Secondary schools show a similar pattern. Schools carrying the highest numbers are concentrated in the most deprived areas, and council officers interviewed for the study said some schools were now "at breaking point". The NFER is urging government to reform the SEND system to promote greater consistency and equity, and to support the schools that are doing the inclusive work rather than penalising them.</p>
-        <h3>What this means for families</h3>
-        <p>A system under this much strain moves slowly. Waiting lists for statutory assessment are long, school SEND budgets are stretched, and how much support your child's school can offer increasingly depends on how many other children there need it too. That is not a reason to lose hope, but it is a reason not to wait passively. A clear, independent picture of your child's strengths and difficulties gives their school something concrete to act on, and specialist 1-to-1 intervention can start straight away, without waiting for a plan.</p>
-        <div class="btnrow">
-          <a class="btn ghost" href="https://schoolsweek.co.uk/schools-at-breaking-point-over-send-pressure-as-admission-gap-grows/" target="_blank" rel="noopener">Read the Schools Week article</a>
-          <a class="btn green" href="../services/">How I can help</a>
-        </div>
+      <article class="postcard">
+        <p class="eyebrow"><time datetime="2026-07-06">6 July 2026</time> &middot; News</p>
+        <h2><a href="send-pressure-nfer/">Schools "at breaking point": what growing SEND pressure means for families</a></h2>
+        <p>Schools Week has reported on an interim study by the National Foundation for Educational Research into how pupils with special educational needs and disabilities are spread across England's schools. The short version: very unevenly, and the gap is growing.</p>
+        <p><a class="more" href="send-pressure-nfer/">Read more</a></p>
       </article>
+      </div>
       <div class="cardgrid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:3em">
         <div class="card">
           <p class="eyebrow" style="margin-bottom:.4em">Research · Worth reading</p>
