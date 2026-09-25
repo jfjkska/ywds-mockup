@@ -270,6 +270,9 @@
     border:1px solid var(--line);font-size:.95rem;
   }
   .testi .who{margin-top:1em;font-weight:700;color:var(--olive);font-size:.85rem;letter-spacing:.05em}
+  .testi .qt{margin:0;max-width:none}
+  .testi .qt.clamp{display:-webkit-box;-webkit-line-clamp:10;-webkit-box-orient:vertical;overflow:hidden}
+  .testi .more-btn{background:none;border:0;padding:0;margin-top:.6em;color:var(--navy);font:inherit;font-weight:700;font-size:.88rem;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 
   .signcols{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:1.4em}
   @media (max-width:760px){.signcols{grid-template-columns:1fr}}
@@ -476,12 +479,24 @@
   </section>
 
   <section class="block skyt">
-    <div class="wrap narrow">
-      <p class="eyebrow">About</p>
-      <h2>Hello, I'm Natalie</h2>
-      <p>I live in Pocklington, East Yorkshire, and I've worked with children and young people with special educational needs and disabilities for 15 years, across primary, secondary and specialist settings, and in NHS children's speech and language therapy and Local Authority educational psychology.</p>
-      <p>I aim to empower children to take charge of their literacy challenges by teaching them to understand how they think and learn, and supporting them to identify the strategies that suit them best.</p>
-      <a class="btn ghost" href="about/">More about me</a>
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Hello, I'm Natalie</h2>
+        <p>I live in Pocklington, East Yorkshire, and I've worked with children and young people with special educational needs and disabilities for 15 years, across primary, secondary and specialist settings, and in NHS children's speech and language therapy and Local Authority educational psychology.</p>
+        <p>I aim to empower children to take charge of their literacy challenges by teaching them to understand how they think and learn, and supporting them to identify the strategies that suit them best.</p>
+        <a class="btn ghost" href="about/">More about me</a>
+      </div>
+      <div class="card">
+        <h3>Qualified and checked</h3>
+        <ul class="quals">
+          <li>Diploma in Specialist Teaching for Literacy Difficulties (Level 5)</li>
+          <li>Certificate of Competence in Educational Testing (Level 7)</li>
+          <li>MSc Psychology</li>
+          <li>Member of the British Psychological Society and the Dyslexia Guild</li>
+          <li>Enhanced DBS and professional indemnity insurance</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -491,19 +506,19 @@
       <h2>What families and schools say</h2>
       <div class="testis">
         <div class="testi">
-          "I am extremely happy with the support and approaches used by Natalie when helping us to support pupils at our school. I would strongly recommend Natalie and her fantastic skill set. She was sensitive to our pupils' needs, and her reports have allowed us to support our pupils in the best possible way."
+          <p class="qt">"I am extremely happy with the support and approaches used by Natalie when helping us to support pupils at our school. I would strongly recommend Natalie and her fantastic skill set. She was sensitive to our pupils' needs, and her reports have allowed us to support our pupils in the best possible way."</p>
           <div class="who">Zoe Douthwaite, SENDCo, Russell Hall Primary School</div>
         </div>
         <div class="testi">
-          "Natalie provides a calm, professional and child-centred approach when working with pupils, carrying out individual assessments to help identify specific areas of need and inform appropriate next steps. Her work supports schools in developing a clearer understanding of learners' strengths and barriers, ensuring that pupils receive the right support at the right time. She builds strong rapport with children, creating an environment where they feel at ease and able to engage fully throughout the assessment process. Schools value her clear insights and the practical value of her findings in supporting effective provision planning."
+          <p class="qt">"Natalie provides a calm, professional and child-centred approach when working with pupils, carrying out individual assessments to help identify specific areas of need and inform appropriate next steps. Her work supports schools in developing a clearer understanding of learners' strengths and barriers, ensuring that pupils receive the right support at the right time. She builds strong rapport with children, creating an environment where they feel at ease and able to engage fully throughout the assessment process. Schools value her clear insights and the practical value of her findings in supporting effective provision planning."</p>
           <div class="who">Sophie Kirk, SENDCo, Pocklington Junior School</div>
         </div>
         <div class="testi">
-          "Natalie assessed my son at school, he was at first very reluctant to participate as he dislikes speaking with new people. He is diagnosed with ADHD and this brought challenge to his assessment also, affecting his concentration and movement. Natalie managed both of these obstacles with patience and skill, and in the end they successfully complete his assessment together. Communication with Natalie both during and post assessment was excellent."
+          <p class="qt">"Natalie assessed my son at school, he was at first very reluctant to participate as he dislikes speaking with new people. He is diagnosed with ADHD and this brought challenge to his assessment also, affecting his concentration and movement. Natalie managed both of these obstacles with patience and skill, and in the end they successfully complete his assessment together. Communication with Natalie both during and post assessment was excellent."</p>
           <div class="who">C. Danby, parent</div>
         </div>
         <div class="testi">
-          "We are incredibly grateful for the support and encouragement our son has received from Natalie. From the very beginning, she has been patient, understanding and genuinely caring, creating a positive and supportive environment where our son feels comfortable and confident. The sessions have helped not only with reading, spelling and learning strategies, but also with building his confidence. We have seen such a positive difference, and it has been wonderful to watch our son become more willing to try things without feeling worried about making mistakes. Natalie keeps me updated with everything she is going to teach each week and then how each session has gone. This is super helpful as we are keen to know what he's learning. Natalie likes to make the session fun and engaging as this is how our son learns best. Natalie is full of praise and he looks forward to the lesson each week. As a parent, it is reassuring to know that your child is being supported by someone who truly understands dyslexia and takes the time to find approaches that work for them as an individual. We cannot thank her enough for all the hard work, patience and dedication. We would highly recommend them to any parent looking for specialist dyslexia support."
+          <p class="qt">"We are incredibly grateful for the support and encouragement our son has received from Natalie. From the very beginning, she has been patient, understanding and genuinely caring, creating a positive and supportive environment where our son feels comfortable and confident. The sessions have helped not only with reading, spelling and learning strategies, but also with building his confidence. We have seen such a positive difference, and it has been wonderful to watch our son become more willing to try things without feeling worried about making mistakes. Natalie keeps me updated with everything she is going to teach each week and then how each session has gone. This is super helpful as we are keen to know what he's learning. Natalie likes to make the session fun and engaging as this is how our son learns best. Natalie is full of praise and he looks forward to the lesson each week. As a parent, it is reassuring to know that your child is being supported by someone who truly understands dyslexia and takes the time to find approaches that work for them as an individual. We cannot thank her enough for all the hard work, patience and dedication. We would highly recommend them to any parent looking for specialist dyslexia support."</p>
           <div class="who">C. Bell, parent</div>
         </div>
       </div>
@@ -521,6 +536,16 @@
   </section>
 
 </main>
+<script>
+document.querySelectorAll(".testi .qt").forEach(function(q){
+  q.classList.add("clamp");
+  if(q.scrollHeight<=q.clientHeight+2){q.classList.remove("clamp");return;}
+  var b=document.createElement("button");
+  b.type="button";b.className="more-btn";b.textContent="Read more";b.setAttribute("aria-expanded","false");
+  b.onclick=function(){var open=q.classList.toggle("clamp")===false;b.textContent=open?"Show less":"Read more";b.setAttribute("aria-expanded",String(open));};
+  q.after(b);
+});
+</script>
 <footer class="site">
   <div class="wrap cols">
     <div>
