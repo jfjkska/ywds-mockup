@@ -174,6 +174,12 @@
     .hero-logo svg{width:min(230px,60vw)}
   }
   .hero p.lead{font-size:1.08rem;color:var(--ink-soft);max-width:54ch}
+  .hero-photo{display:flex;justify-content:center}
+  .hero-photo img{width:min(380px,100%);height:auto;border-radius:24px;box-shadow:0 12px 30px rgba(34,56,74,.16);display:block}
+  @media (max-width:800px){.hero-photo{order:-1}.hero-photo img{width:min(240px,62vw)}}
+  .heroquote{margin:1.2em 0 0;padding:4px 0 4px 18px;border-left:4px solid var(--sage);max-width:54ch;font-style:italic;color:var(--ink)}
+  .heroquote footer{font-style:normal;font-size:.85rem;color:var(--ink-soft);margin-top:.4em}
+  .card p.cardnote{font-size:.85rem;margin:4px 0 0}
   .btnrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:1.4em}
   .btn{
     display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;
@@ -398,35 +404,22 @@
       <div>
         <p class="eyebrow">Pocklington · East Yorkshire</p>
         <h1>Specialist literacy support, rooted in the Wolds</h1>
-        <p class="lead">Delivering high-quality, evidence-based support to improve educational outcomes for children and young people with dyslexia and literacy-related difficulties. Based in Pocklington and working with families and schools across York, Market Weighton, Driffield, Beverley and the wider East Riding.</p>
-        <p style="max-width:54ch">I am eager to work in partnership with schools to deliver targeted 1:1 interventions. For an already overwhelmed and exhausted learner, extra support should feel like relief, not a penalty. By coordinating directly with school timetables, we can integrate these sessions seamlessly into the school day at a mutually convenient time. This ensures that students build core skills and confidence without the burnout of after-school or weekend work.</p>
+        <p class="lead">I help children and young people aged 6 to 16 who find reading, writing or spelling hard. I find out what is getting in the way, then teach them in calm, structured one-to-one sessions, in person and often within the school day.</p>
+        <p style="max-width:54ch">Based in Pocklington and working with families across York, Market Weighton, Driffield, Beverley and the wider East Riding.</p>
+        <blockquote class="heroquote">"It has been wonderful to watch our son become more willing to try things without feeling worried about making mistakes."<footer>C. Bell, parent</footer></blockquote>
         <div class="btnrow">
           <a class="btn primary" href="https://cal.com/natalie-langley-1sztkj/20min" target="_blank" rel="noopener">Book a free intro call</a>
           <a class="btn ghost" href="services/">Explore services</a>
         </div>
       </div>
-      <div class="hero-logo">
-        <img class="herologo" src="img/logo.webp" alt="Yorkshire Wolds Dyslexia Service logo" width="560" height="626">
+      <div class="hero-photo">
+        <img src="img/natalie-portrait.webp" alt="Natalie Fisher, specialist literacy teacher" width="640" height="800" fetchpriority="high">
       </div>
     </div>
     <svg class="hills" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,60 C240,20 420,80 720,50 C1020,20 1200,70 1440,40 L1440,90 L0,90 Z" fill="var(--sage-tint)"/></svg>
   </div>
 
   <section class="block tint" style="padding-top:24px">
-    <div class="wrap">
-      <p class="eyebrow">Why literacy matters</p>
-      <h2>Literacy underpins every school subject, and it's a life skill</h2>
-      <p>Reading, writing, speaking and listening underpin almost all learning at school and in everyday life. With the right support, every child can progress.</p>
-      <div class="statrow">
-        <div class="stat"><b>~10%</b><span>of children have dyslexia, around three in every classroom</span></div>
-        <div class="stat"><b>£55bn</b><span>estimated yearly cost of illiteracy to the UK economy</span></div>
-      </div>
-      <p style="margin-top:1.6em">Early, targeted literacy support changes outcomes. <strong>Every child deserves the chance to read, write and thrive.</strong></p>
-      <p class="srcnote">Source: World Literacy Foundation.</p>
-    </div>
-  </section>
-
-  <section class="block">
     <div class="wrap">
       <p class="eyebrow">How I can help</p>
       <h2>Support built around your child</h2>
@@ -436,6 +429,7 @@
           <h3>Learning Needs Assessment</h3>
           <p>A two-hour battery of standardised, psychometric tests to pinpoint strengths and needs and identify barriers to learning, with a detailed written report and practical recommendations.</p>
           <div class="price">£300 <small>or two instalments of £150</small></div>
+          <p class="cardnote"><a href="services/#diagnostic">Not a diagnosis of dyslexia</a></p>
           <a class="more" href="services/">About the LNA</a>
         </div>
         <div class="card">
@@ -453,6 +447,32 @@
           <a class="more" href="services/">For schools</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <p class="eyebrow">For schools</p>
+      <h2>Working with schools</h2>
+      <p style="max-width:62ch">I am eager to work in partnership with schools to deliver targeted 1:1 interventions. For an already overwhelmed and exhausted learner, extra support should feel like relief, not a penalty, so I coordinate directly with school timetables and fit sessions into the school day. Learners build core skills and confidence without the burnout of after-school or weekend work.</p>
+      <div class="btnrow">
+        <a class="btn primary" href="https://cal.com/natalie-langley-1sztkj/30min" target="_blank" rel="noopener">Book a 30-minute school consultation</a>
+        <a class="btn ghost" href="services/">Staff support &amp; training</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap">
+      <p class="eyebrow">Why literacy matters</p>
+      <h2>Literacy underpins every school subject, and it's a life skill</h2>
+      <p>Reading, writing, speaking and listening underpin almost all learning at school and in everyday life. With the right support, every child can progress.</p>
+      <div class="statrow">
+        <div class="stat"><b>~10%</b><span>of children have dyslexia, around three in every classroom</span></div>
+        <div class="stat"><b>£55bn</b><span>estimated yearly cost of illiteracy to the UK economy</span></div>
+      </div>
+      <p style="margin-top:1.6em">Early, targeted literacy support changes outcomes. <strong>Every child deserves the chance to read, write and thrive.</strong></p>
+      <p class="srcnote">Source: World Literacy Foundation.</p>
     </div>
   </section>
 
