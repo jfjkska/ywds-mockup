@@ -275,6 +275,25 @@
   }
   .signcard ul{columns:1;font-size:.93rem;color:var(--ink-soft)}
 
+  .band-label{display:flex;align-items:center;gap:10px;font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:var(--olive);margin:1.8em 0 .6em}
+  .band-label .tag{font-size:.66rem;letter-spacing:.15em;background:var(--sage-tint);color:var(--olive-deep);border-radius:999px;padding:2px 10px;border:1px solid var(--sage-soft)}
+  .twobox{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:1.6em}
+  .box-sage{background:var(--card);border-left:5px solid var(--sage);border-radius:14px;padding:20px 22px;font-size:.95rem}
+  .box-navy{background:var(--navy);color:var(--cream);border-radius:14px;padding:20px 22px;font-size:.95rem}
+  .box-navy strong{color:#fff}.boxsrc{display:block;font-size:.75rem;opacity:.75;margin-top:.5em}
+  .brainfig{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:24px;align-items:center;margin:1.2em 0 .4em}
+  .brainfig svg{width:100%;height:auto}
+  @media (max-width:700px){.brainfig{grid-template-columns:1fr}}
+  .legend{display:flex;flex-direction:column;gap:10px;font-size:.92rem;color:var(--ink-soft)}
+  .legend i{display:inline-block;width:18px;height:18px;border-radius:50%;vertical-align:-4px;margin-right:8px}
+  .lg-less{border:2px dashed var(--olive);background:repeating-linear-gradient(45deg,var(--sage) 0 3px,var(--cream) 3px 8px)}
+  .lg-more{background:#E9B949;border:2px solid #B8860B}
+  .brainarea h3{display:flex;align-items:center;gap:10px}
+  .bnum{flex:none;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:.95rem}
+  .brainarea .bsub{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--olive);margin:-.2em 0 .8em}
+  .brainarea p.dys{padding:10px 12px;border-radius:10px;margin-top:.4em;color:var(--ink)}
+  .brainarea p.dys.less{background:var(--sage-tint);border-left:4px dashed var(--olive)}
+  .brainarea p.dys.more{background:#FBF1D9;border-left:4px solid #D9A12E}
   .bands{display:grid;gap:26px;margin-top:1.6em}
   .band .eyebrow{margin-bottom:.6em}
   .bandgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
@@ -491,6 +510,106 @@
           <li>Talk to your school's SENDCo</li>
         </ul>
         <div class="btnrow"><a class="btn green" href="https://cal.com/natalie-langley-1sztkj/20min" target="_blank" rel="noopener">Worried about your child? Book a free call</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block tint" id="causes">
+    <div class="wrap">
+      <p class="eyebrow">Causes</p>
+      <h2>What causes dyslexia?</h2>
+      <p>Dyslexia comes from differences in how the brain develops and processes written and spoken language. It is about how the brain is wired, not about intelligence or effort.</p>
+      <p class="band-label">Developmental <span class="tag">Most common</span></p>
+      <p><strong>Most people with dyslexia are born with it.</strong></p>
+      <div class="cardgrid">
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M16 4c0 10 16 14 16 20s-16 10-16 20M32 4c0 10-16 14-16 20s16 10 16 20"/><path d="M18 11h12M17 18h14M17 30h14M18 37h12"/></svg></div>
+          <h3>Genetics</h3>
+          <p>Dyslexia often runs in families. Many genes each play a small part, shaping how the brain develops the skills used for language and reading.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8c-4-4-12-3-13 3-5 1-7 7-4 11-3 4-1 10 4 11 1 6 9 8 13 4 4 4 12 2 13-4 5-1 7-7 4-11 3-4 1-10-4-11-1-6-9-7-13-3z"/><path d="M24 8v29M17 18c3 0 5 2 7 4M31 26c-3 0-5-2-7-4"/></svg></div>
+          <h3>Brain differences</h3>
+          <p>Brain imaging shows that dyslexic readers process written words differently. The connections on the left side of the brain that link speech sounds to letters can work less efficiently.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="15" r="8"/><path d="M10 42c1-9 7-14 14-14s13 5 14 14"/><path d="M21 14h.01M27 14h.01M21 18c2 1.5 4 1.5 6 0"/></svg></div>
+          <h3>Early development</h3>
+          <p>The chance of dyslexia is higher after premature birth or low birth weight, and after exposure to nicotine or alcohol before birth.</p>
+        </div>
+      </div>
+      <p class="band-label">Acquired <span class="tag">Rare</span></p>
+      <p>Occasionally, reading difficulties start later in life. This can happen after a brain injury, a stroke or an illness that affects the brain. It is called acquired dyslexia, and it is different from the developmental dyslexia most children have.</p>
+      <div class="twobox">
+        <div class="box-sage"><strong>What dyslexia is not.</strong> Dyslexia is not a sign of low intelligence, laziness or poor parenting. Dyslexic children are often working much harder than their classmates to read the same page.</div>
+        <div class="box-navy"><strong>What this means for your child.</strong> Dyslexia is lifelong, but the right teaching makes a real difference. Structured, multi-sensory teaching builds the skills that do not come automatically, and helps children understand how they learn best.</div>
+      </div>
+
+      <h2 id="brain" style="margin-top:2em">Dyslexia and the brain</h2>
+      <p>In a typical reader, a fast “reading highway” develops mainly on the left side of the brain. In a dyslexic reader this highway is wired a little differently. Brain imaging shows three areas on the left side working differently during reading.</p>
+      <div class="brainfig">
+        <svg viewBox="0 0 640 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="brainT brainD">
+<title id="brainT">The left side of the brain, showing three areas used in reading</title>
+<desc id="brainD">A side view of the brain facing left. At the front, the speech and production area is marked as often more active in dyslexia. Above the ear, the sound-processing area, and at the lower back, the visual word form area, are marked as less active.</desc>
+<defs>
+  <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#93AA8C" stroke-width="3"/></pattern>
+</defs>
+<ellipse cx="448" cy="338" rx="66" ry="38" fill="#EFEADD" stroke="#274A68" stroke-width="3"/>
+<path d="M452,322 C455,332 462,338 470,344 M430,330 C440,340 455,348 480,352" fill="none" stroke="#C9C1AE" stroke-width="2"/>
+<path d="M392,318 C394,350 400,378 412,408" fill="none" stroke="#274A68" stroke-width="22" stroke-linecap="round"/>
+<path d="M392,318 C394,350 400,378 412,408" fill="none" stroke="#EFEADD" stroke-width="16" stroke-linecap="round"/>
+<path d="M108,232 C92,160 138,86 230,62 C302,42 384,44 448,74 C510,102 552,152 552,210 C552,258 530,292 492,304 C466,312 440,308 420,316 C394,328 360,336 322,330 C292,326 270,338 240,336 C204,334 184,320 164,316 C132,308 114,276 108,232 Z" fill="#F7F4EC" stroke="#274A68" stroke-width="3.5"/>
+<g fill="none" stroke="#C9C1AE" stroke-width="2.2" stroke-linecap="round">
+  <path d="M332,58 C322,112 306,160 300,226"/>
+  <path d="M176,266 C236,244 300,238 392,226"/>
+  <path d="M166,150 C196,136 228,142 250,128"/><path d="M150,196 C180,186 208,196 236,184"/>
+  <path d="M398,92 C404,122 420,140 446,146"/><path d="M470,180 C488,196 508,200 530,196"/>
+  <path d="M252,286 C292,280 330,286 370,276"/><path d="M262,92 C272,110 270,130 282,150"/>
+</g>
+<circle cx="208" cy="236" r="40" fill="#E9B949" stroke="#B8860B" stroke-width="2.5"/>
+<circle cx="372" cy="202" r="44" fill="url(#hatch)" fill-opacity=".9" stroke="#5C7A5E" stroke-width="2.5" stroke-dasharray="7 5"/>
+<circle cx="472" cy="262" r="38" fill="url(#hatch)" fill-opacity=".9" stroke="#5C7A5E" stroke-width="2.5" stroke-dasharray="7 5"/>
+<g font-family="Aptos, 'Segoe UI', sans-serif" font-weight="800" font-size="22" fill="#fff" text-anchor="middle">
+  <circle cx="208" cy="236" r="15" fill="#274A68"/><text x="208" y="244">3</text>
+  <circle cx="372" cy="202" r="15" fill="#274A68"/><text x="372" y="210">1</text>
+  <circle cx="472" cy="262" r="15" fill="#274A68"/><text x="472" y="270">2</text>
+</g>
+<g font-family="Verdana, sans-serif" font-size="15" fill="#4A5D6B" letter-spacing="2">
+  <text x="70" y="40">◀ FRONT</text><text x="520" y="40">BACK ▶</text>
+</g>
+</svg>
+        <div class="legend"><span><i class="lg-less"></i>Less active when reading</span><span><i class="lg-more"></i>Often more active (working harder)</span></div>
+      </div>
+      <div class="cardgrid">
+        <div class="card brainarea">
+          <h3><span class="bnum">1</span>The sound-processing area</h3>
+          <p class="bsub">Parietal-temporal</p>
+          <p><strong>Where:</strong> Near the top-middle of the brain, just above the ear.</p>
+          <p><strong>What it does:</strong> A translator. It matches the letters your eyes see to the sounds of spoken language. This is called decoding.</p>
+          <p class="dys less"><strong>In dyslexia:</strong> Less active. Translation is slower, so pulling words apart into their sounds takes much more effort.</p>
+        </div>
+        <div class="card brainarea">
+          <h3><span class="bnum">2</span>The visual word form area</h3>
+          <p class="bsub">Occipital-temporal</p>
+          <p><strong>Where:</strong> Towards the lower back of the brain.</p>
+          <p><strong>What it does:</strong> An automatic camera. Once a word has been seen enough times, this area recognises it instantly, like a friend’s face, so reading becomes quick and fluent.</p>
+          <p class="dys less"><strong>In dyslexia:</strong> Less active. Words are not recognised instantly, so reading can feel slow and laboured, as if seeing each word for the first time.</p>
+        </div>
+        <div class="card brainarea">
+          <h3><span class="bnum">3</span>The speech and production area</h3>
+          <p class="bsub">Broca’s area, frontal lobe</p>
+          <p><strong>Where:</strong> At the front of the brain, near the forehead.</p>
+          <p><strong>What it does:</strong> Speech production: forming and saying words.</p>
+          <p class="dys more"><strong>In dyslexia:</strong> Often more active. Because the areas at the back are doing less of the work, the front of the brain steps in, working extra hard to “say” words silently in the reader’s head.</p>
+        </div>
+      </div>
+      <div class="twobox">
+        <div class="box-sage"><strong>How the brain compensates.</strong> Because the left-side pathways work less efficiently, a dyslexic brain often draws more on the right side, which is better at the big picture than at step-by-step detail. This detour makes reading slower and more tiring. Some dyslexic people also have real strengths in visual and big-picture thinking, although this varies from person to person.</div>
+        <div class="box-navy"><strong>The good news.</strong> Brain-imaging studies show that structured, intensive reading teaching can increase activity in the left-side reading areas. With the right support, the brain can build a stronger reading pathway. <span class="boxsrc">Temple et al. (2003); Shaywitz et al. (2004).</span></div>
+      </div>
+      <div class="btnrow">
+        <a class="btn ghost" href="../downloads/ywds-causes.pdf" download>Download: What causes dyslexia? (A3 PDF)</a>
+        <a class="btn ghost" href="../downloads/ywds-brain.pdf" download>Download: Dyslexia and the brain (A3 PDF)</a>
       </div>
     </div>
   </section>
