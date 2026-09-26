@@ -201,7 +201,12 @@
 
   .pagehead{background:var(--hero-grad);padding:clamp(36px,6vw,66px) 0 clamp(22px,3vw,34px)}
   .pagehead p.lead{color:var(--ink-soft);font-size:1.05rem;max-width:60ch}
-  .terms h2{scroll-margin-top:90px}
+  .terms h2,.terms h3{scroll-margin-top:90px}
+  .terms h2{margin-top:1.8em;padding-top:.8em;border-top:2px solid var(--sage-soft)}
+  .terms h3{margin-top:1.2em}
+  .parts{background:var(--sage-tint);border-radius:14px;padding:16px 22px;margin:1.2em 0 .5em}
+  .parts p{margin-bottom:.4em}
+  .parts ul{margin:0}
   .terms ul{margin-bottom:1.2em}
   .formbox{background:var(--card);border:1.5px solid var(--sage);border-radius:18px;padding:22px 26px;box-shadow:var(--shadow);margin:1.4em 0 2em}
   .formbox p{margin-bottom:.8em}
@@ -269,49 +274,126 @@
   <section class="block terms" style="padding-top:20px">
     <div class="wrap narrow">
       <div class="formbox">
-        <p><strong>Booking and consent form</strong></p>
-        <p>Before we start, I will ask you to fill in and sign the booking and consent form. It includes a copy of these terms. You can fill it in on screen or print it.</p>
-        <a class="btn ghost" href="../downloads/ywds-booking-and-terms.pdf" download>Download: Booking and consent form (PDF)</a>
+        <p><strong>Booking and consent forms</strong></p>
+        <p>Before we start, I will ask you to fill in and sign a booking and consent form. Each form includes the terms that apply to that service. You can fill it in on screen or print it.</p>
+        <div class="btnrow" style="margin-top:.4em">
+          <a class="btn ghost" href="../downloads/ywds-booking-assessment.pdf" download>Download: Assessment booking form (PDF)</a>
+          <a class="btn ghost" href="../downloads/ywds-booking-intervention.pdf" download>Download: Intervention booking form (PDF)</a>
+        </div>
       </div>
-      <p>These terms explain how booking, paying for and working with Yorkshire Wolds Dyslexia Service works. They cover Learning Needs Assessments and 1-1 literacy intervention for children and young people.</p>
+      <p>These terms explain how booking, paying for and working with Yorkshire Wolds Dyslexia Service works.</p>
       <p>Yorkshire Wolds Dyslexia Service is run by me, Natalie Fisher, in Pocklington, East Yorkshire. You can contact me at <a href="mailto:natalie@ywds.co.uk">natalie@ywds.co.uk</a>.</p>
+      <nav class="parts" aria-label="Parts of these terms">
+        <p><strong>These terms have three parts:</strong></p>
+        <ul>
+          <li><a href="#everyone">For everyone</a>: applies to every booking</li>
+          <li><a href="#assessments">Learning Needs Assessments</a></li>
+          <li><a href="#intervention">1-1 literacy intervention</a></li>
+        </ul>
+      </nav>
 
-      <h2 id="agreement">1. Our agreement</h2>
+      <h2 id="everyone">For everyone</h2>
+      <p>These apply whichever service you book.</p>
+
+      <h3 id="agreement">Our agreement</h3>
       <ul>
         <li>Our agreement starts when you return the signed booking and consent form and I confirm a date for the assessment or the first session.</li>
         <li>The agreement is between me and the parent or carer who signs the form.</li>
         <li>Work for schools, such as staff consultancy and training, is agreed separately with the school in writing.</li>
       </ul>
 
-      <h2 id="services">2. What I provide</h2>
+      <h3 id="payment">Paying</h3>
       <ul>
-        <li><strong>Learning Needs Assessment (ages 6 to 16):</strong> a battery of standardised tests, taking about two hours, that pinpoints your child's strengths and areas for development. I send you a written report within two weeks of the assessment. The report is not a diagnosis of dyslexia, but it will give you an indication of whether dyslexia is likely. Assessments can take place in school or at another agreed place.</li>
-        <li><strong>1-1 literacy intervention (ages 7 to 16):</strong> weekly, hour-long, in-person sessions using the Dyslexia Action Literacy Programme (DALP). Sessions usually take place in school during the school day. Where that isn't possible, we can agree another place, such as your home.</li>
-      </ul>
-
-      <h2 id="fees">3. Fees and payment</h2>
-      <ul>
-        <li><strong>Learning Needs Assessment:</strong> £300. You can pay in full, or in two instalments of £150: the first before the information-gathering process begins, and the second before I share the final report.</li>
-        <li><strong>1-1 intervention:</strong> £50 per hour. Sessions are paid for in blocks of six weekly sessions (£300 for six one-hour sessions). You can pay each block in two instalments: the first a week before the first session of the block, and the second after the third session.</li>
         <li>All fees are paid by bank transfer. I will send you an invoice with the bank details.</li>
         <li>If a payment is not made, sessions will not go ahead until it is.</li>
         <li>I may change my prices. I will give you at least one month's notice, and a price change never applies to a block you have already paid for.</li>
       </ul>
 
-      <h2 id="cooling-off">4. Your right to cancel in the first 14 days</h2>
+      <h3 id="cooling-off">Your right to cancel in the first 14 days</h3>
       <ul>
         <li>You have 14 days from the start of our agreement to cancel it for any reason. You will get a full refund of anything you have paid.</li>
         <li>If you would like the assessment or sessions to start within those 14 days, please tick the box on the booking form. If you then cancel within the 14 days, you pay only for what has already been delivered.</li>
         <li>To cancel, email me at <a href="mailto:natalie@ywds.co.uk">natalie@ywds.co.uk</a>. I will refund you within 14 days.</li>
       </ul>
 
-      <h2 id="cancellations">5. If you need to cancel, or are late</h2>
-      <h3>Assessments</h3>
+      <h3 id="my-cancellations">If I need to cancel</h3>
+      <ul>
+        <li>If I have to cancel an assessment or a session, for example because I am ill, I will tell you as soon as I can.</li>
+        <li>You will not be charged for it. I will offer you a rearranged date or a refund, whichever you prefer.</li>
+      </ul>
+
+      <h3 id="safeguarding">Safeguarding</h3>
+      <ul>
+        <li>I hold an enhanced DBS certificate and am on the DBS Update Service.</li>
+        <li>If I am worried about a child's safety or wellbeing, I will follow safeguarding procedures. This may mean sharing information with the school's Designated Safeguarding Lead or children's services, sometimes without asking you first, where the law requires it.</li>
+      </ul>
+
+      <h3 id="information">Your information</h3>
+      <ul>
+        <li>I look after your and your child's information in line with UK data protection law (UK GDPR).</li>
+        <li>Records are kept in secure, password-protected cloud storage. I keep them for six years after I last work with your family, then securely destroy them.</li>
+        <li>The <a href="../privacy/">privacy notice</a> explains what I collect, why, and your rights.</li>
+      </ul>
+
+      <h3 id="liability">Insurance and liability</h3>
+      <ul>
+        <li>I hold professional indemnity insurance.</li>
+        <li>I am not responsible for losses that could not reasonably have been foreseen when we made our agreement.</li>
+        <li>Nothing in these terms limits my responsibility for death or personal injury caused by my negligence, or anything else that the law does not allow me to limit. These terms do not affect your legal rights as a consumer.</li>
+      </ul>
+
+      <h3 id="complaints">Complaints</h3>
+      <ul>
+        <li>If you are unhappy with any part of my service, please tell me first so I can put it right. Email <a href="mailto:natalie@ywds.co.uk">natalie@ywds.co.uk</a> and I will reply within 14 days.</li>
+      </ul>
+
+      <h3 id="changes">Changes to these terms</h3>
+      <ul>
+        <li>I may update these terms from time to time. If I do, I will tell you before the change applies to you. It will not apply to a block of sessions you have already paid for.</li>
+        <li>These terms are governed by the law of England and Wales.</li>
+      </ul>
+
+      <h2 id="assessments">Learning Needs Assessments</h2>
+
+      <h3 id="lna-what">What the assessment is</h3>
+      <ul>
+        <li>For children aged 6 to 16: a battery of standardised tests, taking about two hours, that pinpoints your child's strengths and areas for development.</li>
+        <li>Assessments can take place in school or at another agreed place.</li>
+      </ul>
+
+      <h3 id="lna-fees">Fees</h3>
+      <ul>
+        <li>£300. You can pay in full, or in two instalments of £150: the first before the information-gathering process begins, and the second before I share the final report.</li>
+      </ul>
+
+      <h3 id="lna-cancel">Cancelling or arriving late</h3>
       <ul>
         <li>Please give me at least <strong>48 hours' notice</strong> if your child can't attend their assessment, and I will rearrange it. With less than 48 hours' notice, there is a charge of <strong>£100</strong> to cover the lost appointment.</li>
         <li>If an assessment outside school starts late because you arrive late, there is a charge of <strong>£10 for every 15 minutes</strong> it is delayed. This does not apply to assessments in school.</li>
       </ul>
-      <h3>Intervention sessions</h3>
+
+      <h3 id="lna-report">The report</h3>
+      <ul>
+        <li>I send you a written report within two weeks of the assessment.</li>
+        <li>The report is not a diagnosis of dyslexia, but it will give you an indication of whether dyslexia is likely.</li>
+        <li>The report is for you and your child. I will only share it with your child's school, or discuss it with school staff, if you have given permission on the booking form.</li>
+        <li>You are welcome to share the report with anyone you choose, such as your child's school or GP.</li>
+      </ul>
+
+      <h2 id="intervention">1-1 literacy intervention</h2>
+
+      <h3 id="int-what">What the intervention is</h3>
+      <ul>
+        <li>For children and young people aged 7 to 16: weekly, hour-long, in-person sessions using the Dyslexia Action Literacy Programme (DALP).</li>
+      </ul>
+
+      <h3 id="int-fees">Fees</h3>
+      <ul>
+        <li>£50 per hour. Sessions are paid for in blocks of six weekly sessions (£300 for six one-hour sessions).</li>
+        <li>You can pay each block in two instalments: the first a week before the first session of the block, and the second after the third session.</li>
+      </ul>
+
+      <h3 id="int-cancel">Cancelling, missing or arriving late</h3>
       <ul>
         <li>Please give me at least <strong>48 hours' notice</strong> if you need to cancel a session. Cancellations with less than 48 hours' notice are charged at the full session rate. This includes cancellations because your child is ill.</li>
         <li>If the school cancels or can't host a session, for example because of a trip, exam, INSET day or closure, there is no charge and I will rearrange the session.</li>
@@ -321,69 +403,28 @@
         <li>Please tell me about planned holidays in advance, giving notice equal to the length of the holiday.</li>
       </ul>
 
-      <h2 id="my-cancellations">6. If I need to cancel</h2>
+      <h3 id="int-where">Where sessions take place</h3>
       <ul>
-        <li>If I have to cancel a session, for example because I am ill, I will tell you as soon as I can.</li>
-        <li>You will not be charged for it. I will offer you a rearranged session or a refund for that session, whichever you prefer.</li>
+        <li>Sessions usually take place in school during the school day. Where that isn't possible, we can agree another place, such as your home.</li>
+        <li><strong>In school:</strong> sessions depend on the school agreeing to them and providing a suitable quiet room. I follow the school's visitor and safeguarding procedures.</li>
+        <li><strong>At home or another place:</strong> a parent, carer or another responsible adult you have named must be in the building for the whole session.</li>
       </ul>
 
-      <h2 id="ending">7. Stopping the intervention</h2>
+      <h3 id="int-stopping">Stopping the intervention</h3>
       <ul>
         <li>You can stop at the end of any block of six sessions. Please tell me before the next block is due to start.</li>
         <li>If you want to stop part-way through a block, please give me 48 hours' notice. I will refund any sessions you have paid for that have not yet taken place.</li>
         <li>I may end the agreement if fees are not paid, or if I can no longer provide the service. If I do, I will refund any sessions you have paid for that have not yet taken place.</li>
       </ul>
 
-      <h2 id="sessions">8. Where sessions take place</h2>
-      <ul>
-        <li><strong>In school:</strong> sessions depend on the school agreeing to them and providing a suitable quiet room. I follow the school's visitor and safeguarding procedures.</li>
-        <li><strong>At home or another place:</strong> a parent, carer or another responsible adult you have named must be in the building for the whole session.</li>
-      </ul>
-
-      <h2 id="safeguarding">9. Safeguarding</h2>
-      <ul>
-        <li>I hold an enhanced DBS certificate and am on the DBS Update Service.</li>
-        <li>If I am worried about a child's safety or wellbeing, I will follow safeguarding procedures. This may mean sharing information with the school's Designated Safeguarding Lead or children's services, sometimes without asking you first, where the law requires it.</li>
-      </ul>
-
-      <h2 id="progress">10. What to expect from the intervention</h2>
+      <h3 id="int-progress">What to expect</h3>
       <ul>
         <li>The DALP is evidence-based, but there is <strong>no guarantee</strong> that your child will make academic progress.</li>
         <li>Literacy development depends a great deal on other things, such as school attendance and practice at home. Any co-occurring difficulties may also affect progress.</li>
         <li>I will keep you updated on what we are working on and how sessions are going.</li>
       </ul>
 
-      <h2 id="reports">11. Reports</h2>
-      <ul>
-        <li>The assessment report is for you and your child. I will only share it with your child's school, or discuss it with school staff, if you have given permission on the booking form.</li>
-        <li>You are welcome to share the report with anyone you choose, such as your child's school or GP.</li>
-      </ul>
-
-      <h2 id="information">12. Your information</h2>
-      <ul>
-        <li>I look after your and your child's information in line with UK data protection law (UK GDPR).</li>
-        <li>Records are kept in secure, password-protected cloud storage. I keep them for six years after I last work with your family, then securely destroy them.</li>
-        <li>The <a href="../privacy/">privacy notice</a> explains what I collect, why, and your rights.</li>
-      </ul>
-
-      <h2 id="liability">13. Insurance and liability</h2>
-      <ul>
-        <li>I hold professional indemnity insurance.</li>
-        <li>I am not responsible for losses that could not reasonably have been foreseen when we made our agreement.</li>
-        <li>Nothing in these terms limits my responsibility for death or personal injury caused by my negligence, or anything else that the law does not allow me to limit. These terms do not affect your legal rights as a consumer.</li>
-      </ul>
-
-      <h2 id="complaints">14. Complaints</h2>
-      <ul>
-        <li>If you are unhappy with any part of my service, please tell me first so I can put it right. Email <a href="mailto:natalie@ywds.co.uk">natalie@ywds.co.uk</a> and I will reply within 14 days.</li>
-      </ul>
-
-      <h2 id="changes">15. Changes to these terms</h2>
-      <ul>
-        <li>I may update these terms from time to time. If I do, I will tell you before the change applies to you. It will not apply to a block of sessions you have already paid for.</li>
-        <li>These terms are governed by the law of England and Wales.</li>
-      </ul>
-      <p class="srcnote">Version 1. Last updated 26 September 2026.</p>
+      <p class="srcnote">Version 1.1. Last updated 26 September 2026.</p>
     </div>
   </section>
 
