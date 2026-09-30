@@ -185,6 +185,7 @@
     font-size:1.45rem;color:var(--olive);border-bottom:2px solid var(--sage-soft);
     padding-bottom:.25em;margin-bottom:.5em;
   }
+  .sgroup .shead{display:flex;align-items:center;gap:12px}
   .sgroup .sintro{font-size:.92rem;color:var(--ink-soft);margin-bottom:1.1em}
   .svc{
     background:var(--card);border:1px solid var(--line);border-radius:16px;
@@ -199,6 +200,7 @@
     text-decoration:none;color:var(--olive-deep);
   }
   .svc .go::after{content:" →"}
+  .svc .go svg{width:16px;height:16px;vertical-align:-3px;margin-right:6px}
   .svc .go:hover{text-decoration:underline}
 
   /* ---------- footer ---------- */
@@ -215,6 +217,11 @@
 
   .pagehead{background:var(--hero-grad);padding:clamp(36px,6vw,66px) 0 clamp(22px,3vw,34px)}
   .pagehead p.lead{color:var(--ink-soft);font-size:1.05rem;max-width:60ch}
+  .ico{width:44px;height:44px;border-radius:12px;background:var(--sage-tint);color:var(--olive-deep);display:grid;place-items:center;flex-shrink:0}
+  .ico svg{width:24px;height:24px}
+  img.spot{display:block;max-width:100%;height:auto;border-radius:18px}
+  .headgrid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:clamp(20px,4vw,48px);align-items:center}
+  @media (max-width:760px){.headgrid{grid-template-columns:1fr}.headgrid img.spot{width:min(280px,80%)}}
   .crumb{font-size:.82rem;color:var(--ink-soft);margin-bottom:1em}
   .crumb a{color:var(--olive-deep)}
 </style>
@@ -259,7 +266,7 @@
         <li><a href="../services/">Services</a></li>
         <li><a href="../literacy/">Literacy</a></li>
         <li><a href="../dyslexia/">Dyslexia</a></li>
-        <li><a href="../splds/">Related</a></li>
+        <li><a href="../splds/">Beyond dyslexia</a></li>
         <li><a href="../glossary/">Glossary</a></li>
         <li><a href="../resources/">Resources</a></li>
         <li><a href="../blog/">Blog</a></li>
@@ -272,10 +279,13 @@
 <main id="main">
 
   <div class="pagehead">
-    <div class="wrap">
+    <div class="wrap headgrid">
+      <div>
       <p class="eyebrow">Local support</p>
       <h1>SEND support in East Yorkshire</h1>
       <p class="lead">Who to contact locally, gathered in one place: free advice, dyslexia charities, NHS services, and help if you need to challenge a decision.</p>
+      </div>
+      <div><img class="spot" src="/mockups/condensed/img/pages/local-signpost.svg" alt="" width="480" height="360" loading="lazy"></div>
     </div>
   </div>
 
@@ -298,127 +308,127 @@
       </nav>
 
       <div class="sgroup" id="advice">
-        <div class="shead">Information, advice and support</div>
+        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H11l-4 4v-4H4z"/><path d="M12 10.5V13M12 8h.01"/></svg></span>Information, advice and support</div>
         <p class="sintro">Free, legally trained and impartial advice for parents and carers of children and young people with SEND.</p>
         <div class="svc">
           <h3><a href="https://www.eastridingsendiass.org.uk/" target="_blank" rel="noopener">East Riding SENDIASS</a></h3>
           <p>A dedicated team for families living within the East Yorkshire boundaries, offering confidential information, advice and support for children and young people aged 0 to 25. They can help you understand EHC plans, school support and exclusions.</p>
-          <a class="go" href="https://www.eastridingsendiass.org.uk/" target="_blank" rel="noopener">Visit East Riding SENDIASS</a>
+          <a class="go" href="https://www.eastridingsendiass.org.uk/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit East Riding SENDIASS</a>
         </div>
         <div class="svc">
           <h3><a href="https://www.kids.org.uk/sendiass/services/hull-sendiass/" target="_blank" rel="noopener">Hull SENDIASS</a></h3>
           <p>Provided by the charity Kids, this service supports parents living on the border of Hull and East Yorkshire.</p>
-          <a class="go" href="https://www.kids.org.uk/sendiass/services/hull-sendiass/" target="_blank" rel="noopener">Visit Hull SENDIASS</a>
+          <a class="go" href="https://www.kids.org.uk/sendiass/services/hull-sendiass/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit Hull SENDIASS</a>
         </div>
       </div>
 
       <div class="sgroup" id="dyslexia">
-        <div class="shead">Specialist dyslexia charities</div>
+        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.6A4 4 0 0 1 12 8a4 4 0 0 1 7 2.4C19 15.6 12 20 12 20z"/></svg></span>Specialist dyslexia charities</div>
         <p class="sintro">Regional and national charities offering guidance, helplines and parent groups.</p>
         <div class="svc">
           <h3><a href="https://www.dyslexiasparks.org.uk/" target="_blank" rel="noopener">Dyslexia Sparks</a></h3>
           <p>Hull and East Yorkshire's local registered charity, supporting dyslexic individuals with advice, guidance and free parent support groups.</p>
-          <a class="go" href="https://www.dyslexiasparks.org.uk/" target="_blank" rel="noopener">Visit Dyslexia Sparks</a>
+          <a class="go" href="https://www.dyslexiasparks.org.uk/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit Dyslexia Sparks</a>
         </div>
         <div class="svc">
           <h3><a href="https://yorkshirerosedyslexia.org.uk/about-yorkshire-rose-dyslexia/" target="_blank" rel="noopener">Yorkshire Rose Dyslexia</a></h3>
           <p>The regional branch, offering support, guidance and parent helplines across Yorkshire.</p>
-          <a class="go" href="https://yorkshirerosedyslexia.org.uk/about-yorkshire-rose-dyslexia/" target="_blank" rel="noopener">Visit Yorkshire Rose Dyslexia</a>
+          <a class="go" href="https://yorkshirerosedyslexia.org.uk/about-yorkshire-rose-dyslexia/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit Yorkshire Rose Dyslexia</a>
         </div>
         <div class="svc">
           <h3><a href="https://www.bdadyslexia.org.uk/" target="_blank" rel="noopener">British Dyslexia Association</a></h3>
           <p>The national charity, offering a range of services from assessment and tutoring to training and a national helpline.</p>
-          <a class="go" href="https://www.bdadyslexia.org.uk/" target="_blank" rel="noopener">Visit the BDA</a>
+          <a class="go" href="https://www.bdadyslexia.org.uk/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit the BDA</a>
         </div>
       </div>
 
       <div class="sgroup" id="localoffer">
-        <div class="shead">The SEND Local Offer</div>
+        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-5 9 5M5 9v9M9.5 9v9M14.5 9v9M19 9v9M3 20h18"/></svg></span>The SEND Local Offer</div>
         <p class="sintro">Every council must publish what support is available in its area. This is East Yorkshire's.</p>
         <div class="svc">
           <h3><a href="https://www.eastriding.gov.uk/local-offer/about-send-and-local-offer/" target="_blank" rel="noopener">East Riding SEND Local Offer</a></h3>
           <p>Services and support for children and young people with special educational needs and disabilities, aged 25 or under. It includes an A to Z of SEND terms and a guide to who's who in the local authority.</p>
-          <a class="go" href="https://www.eastriding.gov.uk/local-offer/about-send-and-local-offer/" target="_blank" rel="noopener">Visit the Local Offer</a>
+          <a class="go" href="https://www.eastriding.gov.uk/local-offer/about-send-and-local-offer/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit the Local Offer</a>
         </div>
       </div>
 
       <div class="sgroup" id="parents">
-        <div class="shead">Parent support</div>
+        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><path d="M16 5a3.2 3.2 0 0 1 0 6.2M17.5 14.8c2.1.7 3.5 2.6 3.5 5.2"/></svg></span>Parent support</div>
         <p class="sintro">Where parent carers' voices are represented locally.</p>
         <div class="svc">
           <h3><a href="https://eypcf.co.uk/" target="_blank" rel="noopener">East Yorkshire Parent Carer Forum</a></h3>
           <p>The forum works as an equal partner with the local authority, health and social care partners and the voluntary sector. It represents the voices of parent carers at strategic meetings and reports back on what was decided.</p>
-          <a class="go" href="https://eypcf.co.uk/" target="_blank" rel="noopener">Visit the Parent Carer Forum</a>
+          <a class="go" href="https://eypcf.co.uk/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit the Parent Carer Forum</a>
         </div>
       </div>
 
       <div class="sgroup" id="cooccurring">
-        <div class="shead">Support for co-occurring difficulties</div>
+        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="12" r="6"/><circle cx="15" cy="12" r="6"/></svg></span>Support for co-occurring difficulties</div>
         <p class="sintro">Dyslexia rarely travels alone. These services cover the difficulties that often sit alongside it. There is more on this on the <a href="../splds/">SpLDs page</a>.</p>
         <div class="svc">
           <h3><a href="https://www.humber.nhs.uk/services/children-young-people-and-families/hull-and-east-riding-childrens-occupational-therapy-services/east-riding-childrens-occupational-therapy-service/" target="_blank" rel="noopener">Paediatric Occupational Therapy</a></h3>
           <p>NHS Humber's East Riding service, for families whose children struggle with handwriting, fine and gross motor skills, and spatial coordination.</p>
-          <a class="go" href="https://www.humber.nhs.uk/services/children-young-people-and-families/hull-and-east-riding-childrens-occupational-therapy-services/east-riding-childrens-occupational-therapy-service/" target="_blank" rel="noopener">Visit the OT service</a>
+          <a class="go" href="https://www.humber.nhs.uk/services/children-young-people-and-families/hull-and-east-riding-childrens-occupational-therapy-services/east-riding-childrens-occupational-therapy-service/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit the OT service</a>
         </div>
         <div class="svc">
           <h3><a href="https://www.hereforschools.co.uk/Page/40036" target="_blank" rel="noopener">East Riding Educational Psychology Service</a></h3>
           <p>Educational psychologists understand how children learn and what can make learning difficult, and use their knowledge of psychology to help children and young people make progress.</p>
-          <a class="go" href="https://www.hereforschools.co.uk/Page/40036" target="_blank" rel="noopener">Visit the EP service</a>
+          <a class="go" href="https://www.hereforschools.co.uk/Page/40036" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit the EP service</a>
         </div>
         <div class="svc">
           <h3><a href="https://connect.humber.nhs.uk/service/childrens-speech-and-language-therapy/introduction-speech-and-language/" target="_blank" rel="noopener">Children's Speech and Language Therapy</a></h3>
           <p>Screening appointments and assessments to identify speech, language and communication needs, for children and young people aged 0 to 18. The team also offers training and intervention.</p>
-          <a class="go" href="https://connect.humber.nhs.uk/service/childrens-speech-and-language-therapy/introduction-speech-and-language/" target="_blank" rel="noopener">Visit the SaLT service</a>
+          <a class="go" href="https://connect.humber.nhs.uk/service/childrens-speech-and-language-therapy/introduction-speech-and-language/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit the SaLT service</a>
         </div>
         <div class="svc">
           <h3><a href="https://www.eastriding.gov.uk/local-offer/find-a-send-service/send-service/?entry=sensory-and-physical-teaching-service" target="_blank" rel="noopener">Sensory and Physical Teaching Service (SaPTS)</a></h3>
           <p>Supports children and young people aged up to 25 with hearing or vision impairments or physical difficulties, helping them learn, become independent and get ready for adult life.</p>
-          <a class="go" href="https://www.eastriding.gov.uk/local-offer/find-a-send-service/send-service/?entry=sensory-and-physical-teaching-service" target="_blank" rel="noopener">Visit SaPTS</a>
+          <a class="go" href="https://www.eastriding.gov.uk/local-offer/find-a-send-service/send-service/?entry=sensory-and-physical-teaching-service" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit SaPTS</a>
         </div>
         <div class="svc">
           <h3><a href="https://www.humber.nhs.uk/services/children-and-young-peoples-mental-health-and-neurodiversity-services/" target="_blank" rel="noopener">CAMHS and Neurodiversity Services</a></h3>
           <p>Children and Young People's Mental Health (commonly known as CAMHS) and Neurodiversity Services offer specialist assessment, diagnostic assessment for autism and ADHD, advice to professionals, and evidence-based support for individuals and families.</p>
-          <a class="go" href="https://www.humber.nhs.uk/services/children-and-young-peoples-mental-health-and-neurodiversity-services/" target="_blank" rel="noopener">Visit CAMHS</a>
+          <a class="go" href="https://www.humber.nhs.uk/services/children-and-young-peoples-mental-health-and-neurodiversity-services/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit CAMHS</a>
         </div>
         <div class="svc">
           <h3><a href="https://www.humber.nhs.uk/services/children-and-young-peoples-mental-health-and-neurodiversity-services/sensory-processing-service/" target="_blank" rel="noopener">Sensory Processing Service</a></h3>
           <p>A small team of sensory-trained therapists providing advice and formal sensory processing assessments, subject to referral criteria. They also run a website and provide training on sensory processing differences.</p>
-          <a class="go" href="https://www.humber.nhs.uk/services/children-and-young-peoples-mental-health-and-neurodiversity-services/sensory-processing-service/" target="_blank" rel="noopener">Visit the Sensory Processing Service</a>
+          <a class="go" href="https://www.humber.nhs.uk/services/children-and-young-peoples-mental-health-and-neurodiversity-services/sensory-processing-service/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit the Sensory Processing Service</a>
         </div>
         <div class="svc">
           <h3><a href="https://heymind.org.uk/counselling-youngpeople/" target="_blank" rel="noopener">Mind Youth Services</a></h3>
           <p>The registered charity Mind offers counselling services for children and young people across the district.</p>
-          <a class="go" href="https://heymind.org.uk/counselling-youngpeople/" target="_blank" rel="noopener">Visit Mind Youth Services</a>
+          <a class="go" href="https://heymind.org.uk/counselling-youngpeople/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit Mind Youth Services</a>
         </div>
         <div class="svc">
           <h3><a href="https://connect.humber.nhs.uk/service/my-mental-health-support-team-mymhst/east-riding-mhst/" target="_blank" rel="noopener">Mental Health Support Teams in Schools (MHST)</a></h3>
           <p>Early intervention for mild to moderate emotional wellbeing difficulties. The teams are embedded within local schools and education settings, providing accessible advice and support at the point it is needed.</p>
-          <a class="go" href="https://connect.humber.nhs.uk/service/my-mental-health-support-team-mymhst/east-riding-mhst/" target="_blank" rel="noopener">Visit East Riding MHST</a>
+          <a class="go" href="https://connect.humber.nhs.uk/service/my-mental-health-support-team-mymhst/east-riding-mhst/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit East Riding MHST</a>
         </div>
       </div>
 
       <div class="sgroup" id="legal">
-        <div class="shead">Legal and advocacy support</div>
+        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M8 20h8M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg></span>Legal and advocacy support</div>
         <p class="sintro">If you need to understand your rights, or challenge a decision.</p>
         <div class="svc">
           <h3><a href="https://www.ipsea.org.uk/" target="_blank" rel="noopener">IPSEA</a></h3>
           <p>The Independent Provider of Special Education Advice is the leading charity in the field of SEND law in England, providing free and independent legal advice and support to families. It also provides training on the SEND legal framework and influences policy locally and nationally.</p>
-          <a class="go" href="https://www.ipsea.org.uk/" target="_blank" rel="noopener">Visit IPSEA</a>
+          <a class="go" href="https://www.ipsea.org.uk/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit IPSEA</a>
         </div>
         <div class="svc">
           <h3><a href="https://www.communityaccord.com/wordpress/" target="_blank" rel="noopener">Community Accord</a></h3>
           <p>The SEND mediation service for East Yorkshire and Hull. Professionally trained mediators support families and carers appealing a local authority's refusal to assess for an EHCP, or to issue one.</p>
-          <a class="go" href="https://www.communityaccord.com/wordpress/" target="_blank" rel="noopener">Visit Community Accord</a>
+          <a class="go" href="https://www.communityaccord.com/wordpress/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit Community Accord</a>
         </div>
       </div>
 
       <div class="sgroup" id="access">
-        <div class="shead">Assistive technology and access</div>
+        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="14" height="10" rx="1.5"/><path d="M3 19h18"/></svg></span>Assistive technology and access</div>
         <p class="sintro">Where to find dyslexia-friendly formats locally.</p>
         <div class="svc">
           <h3><a href="https://library.eastriding.gov.uk/" target="_blank" rel="noopener">East Riding Library Service</a></h3>
           <p>The assistive hub offers a range of literature, including digital and dyslexia-friendly formats.</p>
-          <a class="go" href="https://library.eastriding.gov.uk/" target="_blank" rel="noopener">Visit the library service</a>
+          <a class="go" href="https://library.eastriding.gov.uk/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Visit the library service</a>
         </div>
       </div>
 

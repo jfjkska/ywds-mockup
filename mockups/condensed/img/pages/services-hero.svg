@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" width="600" height="440">
+<rect width="600" height="440" fill="#E3EBEE"/>
+<circle cx="300" cy="200" r="172" fill="#E7ECE0"/>
+<path d="M0 372 Q150 326 310 362 T600 344 V440 H0Z" fill="#93AA8C" opacity=".5"/>
+<path d="M0 402 Q175 364 350 396 T600 386 V440 H0Z" fill="#93AA8C"/>
+<g>
+<rect x="150" y="84" width="196" height="256" rx="12" fill="#F7F4EC" stroke="#274A68" stroke-width="5"/>
+<rect x="208" y="68" width="80" height="30" rx="9" fill="#5C7A5E"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="186" cy="146" r="13" fill="#93AA8C"/>
+<path d="M180 146 l5 5 l8 -10" stroke="#F7F4EC" stroke-width="4"/>
+<path d="M214 146 H312" stroke="#93AA8C" stroke-width="8"/>
+<circle cx="186" cy="198" r="13" fill="#93AA8C"/>
+<path d="M180 198 l5 5 l8 -10" stroke="#F7F4EC" stroke-width="4"/>
+<path d="M214 198 H296" stroke="#93AA8C" stroke-width="8"/>
+<circle cx="186" cy="250" r="13" fill="#F7F4EC" stroke="#93AA8C" stroke-width="4"/>
+<path d="M214 250 H312" stroke="#93AA8C" stroke-width="8"/>
+<path d="M174 298 H270" stroke="#274A68" stroke-width="6" opacity=".35"/>
+</g>
+</g>
+<g transform="rotate(35 405 170)">
+<rect x="395" y="100" width="20" height="120" fill="#C98A5E"/>
+<rect x="395" y="100" width="20" height="18" rx="4" fill="#5C7A5E"/>
+<path d="M395 220 L405 244 L415 220Z" fill="#274A68"/>
+</g>
+<g>
+<path d="M455 352 Q410 336 366 344 V282 Q410 272 455 290 Q500 272 544 282 V344 Q500 336 455 352Z" fill="#274A68"/>
+<path d="M455 340 Q414 326 376 332 V278 Q414 270 455 286Z" fill="#F7F4EC"/>
+<path d="M455 340 Q496 326 534 332 V278 Q496 270 455 286Z" fill="#F7F4EC"/>
+<g stroke="#93AA8C" stroke-width="5" stroke-linecap="round" fill="none">
+<path d="M390 294 Q416 290 440 300"/><path d="M390 310 Q416 306 440 316"/>
+<path d="M470 300 Q494 290 520 294"/><path d="M470 316 Q494 306 520 310"/>
+</g>
+</g>
+<path d="M470 84 Q470 100 486 100 Q470 100 470 116 Q470 100 454 100 Q470 100 470 84Z" fill="#C98A5E"/>
+<path d="M104 150 Q104 161 115 161 Q104 161 104 172 Q104 161 93 161 Q104 161 104 150Z" fill="#5C7A5E"/>
+<path d="M520 190 Q520 200 530 200 Q520 200 520 210 Q520 200 510 200 Q520 200 520 190Z" fill="#274A68"/>
+</svg>
