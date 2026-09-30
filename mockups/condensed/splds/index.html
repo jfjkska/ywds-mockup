@@ -398,6 +398,35 @@
   .twoway .flow span{background:var(--sage-tint);border-radius:999px;padding:5px 12px;line-height:1.3}
   .twoway .flow svg{width:26px;height:26px;color:var(--olive);flex-shrink:0}
   .twoway p{margin:0;font-size:.95rem;color:var(--ink-soft)}
+
+  /* ---------- logo-colour family: 1 sky, 2 light sage, 3 cream path, 4 deep sage ---------- */
+  .condgrid>li.card:nth-child(4n+1){
+    --fam-bg:color-mix(in srgb,var(--sky) 90%,var(--card));
+    --fam-bar:color-mix(in srgb,var(--navy) 45%,var(--sky));
+    --fam-tile:color-mix(in srgb,var(--navy) 14%,var(--sky));--fam-icon:var(--navy);
+  }
+  .condgrid>li.card:nth-child(4n+2){
+    --fam-bg:color-mix(in srgb,var(--sage-tint) 90%,var(--card));
+    --fam-bar:var(--sage);
+    --fam-tile:color-mix(in srgb,var(--sage-soft) 75%,var(--card));--fam-icon:var(--olive-deep);
+  }
+  .condgrid>li.card:nth-child(4n+3){
+    --fam-bg:color-mix(in srgb,var(--cream-deep) 90%,var(--card));
+    --fam-bar:color-mix(in srgb,var(--line) 75%,var(--olive-deep));
+    --fam-tile:color-mix(in srgb,var(--line) 60%,var(--card));--fam-icon:var(--olive-deep);
+  }
+  .condgrid>li.card:nth-child(4n+4){
+    --fam-bg:color-mix(in srgb,var(--sage-soft) 55%,var(--card));
+    --fam-bar:var(--olive);
+    --fam-tile:color-mix(in srgb,var(--sage-soft) 90%,var(--olive));--fam-icon:var(--olive-deep);
+  }
+  .condgrid>li.card{
+    background:linear-gradient(var(--fam-bar),var(--fam-bar)) top / 100% 5px no-repeat,var(--fam-bg);
+    border-color:color-mix(in srgb,var(--fam-bar) 40%,var(--line));
+  }
+  .condgrid>li.card>.ic{background:var(--fam-tile);color:var(--fam-icon)}
+  .condgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  @media (max-width:560px){.condgrid{grid-template-columns:1fr}}
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>

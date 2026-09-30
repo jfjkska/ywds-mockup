@@ -367,11 +367,24 @@
   .ico svg{width:24px;height:24px}
   .hico{display:flex;align-items:center;gap:12px}
   .card .ico{margin-bottom:12px}
-  .abouthero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,360px);gap:clamp(28px,5vw,64px);align-items:center}
-  .abouthero .photo{width:100%;height:auto;border-radius:18px;box-shadow:var(--shadow)}
-  .abouthero .bioname{font-size:1.35rem;margin:1.4em 0 .4em}
-  .abouthero .pull{margin-top:1.2em}
-  @media (max-width:800px){.abouthero{grid-template-columns:1fr}.abouthero .photo{max-width:300px}}
+  /* about: text-led hero with fact tiles */
+  .abouttop{padding-bottom:clamp(30px,5vw,52px)}
+  .abouttop .lead{font-size:1.1rem;max-width:62ch}
+  .facts{list-style:none;margin:clamp(22px,4vw,36px) 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+  .facts li{
+    margin:0;min-width:0;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--sage);
+    border-radius:14px;padding:16px 20px;box-shadow:var(--shadow);
+  }
+  .facts b{display:block;font-family:"Aptos","Segoe UI",sans-serif;font-size:1.45rem;font-weight:800;color:var(--navy);line-height:1.2}
+  .facts span{display:block;font-size:.9rem;color:var(--ink-soft);margin-top:4px}
+  /* about: photo and bio beside the timeline */
+  .bgsplit{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:clamp(28px,5vw,60px);align-items:start;margin-top:1.6em}
+  .bgsplit .timeline{margin-top:0}
+  .bio img{display:block;width:100%;max-width:260px;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:18px;box-shadow:var(--shadow)}
+  .bio h3{font-size:1.2rem;margin:1em 0 .3em}
+  .bio p{font-size:.94rem;color:var(--ink-soft)}
+  .bio .pull{margin:1em 0 0;padding:18px 20px;font-size:.95rem}
+  @media (max-width:800px){.bgsplit{grid-template-columns:minmax(0,1fr)}.bio img{max-width:220px}}
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
@@ -426,22 +439,16 @@
 </header>
 <main id="main">
 
-  <div class="pagehead">
+  <div class="pagehead abouttop">
     <div class="wrap">
-      <div class="abouthero">
-        <div>
       <p class="eyebrow">About</p>
       <h1>Welcome to Yorkshire Wolds Dyslexia Service</h1>
-      <p>I believe that a child's learning profile is more than just a label. I look beyond the surface of reading and writing, into the mechanics of learning, to give each child a roadmap to success.</p>
-          <h2 class="bioname">Natalie Fisher</h2>
-          <p>I live in Pocklington, East Yorkshire. For 15 years I have worked across primary, secondary and specialist educational settings, supporting children and young people with SpLDs, autism, ADHD, SEMH needs, and severe and complex needs.</p>
-          <blockquote class="pull">
-            "I am passionate about literacy and believe everybody can learn and progress in the right environment with the right type of support."
-            <footer>Natalie Fisher</footer>
-          </blockquote>
-        </div>
-        <img class="photo" style="aspect-ratio:4/5;object-fit:cover;object-position:center" src="/img/natalie-portrait.webp" alt="Natalie Fisher" width="640" height="800">
-      </div>
+      <p class="lead">I believe that a child's learning profile is more than just a label. I look beyond the surface of reading and writing, into the mechanics of learning, to give each child a roadmap to success.</p>
+      <ul class="facts" aria-label="At a glance">
+        <li><b>15 years</b><span>supporting children and young people with SEND</span></li>
+        <li><b>Pocklington</b><span>based in East Yorkshire</span></li>
+        <li><b>Dyslexic myself</b><span>lived experience of the challenges</span></li>
+      </ul>
     </div>
   </div>
   <section class="block" style="padding-top:clamp(24px,4vw,40px)">
@@ -475,9 +482,19 @@
     </div>
   </section>
   <section class="block skyt">
-    <div class="wrap narrow">
+    <div class="wrap">
       <p class="eyebrow">My background</p>
       <h2>How I became a dyslexia specialist</h2>
+      <div class="bgsplit">
+        <div class="bio">
+          <img src="/img/natalie-portrait.webp" alt="Natalie Fisher" width="640" height="800" loading="lazy">
+          <h3>Natalie Fisher</h3>
+          <p>I live in Pocklington, East Yorkshire. For 15 years I have worked across primary, secondary and specialist educational settings, supporting children and young people with SpLDs, autism, ADHD, SEMH needs, and severe and complex needs.</p>
+          <blockquote class="pull">
+            "I am passionate about literacy and believe everybody can learn and progress in the right environment with the right type of support."
+            <footer>Natalie Fisher</footer>
+          </blockquote>
+        </div>
       <ol class="timeline">
         <li>
           <h3>Paired reader</h3>
@@ -504,6 +521,7 @@
           <p>I regularly saw children who were anxious about school because of their difficulties, then received my own dyslexia diagnosis, which spurred me on to complete my training.</p>
         </li>
       </ol>
+      </div>
     </div>
   </section>
   <section class="block tint">

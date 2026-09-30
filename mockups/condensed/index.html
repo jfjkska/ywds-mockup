@@ -362,6 +362,37 @@
   .guides li{display:flex}.guides li>a{flex:1}
   @media (min-width:1000px){.guides{grid-template-columns:repeat(4,minmax(0,1fr))}}
   @media (max-width:600px){.guides{grid-template-columns:1fr}}
+
+  /* ---------- logo-colour family: 1 sky, 2 light sage, 3 cream path, 4 deep sage ---------- */
+  .guides>li:nth-child(4n+1)>a{
+    --fam-bg:color-mix(in srgb,var(--sky) 90%,var(--card));--fam-bg-h:var(--sky);
+    --fam-bar:color-mix(in srgb,var(--navy) 45%,var(--sky));
+    --fam-tile:color-mix(in srgb,var(--navy) 14%,var(--sky));--fam-icon:var(--navy);
+  }
+  .guides>li:nth-child(4n+2)>a{
+    --fam-bg:color-mix(in srgb,var(--sage-tint) 90%,var(--card));--fam-bg-h:var(--sage-tint);
+    --fam-bar:var(--sage);
+    --fam-tile:color-mix(in srgb,var(--sage-soft) 75%,var(--card));--fam-icon:var(--olive-deep);
+  }
+  .guides>li:nth-child(4n+3)>a{
+    --fam-bg:color-mix(in srgb,var(--cream-deep) 90%,var(--card));--fam-bg-h:var(--cream-deep);
+    --fam-bar:color-mix(in srgb,var(--line) 75%,var(--olive-deep));
+    --fam-tile:color-mix(in srgb,var(--line) 60%,var(--card));--fam-icon:var(--olive-deep);
+  }
+  .guides>li:nth-child(4n+4)>a{
+    --fam-bg:color-mix(in srgb,var(--sage-soft) 55%,var(--card));--fam-bg-h:color-mix(in srgb,var(--sage-soft) 62%,var(--card));
+    --fam-bar:var(--olive);
+    --fam-tile:color-mix(in srgb,var(--sage-soft) 90%,var(--olive));--fam-icon:var(--olive-deep);
+  }
+  .guides>li>a{
+    background:linear-gradient(var(--fam-bar),var(--fam-bar)) top / 100% 5px no-repeat,var(--fam-bg);
+    border-color:color-mix(in srgb,var(--fam-bar) 40%,var(--line));
+  }
+  .guides>li>a:hover{
+    background:linear-gradient(var(--fam-bar),var(--fam-bar)) top / 100% 5px no-repeat,var(--fam-bg-h);
+    border-color:var(--fam-bar);
+  }
+  .guides>li>a>span.ico{background:var(--fam-tile);color:var(--fam-icon)}
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>

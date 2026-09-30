@@ -466,6 +466,38 @@
   .checklists a img{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:6px;object-fit:contain;background:#fff}
   @media (min-width:1000px){.checklists{grid-template-columns:repeat(4,minmax(0,1fr))}}
   @media (max-width:600px){.checklists{grid-template-columns:1fr}}
+
+  /* ---------- logo-colour family: 1 sky, 2 light sage, 3 cream path, 4 deep sage ---------- */
+  .checklists>li:nth-child(4n+1)>a{
+    --fam-bg:color-mix(in srgb,var(--sky) 90%,var(--card));--fam-bg-h:var(--sky);
+    --fam-bar:color-mix(in srgb,var(--navy) 45%,var(--sky));
+    --fam-tile:color-mix(in srgb,var(--navy) 14%,var(--sky));
+  }
+  .checklists>li:nth-child(4n+2)>a{
+    --fam-bg:color-mix(in srgb,var(--sage-tint) 90%,var(--card));--fam-bg-h:var(--sage-tint);
+    --fam-bar:var(--sage);
+    --fam-tile:color-mix(in srgb,var(--sage-soft) 75%,var(--card));
+  }
+  .checklists>li:nth-child(4n+3)>a{
+    --fam-bg:color-mix(in srgb,var(--cream-deep) 90%,var(--card));--fam-bg-h:var(--cream-deep);
+    --fam-bar:color-mix(in srgb,var(--line) 75%,var(--olive-deep));
+    --fam-tile:color-mix(in srgb,var(--line) 60%,var(--card));
+  }
+  .checklists>li:nth-child(4n+4)>a{
+    --fam-bg:color-mix(in srgb,var(--sage-soft) 55%,var(--card));--fam-bg-h:color-mix(in srgb,var(--sage-soft) 62%,var(--card));
+    --fam-bar:var(--olive);
+    --fam-tile:color-mix(in srgb,var(--sage-soft) 90%,var(--olive));
+  }
+  .checklists>li>a{
+    background:linear-gradient(var(--fam-bar),var(--fam-bar)) top / 100% 5px no-repeat,var(--fam-bg);
+    border-color:color-mix(in srgb,var(--fam-bar) 40%,var(--line));
+  }
+  .checklists>li>a:hover{
+    background:linear-gradient(var(--fam-bar),var(--fam-bar)) top / 100% 5px no-repeat,var(--fam-bg-h);
+    border-color:var(--fam-bar);
+  }
+  /* logo keeps its white tile; the ring carries the card's colour */
+  .checklists>li>a>img{box-shadow:0 0 0 3px var(--fam-tile)}
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
