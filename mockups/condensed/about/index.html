@@ -371,6 +371,11 @@
   .timeline li{padding-left:40px;min-height:60px}
   .timeline li::before{display:none}
   .timeline .ico{position:absolute;left:-23.5px;top:-6px;background:var(--card);border:1px solid var(--line)}
+  .abouthero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,360px);gap:clamp(28px,5vw,64px);align-items:center}
+  .abouthero .photo{width:100%;height:auto;border-radius:18px;box-shadow:var(--shadow)}
+  .abouthero .bioname{font-size:1.35rem;margin:1.4em 0 .4em}
+  .abouthero .pull{margin-top:1.2em}
+  @media (max-width:800px){.abouthero{grid-template-columns:1fr}.abouthero .photo{max-width:300px}}
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
@@ -427,25 +432,25 @@
 
   <div class="pagehead">
     <div class="wrap">
+      <div class="abouthero">
+        <div>
       <p class="eyebrow">About</p>
       <h1>Welcome to Yorkshire Wolds Dyslexia Service</h1>
       <p class="lead">Unlocking potential through insight and understanding.</p>
       <p>I believe that a child's learning profile is more than just a label. I look beyond the surface of reading and writing, into the mechanics of learning, to give each child a roadmap to success.</p>
-    </div>
-  </div>
-  <section class="block" style="padding-top:20px">
-    <div class="wrap">
-      <div class="split aboutsplit">
-        <img class="photo" style="aspect-ratio:4/5;object-position:center" src="/img/natalie-portrait.webp" alt="Natalie Fisher" width="640" height="800">
-        <div>
-          <h2>Natalie Fisher</h2>
+          <h2 class="bioname">Natalie Fisher</h2>
           <p>I live in Pocklington, East Yorkshire. For 15 years I have worked across primary, secondary and specialist educational settings, supporting children and young people with SpLDs, autism, ADHD, SEMH needs, and severe and complex needs.</p>
           <blockquote class="pull">
             "I am passionate about literacy and believe everybody can learn and progress in the right environment with the right type of support."
             <footer>Natalie Fisher</footer>
           </blockquote>
         </div>
+        <img class="photo" style="aspect-ratio:4/5;object-fit:cover;object-position:center" src="/img/natalie-portrait.webp" alt="Natalie Fisher" width="640" height="800">
       </div>
+    </div>
+  </div>
+  <section class="block" style="padding-top:clamp(24px,4vw,40px)">
+    <div class="wrap">
       <div class="creds">
         <div class="cred">
           <h3 class="hico"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v5"/></svg></span>Qualifications</h3>
