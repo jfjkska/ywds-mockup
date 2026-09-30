@@ -1,14 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-<rect width="1200" height="630" fill="#E7ECE0"/>
-<circle cx="600" cy="290" r="255" fill="#F7F4EC"/>
-<g>
-<path d="M0 545 Q300 470 620 532 T1200 500 V630 H0Z" fill="#93AA8C" opacity=".5"/>
-<path d="M0 590 Q350 525 700 580 T1200 562 V630 H0Z" fill="#93AA8C"/>
+<rect width="1200" height="630" fill="#F7F4EC"/>
+<g transform="translate(310 -10) scale(1.6)">
+<circle cx="300" cy="200" r="150" fill="#E3EBEE"/>
+<g fill="none" stroke="#274A68" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M90 344 Q300 336 510 344"/>
+<defs><g id="p"><circle cy="-12" r="9"/><path d="M-15 16 Q-15 0 0 0 Q15 0 15 16"/></g></defs>
+<use href="#p" x="130" y="140"/><use href="#p" x="182" y="140"/><use href="#p" x="234" y="140"/><use href="#p" x="286" y="140"/><use href="#p" x="338" y="140"/><use href="#p" x="130" y="205"/><use href="#p" x="182" y="205"/><use href="#p" x="234" y="205"/><use href="#p" x="286" y="205"/><use href="#p" x="338" y="205"/><use href="#p" x="130" y="270"/><use href="#p" x="182" y="270"/><use href="#p" x="234" y="270"/><use href="#p" x="286" y="270"/><use href="#p" x="338" y="270"/>
+<circle cx="420" cy="200" r="52"/>
+<use href="#p" transform="translate(420 206) scale(1.4)"/>
+<path d="M457 237 L500 280 M466 228 L509 271 M500 280 L509 271"/>
+<path d="M500 99 v22 M489 110 h22"/><path d="M100 313 v14 M93 320 h14"/><path d="M210 70 q10 -6 16 2 q8 -10 22 -12"/>
 </g>
-<g transform="translate(300 200) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(405 200) scale(1)" fill="#274A68"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(510 200) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(615 200) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(720 200) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(825 200) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(300 325) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(405 325) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(510 325) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(615 325) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(720 325) scale(1)" fill="#274A68"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(825 325) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(300 450) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(405 450) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(510 450) scale(1)" fill="#274A68"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(615 450) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(720 450) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g><g transform="translate(825 450) scale(1)" fill="#93AA8C"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g>
-<g>
-<circle cx="825" cy="310" r="82" fill="#E3EBEE" stroke="#274A68" stroke-width="14"/>
-<g transform="translate(825 322) scale(1.5)" fill="#C98A5E"><circle cy="-34" r="15"/><path d="M-22 22 V4 Q-22 -14 0 -14 Q22 -14 22 4 V22Z"/></g>
-<path d="M885 372 L965 452" stroke="#274A68" stroke-width="26" stroke-linecap="round"/>
 </g>
 </svg>

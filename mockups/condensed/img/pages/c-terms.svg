@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420">
+<rect width="600" height="420" fill="#F7F4EC"/>
+<circle cx="300" cy="200" r="150" fill="#E3EBEE"/>
+<g fill="none" stroke="#274A68" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M70 344 Q300 336 530 344"/>
+<rect x="190" y="108" width="190" height="232" rx="12"/>
+<path d="M246 108 V96 Q246 88 254 88 H316 Q324 88 324 96 V108 Q324 120 312 120 H258 Q246 120 246 108Z"/>
+<rect x="214" y="150" width="22" height="22" rx="5"/><path d="M216 160 l8 9 l15 -18"/><path d="M252 162 Q300 156 352 164"/>
+<rect x="214" y="202" width="22" height="22" rx="5"/><path d="M216 212 l8 9 l15 -18"/><path d="M252 214 Q296 208 344 216"/>
+<rect x="214" y="254" width="22" height="22" rx="5"/><path d="M252 266 Q290 260 330 268"/>
+<path d="M214 306 H300"/>
+<path d="M406 336 L404 304 L454 146 Q460 134 472 138 Q480 144 477 153 L426 311Z"/><path d="M404 304 L426 311 M443 180 L466 187"/>
+<path d="M140 113 v22 M129 124 h22"/><path d="M500 243 v14 M493 250 h14"/><path d="M430 76 q10 -6 16 2 q8 -10 22 -12"/>
+</g>
+</svg>
