@@ -20,6 +20,13 @@
   var css=[
     /* text size: body is set in px on every page, so tie it back to the root */
     'html[data-a11y-size] body{font-size:1.03125rem}',
+    /* keep the menu button on screen on phones when the text is enlarged */
+    'html[data-a11y-size] .brand{flex-shrink:1;min-width:0}',
+    'html:is([data-a11y-size],[data-a11y-spacing]) .band-label{flex-wrap:wrap}',
+    'html:is([data-a11y-size],[data-a11y-spacing]) :is(h1,h2,h3,h4){overflow-wrap:break-word;hyphens:auto}',
+    '@media (max-width:600px){html:is([data-a11y-size],[data-a11y-spacing]) ul[style*="columns"]{columns:1 !important}',
+    /* long words in the main heading must still fit a phone screen */
+    'html:is([data-a11y-size],[data-a11y-spacing]) h1{font-size:min(2.2rem,9.5vw)}}',
     'html[data-a11y-spacing] body{line-height:2;letter-spacing:.06em;word-spacing:.18em}',
     'html[data-a11y-spacing] :is(p,li,dd,dt,td,th,blockquote,label){line-height:2}',
     'html[data-a11y-spacing] :is(h1,h2,h3,h4){line-height:1.4;letter-spacing:.02em}',
