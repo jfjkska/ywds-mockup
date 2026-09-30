@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420">
+<defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCE8EA"/><stop offset="1" stop-color="#EEF3EF"/></linearGradient></defs>
+<rect width="600" height="420" fill="url(#sk)"/>
+<path d="M0 214 Q140 236 290 206 T600 216 V420 H0Z" fill="#C4D1BE"/>
+<path d="M0 250 Q180 214 340 242 T600 228 V420 H0Z" fill="#AEBFA6"/>
+<path d="M0 292 Q220 250 400 284 T600 272 V420 H0Z" fill="#93AA8C"/>
+<path d="M0 350 Q200 316 380 340 T600 334 V420 H0Z" fill="#7E9878"/>
+<path d="M232 420 C250 380 300 360 288 332 C250 302 192 284 166 262 L178 259 C206 278 268 292 304 318 C338 298 402 278 438 250 L450 252 C424 284 352 310 332 332 C328 362 346 392 348 420Z" fill="#F2EFE4"/>
+<g fill="#48624B">
+<rect x="120" y="228" width="4" height="30" rx="2"/><rect x="148" y="222" width="4" height="34" rx="2"/><rect x="174" y="232" width="4" height="24" rx="2"/>
+</g>
+<g fill="#5C7A5E">
+<ellipse cx="122" cy="224" rx="24" ry="11"/><ellipse cx="150" cy="216" rx="26" ry="12"/><ellipse cx="176" cy="228" rx="20" ry="9"/>
+</g>
+<g fill="#5C7A5E">
+<ellipse cx="470" cy="226" rx="16" ry="8"/><rect x="469" y="228" width="3" height="16" rx="1.5"/>
+<ellipse cx="496" cy="232" rx="12" ry="6"/><rect x="495" y="234" width="3" height="12" rx="1.5"/>
+</g>
+<path d="M360 104 q10 -4 16 3 q8 -14 28 -17 q-16 7 -24 21 q-6 -8 -20 -7Z" fill="#274A68"/>
+<path d="M420 132 q6 -2 9 2 q5 -8 16 -10 q-9 4 -14 12 q-4 -5 -11 -4Z" fill="#274A68" opacity=".7"/>
+</svg>
