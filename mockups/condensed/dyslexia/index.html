@@ -459,6 +459,13 @@
   .rows summary.hasico>.ico{grid-column:1;grid-row:1 / span 2;align-self:center}
   .rows summary.hasico::after{grid-column:3}
   .rows summary:hover .ico{background:var(--card)}
+  .checkhead{font-size:1.05rem;margin:1.8em 0 0}
+  .checklists{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:.8em}
+  .checklists li{display:flex}.checklists li>a{flex:1}
+  .checklists a{position:relative;padding-left:62px}
+  .checklists a img{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:6px;object-fit:contain;background:#fff}
+  @media (min-width:1000px){.checklists{grid-template-columns:repeat(4,minmax(0,1fr))}}
+  @media (max-width:600px){.checklists{grid-template-columns:1fr}}
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
@@ -578,6 +585,13 @@
           </ul>
         </div>
       </div>
+      <h3 class="checkhead">Dyslexia checklists from the British Dyslexia Association</h3>
+      <ul class="linklist checklists">
+        <li><a href="https://cdn.bdadyslexia.org.uk/uploads/documents/Foundation-Stage-Checklist.pdf?v=1705333950" target="_blank" rel="noopener"><img src="/img/logos/british-dyslexia-association.webp" alt="" width="32" height="32" loading="lazy" decoding="async">Early years<span>Foundation stage checklist (PDF)</span></a></li>
+        <li><a href="https://cdn.bdadyslexia.org.uk/uploads/documents/Primary-Checklist.pdf?v=1705333948" target="_blank" rel="noopener"><img src="/img/logos/british-dyslexia-association.webp" alt="" width="32" height="32" loading="lazy" decoding="async">Primary<span>Primary school checklist (PDF)</span></a></li>
+        <li><a href="https://cdn.bdadyslexia.org.uk/uploads/documents/Secondary-Checklist.pdf?v=1705333949" target="_blank" rel="noopener"><img src="/img/logos/british-dyslexia-association.webp" alt="" width="32" height="32" loading="lazy" decoding="async">Secondary<span>Secondary school checklist (PDF)</span></a></li>
+        <li><a href="https://cdn.bdadyslexia.org.uk/uploads/documents/Dyslexia/Adult-Checklist-1.pdf?v=1554931003" target="_blank" rel="noopener"><img src="/img/logos/british-dyslexia-association.webp" alt="" width="32" height="32" loading="lazy" decoding="async">Adults<span>Adult checklist (PDF)</span></a></li>
+      </ul>
       <div class="wrap narrow" style="padding:0">
         <h2 style="margin-top:1.3em">Ways to get support for children</h2>
         <ul>
