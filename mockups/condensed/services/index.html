@@ -422,11 +422,11 @@
   .waitlist{background:var(--card);border:1.5px solid var(--sage);border-radius:18px;padding:clamp(20px,4vw,32px);box-shadow:var(--shadow);margin-top:28px}
   .waitlist h3{margin-bottom:.4em}
   form.wl{display:grid;gap:14px;margin-top:1.2em;max-width:560px}
-  form.wl .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  form.wl .row{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:end}
   @media (max-width:640px){form.wl .row{grid-template-columns:1fr}}
   form.wl label{font-size:.82rem;font-weight:700;color:var(--ink-soft);display:block;margin-bottom:4px;letter-spacing:.04em}
-  form.wl input{width:100%;padding:13px 15px;border-radius:12px;border:1.5px solid var(--line);background:var(--cream);color:var(--ink);font-family:inherit;font-size:.95rem}
-  form.wl input:focus{border-color:var(--navy);outline:none}
+  form.wl input,form.wl select{width:100%;padding:13px 15px;border-radius:12px;border:1.5px solid var(--line);background:var(--cream);color:var(--ink);font-family:inherit;font-size:.95rem}
+  form.wl input:focus,form.wl select:focus{border-color:var(--navy);outline:none}
   form.wl .small{font-size:.82rem;color:var(--ink-soft);margin:0}
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
@@ -603,7 +603,20 @@
             <div><label for="wl-name">Your name *</label><input id="wl-name" name="name" required autocomplete="name"></div>
             <div><label for="wl-email">Email *</label><input id="wl-email" name="email" type="email" required autocomplete="email"></div>
           </div>
-          <div><label for="wl-age">Child's age (optional)</label><input id="wl-age" name="child_age" inputmode="numeric"></div>
+          <div class="row">
+            <div><label for="wl-age">Child's age (optional)</label><input id="wl-age" name="child_age" inputmode="numeric"></div>
+            <div><label for="wl-heard">How did you hear about me? (optional)</label><select id="wl-heard" name="heard_about">
+              <option value="">Please choose</option>
+              <option>A friend or family member</option>
+              <option>My child's school or SENCO</option>
+              <option>A school newsletter</option>
+              <option>Google search</option>
+              <option>Google Maps</option>
+              <option>Facebook</option>
+              <option>A leaflet or poster</option>
+              <option>Other</option>
+            </select></div>
+          </div>
           <p class="small">I will only use your details to tell you when diagnostic assessments open. See the <a href="../privacy/">privacy notice</a>.</p>
           <div><button class="btn primary" type="submit">Join the waiting list</button></div>
         </form>
