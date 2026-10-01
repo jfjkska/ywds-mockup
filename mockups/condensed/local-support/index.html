@@ -93,9 +93,8 @@
 
   .eyebrow{
     font-family:Verdana,sans-serif;
-    font-size:.78rem;
-    letter-spacing:.32em;
-    text-transform:uppercase;
+    font-size:.92rem;
+    letter-spacing:.01em;
     color:var(--olive);
     font-weight:700;
     margin:0 0 .9em;
@@ -224,6 +223,10 @@
   @media (max-width:760px){.headgrid{grid-template-columns:1fr}.headgrid img.spot{width:min(280px,80%)}}
   .crumb{font-size:.82rem;color:var(--ink-soft);margin-bottom:1em}
   .crumb a{color:var(--olive-deep)}
+  /* page headers: the logo's layered Wolds hills as a band along the bottom */
+  .pagehead{padding-bottom:0}
+  .pagehead::after{content:"";display:block;height:clamp(40px,5vw,72px);margin-top:clamp(4px,1.5vw,12px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z' fill='%23DCE5D5'/%3E%3Cpath d='M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z' fill='%23B9CBAF'/%3E%3Cpath d='M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z' fill='%2393AA8C'/%3E%3Cpath d='M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z' fill='%23F7F4EC'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
+  .headgrid{grid-template-columns:1fr}
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
@@ -285,7 +288,7 @@
       <h1>SEND support in East Yorkshire</h1>
       <p class="lead">Who to contact locally, gathered in one place: free advice, dyslexia charities, NHS services, and help if you need to challenge a decision.</p>
       </div>
-      <div><img class="spot" src="/mockups/condensed/img/pages/c-local.svg" alt="" width="600" height="420" loading="lazy"></div>
+      <div></div>
     </div>
   </div>
 
@@ -308,7 +311,7 @@
       </nav>
 
       <div class="sgroup" id="advice">
-        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H11l-4 4v-4H4z"/><path d="M12 10.5V13M12 8h.01"/></svg></span>Information, advice and support</div>
+        <div class="shead">Information, advice and support</div>
         <p class="sintro">Free, legally trained and impartial advice for parents and carers of children and young people with SEND.</p>
         <div class="svc">
           <h3><a href="https://www.eastridingsendiass.org.uk/" target="_blank" rel="noopener">East Riding SENDIASS</a></h3>
@@ -323,7 +326,7 @@
       </div>
 
       <div class="sgroup" id="dyslexia">
-        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.6A4 4 0 0 1 12 8a4 4 0 0 1 7 2.4C19 15.6 12 20 12 20z"/></svg></span>Specialist dyslexia charities</div>
+        <div class="shead">Specialist dyslexia charities</div>
         <p class="sintro">Regional and national charities offering guidance, helplines and parent groups.</p>
         <div class="svc">
           <h3><a href="https://www.dyslexiasparks.org.uk/" target="_blank" rel="noopener">Dyslexia Sparks</a></h3>
@@ -343,7 +346,7 @@
       </div>
 
       <div class="sgroup" id="localoffer">
-        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-5 9 5M5 9v9M9.5 9v9M14.5 9v9M19 9v9M3 20h18"/></svg></span>The SEND Local Offer</div>
+        <div class="shead">The SEND Local Offer</div>
         <p class="sintro">Every council must publish what support is available in its area. This is East Yorkshire's.</p>
         <div class="svc">
           <h3><a href="https://www.eastriding.gov.uk/local-offer/about-send-and-local-offer/" target="_blank" rel="noopener">East Riding SEND Local Offer</a></h3>
@@ -353,7 +356,7 @@
       </div>
 
       <div class="sgroup" id="parents">
-        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><path d="M16 5a3.2 3.2 0 0 1 0 6.2M17.5 14.8c2.1.7 3.5 2.6 3.5 5.2"/></svg></span>Parent support</div>
+        <div class="shead">Parent support</div>
         <p class="sintro">Where parent carers' voices are represented locally.</p>
         <div class="svc">
           <h3><a href="https://eypcf.co.uk/" target="_blank" rel="noopener">East Yorkshire Parent Carer Forum</a></h3>
@@ -363,7 +366,7 @@
       </div>
 
       <div class="sgroup" id="cooccurring">
-        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="12" r="6"/><circle cx="15" cy="12" r="6"/></svg></span>Support for co-occurring difficulties</div>
+        <div class="shead">Support for co-occurring difficulties</div>
         <p class="sintro">Dyslexia rarely travels alone. These services cover the difficulties that often sit alongside it. There is more on this on the <a href="../splds/">SpLDs page</a>.</p>
         <div class="svc">
           <h3><a href="https://www.humber.nhs.uk/services/children-young-people-and-families/hull-and-east-riding-childrens-occupational-therapy-services/east-riding-childrens-occupational-therapy-service/" target="_blank" rel="noopener">Paediatric Occupational Therapy</a></h3>
@@ -408,7 +411,7 @@
       </div>
 
       <div class="sgroup" id="legal">
-        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M8 20h8M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg></span>Legal and advocacy support</div>
+        <div class="shead">Legal and advocacy support</div>
         <p class="sintro">If you need to understand your rights, or challenge a decision.</p>
         <div class="svc">
           <h3><a href="https://www.ipsea.org.uk/" target="_blank" rel="noopener">IPSEA</a></h3>
@@ -423,7 +426,7 @@
       </div>
 
       <div class="sgroup" id="access">
-        <div class="shead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="14" height="10" rx="1.5"/><path d="M3 19h18"/></svg></span>Assistive technology and access</div>
+        <div class="shead">Assistive technology and access</div>
         <p class="sintro">Where to find dyslexia-friendly formats locally.</p>
         <div class="svc">
           <h3><a href="https://library.eastriding.gov.uk/" target="_blank" rel="noopener">East Riding Library Service</a></h3>

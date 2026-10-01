@@ -96,9 +96,8 @@
 
   .eyebrow{
     font-family:Verdana,sans-serif;
-    font-size:.78rem;
-    letter-spacing:.32em;
-    text-transform:uppercase;
+    font-size:.92rem;
+    letter-spacing:.01em;
     color:var(--olive);
     font-weight:700;
     margin:0 0 .9em;
@@ -428,6 +427,10 @@
   form.wl input,form.wl select{width:100%;padding:13px 15px;border-radius:12px;border:1.5px solid var(--line);background:var(--cream);color:var(--ink);font-family:inherit;font-size:.95rem}
   form.wl input:focus,form.wl select:focus{border-color:var(--navy);outline:none}
   form.wl .small{font-size:.82rem;color:var(--ink-soft);margin:0}
+  /* page headers: the logo's layered Wolds hills as a band along the bottom */
+  .pagehead{padding-bottom:0}
+  .pagehead::after{content:"";display:block;height:clamp(40px,5vw,72px);margin-top:clamp(4px,1.5vw,12px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z' fill='%23DCE5D5'/%3E%3Cpath d='M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z' fill='%23B9CBAF'/%3E%3Cpath d='M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z' fill='%2393AA8C'/%3E%3Cpath d='M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z' fill='%23F7F4EC'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
+  .headgrid{grid-template-columns:1fr}
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
@@ -488,7 +491,6 @@
         <p class="eyebrow">Services</p>
         <h1>Screening, learning needs assessment and 1-1 tuition</h1>
       </div>
-      <img class="spot" src="/mockups/condensed/img/pages/c-services.svg" alt="" width="600" height="420" loading="lazy">
     </div>
   </div>
 
@@ -496,7 +498,7 @@
     <div class="wrap">
       <div class="glance">
         <div class="card">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/></svg></span>
+          
           <p class="eyebrow">At a glance</p>
           <h2>Learning Needs Assessment</h2>
           <p class="who"><strong>Who it is for:</strong> children aged 6–16 who aren't making progress, when you want to know why.</p>
@@ -515,7 +517,7 @@
           <p class="formlink"><a href="/downloads/ywds-booking-assessment.pdf" download>Assessment booking and consent form (PDF)</a></p>
         </div>
         <div class="card">
-          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6c-2-1.5-5-2-8-1.5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5v-13c-3-.5-6 0-8 1.5zM12 6v13"/></svg></span>
+          
           <p class="eyebrow">At a glance</p>
           <h2>1-1 Literacy Intervention</h2>
           <p class="who"><strong>Who it is for:</strong> children aged 7–16 experiencing literacy difficulties.</p>
