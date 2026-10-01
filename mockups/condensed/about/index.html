@@ -374,13 +374,14 @@
   .facts li{margin:0;position:relative;padding-left:26px;font-size:.98rem;color:var(--ink-soft)}
   .facts li::before{content:"";position:absolute;left:2px;top:.38em;width:13px;height:7px;border-left:2.5px solid var(--olive);border-bottom:2.5px solid var(--olive);transform:rotate(-45deg)}
   .facts b{color:var(--navy);font-weight:700}
-  /* about: photo and bio beside the timeline */
+  /* about: photo beside the background story */
   .bgsplit{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:clamp(28px,5vw,60px);align-items:start;margin-top:1.6em}
   .bgsplit .timeline{margin-top:0}
   .bio img{display:block;width:100%;max-width:260px;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:18px;box-shadow:var(--shadow)}
   .bio h3{font-size:1.2rem;margin:1em 0 .3em}
   .bio p{font-size:.94rem;color:var(--ink-soft)}
-  .bio .pull{margin:1em 0 0;padding:18px 20px;font-size:.95rem}
+  .story p{max-width:64ch}
+  .story .pull{margin:1.4em 0 0;padding:18px 22px;font-size:1rem;max-width:60ch}
   @media (max-width:800px){.bgsplit{grid-template-columns:minmax(0,1fr)}.bio img{max-width:220px}}
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
@@ -456,38 +457,17 @@
         <div class="bio">
           <img src="/img/natalie-portrait.webp" alt="Natalie Fisher" width="640" height="800" loading="lazy">
           <h3>Natalie Fisher</h3>
+        </div>
+        <div class="story">
           <p>I live in Pocklington, East Yorkshire. For 15 years I have worked across primary, secondary and specialist educational settings, supporting children and young people with SpLDs, autism, ADHD, SEMH needs, and severe and complex needs.</p>
+          <p>I have always loved reading. At secondary school I was a paired reader, helping younger pupils who found reading harder, and at university I ran story hubs to help Key Stage 1 and 2 children improve their reading. I went on to work as a primary literacy assistant and then a teaching assistant, which gave me a taste for working in education.</p>
+          <p>Youth work led me to psychology, because I wanted to understand why some young people refused school and did not meet their targets. I then spent a couple of years as an assistant speech and language therapist in the NHS, and several years in educational psychology for a Local Authority.</p>
+          <p>Again and again I saw children who were anxious about school because of their difficulties. Then I received my own dyslexia diagnosis, and that spurred me on to complete my specialist training.</p>
           <blockquote class="pull">
             "I am passionate about literacy and believe everybody can learn and progress in the right environment with the right type of support."
             <footer>Natalie Fisher</footer>
           </blockquote>
         </div>
-      <ol class="timeline">
-        <li>
-          <h3>Paired reader</h3>
-          <p>At secondary school I helped younger readers who found reading harder, because I have always loved it.</p>
-        </li>
-        <li>
-          <h3>Primary literacy assistant, then teaching assistant</h3>
-          <p>At university I ran story hubs to help Key Stage 1 and Key Stage 2 children improve their reading, and one of my first jobs gave me a taste for working in education.</p>
-        </li>
-        <li>
-          <h3>Youth work, then psychology</h3>
-          <p>I wanted to understand why some young people refused school and did not meet their targets.</p>
-        </li>
-        <li>
-          <h3>Assistant speech and language therapist</h3>
-          <p>I worked with children in the NHS for a couple of years.</p>
-        </li>
-        <li>
-          <h3>Educational psychology</h3>
-          <p>I worked for a Local Authority for several years.</p>
-        </li>
-        <li>
-          <h3>Emotional wellbeing and my own diagnosis</h3>
-          <p>I regularly saw children who were anxious about school because of their difficulties, then received my own dyslexia diagnosis, which spurred me on to complete my training.</p>
-        </li>
-      </ol>
       </div>
     </div>
   </section>
