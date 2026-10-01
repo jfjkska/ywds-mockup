@@ -416,6 +416,18 @@
   @media (max-width:480px){.steps{grid-template-columns:1fr}}
   .steps li,.icolist li{overflow-wrap:break-word}
   .faqlist details ol{margin:.9em 0 0;font-size:.95rem;color:var(--ink-soft)}
+  .soon{background:var(--sage-tint);border:1.5px solid var(--sage);border-radius:12px;padding:10px 14px;margin:0 0 .9em}
+  .glance .card p.soon{font-size:.9rem;color:var(--ink)}
+  .soon a{font-weight:700}
+  .waitlist{background:var(--card);border:1.5px solid var(--sage);border-radius:18px;padding:clamp(20px,4vw,32px);box-shadow:var(--shadow);margin-top:28px}
+  .waitlist h3{margin-bottom:.4em}
+  form.wl{display:grid;gap:14px;margin-top:1.2em;max-width:560px}
+  form.wl .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media (max-width:640px){form.wl .row{grid-template-columns:1fr}}
+  form.wl label{font-size:.82rem;font-weight:700;color:var(--ink-soft);display:block;margin-bottom:4px;letter-spacing:.04em}
+  form.wl input{width:100%;padding:13px 15px;border-radius:12px;border:1.5px solid var(--line);background:var(--cream);color:var(--ink);font-family:inherit;font-size:.95rem}
+  form.wl input:focus{border-color:var(--navy);outline:none}
+  form.wl .small{font-size:.82rem;color:var(--ink-soft);margin:0}
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
@@ -494,7 +506,7 @@
             <li>Recommendations and strategies to make learning more accessible.</li>
             <li>Your report within two weeks of the assessment.</li>
           </ul>
-          <p class="who">It does not offer a diagnosis.</p>
+          <p class="soon"><strong>Not a diagnosis of dyslexia.</strong> Diagnostic assessments are planned for 2027. <a href="#waitlist">Join the waiting list</a></p>
           <p class="price">£300<small>, or two instalments of £150</small></p>
           <div class="btnrow">
             <a class="btn primary" href="https://cal.com/natalie-langley-1sztkj/20min" target="_blank" rel="noopener">Book a free call</a>
@@ -513,8 +525,9 @@
             <li>Weekly 1-to-1 sessions, an hour each.</li>
             <li>Regular progress reviews.</li>
             <li>Partnership with school: I work with you and your child's school.</li>
+            <li>Reduced-fee places each term, on request.</li>
           </ul>
-          <p class="price">£50<small>/hour</small></p>
+          <p class="price">£50<small>/hour, paid monthly or in blocks of six</small></p>
           <div class="btnrow">
             <a class="btn primary" href="https://cal.com/natalie-langley-1sztkj/20min" target="_blank" rel="noopener">Book a free call</a>
             <a class="btn ghost" href="#intervention">More detail</a>
@@ -551,7 +564,7 @@
       <div class="svc">
         <div>
           <p>A Learning Needs Assessment (LNA) looks at the gap between where your child is now with their learning and where they need to be, so that support is based on evidence.</p>
-          <p>An LNA takes approximately two hours and enables me to hypothesise why your child might have difficulty with progress, attainment, or achievement. You receive a report detailing your child's strengths and areas for development and recommendations and strategies to make learning more accessible, within two weeks of the assessment. <strong>It does not offer a diagnosis.</strong></p>
+          <p>An LNA takes approximately two hours and enables me to hypothesise why your child might have difficulty with progress, attainment, or achievement. You receive a report detailing your child's strengths and areas for development and recommendations and strategies to make learning more accessible, within two weeks of the assessment.</p>
           <p>Payment, cancellation and consent details are in the <a href="../terms/#assessments">terms and conditions</a> and the <a href="/downloads/ywds-booking-assessment.pdf" download>assessment booking and consent form (PDF)</a>.</p>
         </div>
         <div class="testi">
@@ -560,16 +573,40 @@
         </div>
       </div>
       <div class="faqlist narrow">
-        <details>
-          <summary><span class="st">Waiting for answers from school?</span></summary>
-          <p>Waiting for answers from school about why your child isn't making progress? Educational psychology time is stretched, and it often runs out before every child who needs it has been seen. As a dyslexia specialist I can help you explore the difficulties your child is experiencing and identify their barriers to learning.</p>
+        <details id="waiting">
+          <summary><span class="st">Waiting for a diagnosis, or for answers from school?</span></summary>
+          <p>Many parents decide to wait for a diagnosis before getting help. It is worth knowing:</p>
+          <ul>
+            <li><strong>You don't need a diagnosis to get support.</strong> Schools should put support in place based on what your child needs, with or without a diagnosis. My tuition doesn't need one either.</li>
+            <li><strong>Waiting has a cost.</strong> Educational psychology time is stretched, and waits can be long. Every term without the right teaching can widen the gap.</li>
+            <li><strong>An LNA isn't wasted if you want a diagnosis later.</strong> It gives you evidence to act on now, and if you go on to have a diagnostic assessment with me, 25% of your LNA fee comes off its price.</li>
+          </ul>
+          <p>As a dyslexia specialist I can help you explore the difficulties your child is experiencing and identify their barriers to learning, now.</p>
         </details>
         <details id="diagnostic">
           <summary><span class="st">Is this a diagnostic dyslexia assessment?</span></summary>
           <p>A Learning Needs Assessment tells you where your child's strengths are, what is getting in the way of their learning, and what to do next. The written report sets out an analysis of the barriers, along with recommendations and strategies you can act on. Parents find it useful for conversations with school, and schools find it useful when they are planning support.</p>
-          <p>What it is not is a formal diagnosis of dyslexia. Full diagnostic dyslexia assessments are in preparation, and are not available yet. If that is what you are looking for, please get in touch and I will let you know as soon as they open.</p>
+          <p>What it is not is a formal diagnosis of dyslexia. Full diagnostic dyslexia assessments are planned for 2027. If that is what you are looking for, <a href="#waitlist">join the waiting list</a> and I will let you know as soon as they open.</p>
           <p>In the meantime, there is plenty you can do. The assessment report can be shared with your child's school and used to shape the support they put in place. You may also find the <a href="../local-support/">local SEND support</a> page helpful, which lists East Riding services for families, and you are welcome to <a href="../contact/">get in touch</a> for a free call to talk your situation through.</p>
         </details>
+      </div>
+      <div class="waitlist narrow" id="waitlist">
+        <p class="eyebrow">Coming in 2027</p>
+        <h3>Diagnostic dyslexia assessments: join the waiting list</h3>
+        <p>Full diagnostic dyslexia assessments are planned for 2027. Leave your details and I will email you as soon as bookings open. There is nothing to pay and no obligation.</p>
+        <p>If your child has a Learning Needs Assessment with me first, 25% of the LNA fee comes off the price of their diagnostic assessment.</p>
+        <form class="wl" action="https://formsubmit.co/natalie@ywds.co.uk" method="POST">
+          <input type="hidden" name="_subject" value="Diagnostic assessment waiting list">
+          <input type="hidden" name="_next" value="https://yorkshirewoldsdyslexiaservice.co.uk/contact/?sent=1">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="row">
+            <div><label for="wl-name">Your name *</label><input id="wl-name" name="name" required autocomplete="name"></div>
+            <div><label for="wl-email">Email *</label><input id="wl-email" name="email" type="email" required autocomplete="email"></div>
+          </div>
+          <div><label for="wl-age">Child's age (optional)</label><input id="wl-age" name="child_age" inputmode="numeric"></div>
+          <p class="small">I will only use your details to tell you when diagnostic assessments open. See the <a href="../privacy/">privacy notice</a>.</p>
+          <div><button class="btn primary" type="submit">Join the waiting list</button></div>
+        </form>
       </div>
     </div>
   </section>
@@ -620,7 +657,8 @@
         <details id="terms">
           <summary><span class="st">Terms at a glance</span></summary>
           <ul>
-            <li>Sessions are £50 per hour, paid for in blocks of six weekly sessions, by bank transfer. Each block can be paid in two instalments.</li>
+            <li>Sessions are £50 per hour, paid by bank transfer, in advance. You can pay monthly for that month's sessions, or in blocks of six weekly sessions (each block can be paid in two instalments).</li>
+            <li>A small number of reduced-fee places are available each term for families who would otherwise not be able to afford support. Ask in confidence on your free call.</li>
             <li>Cancellations with less than 48 hours' notice are charged in full.</li>
             <li>Late starts don't extend the session.</li>
           </ul>
@@ -639,7 +677,7 @@
       <div class="faqlist">
         <details>
           <summary><span class="st">How much does an assessment cost?</span></summary>
-          <p>A Learning Needs Assessment is £300. That covers the two-hour assessment and the written report that follows it. It can be paid in two instalments of £150.</p>
+          <p>A Learning Needs Assessment is £300. That covers the two-hour assessment and the written report that follows it. It can be paid in two instalments of £150. If your child goes on to have a diagnostic assessment with me, 25% of the LNA fee comes off its price.</p>
         </details>
         <details>
           <summary><span class="st">What ages do you work with?</span></summary>
@@ -651,7 +689,11 @@
         </details>
         <details>
           <summary><span class="st">Is a Learning Needs Assessment a diagnosis of dyslexia?</span></summary>
-          <p>No, it does not offer a diagnosis. It identifies strengths, barriers to learning and what would help. Full diagnostic dyslexia assessments are in preparation, so please get in touch if you would like to be told when they open.</p>
+          <p>No. It identifies strengths, barriers to learning and what would help, so you can act now. Full diagnostic dyslexia assessments are planned for 2027: <a href="#waitlist">join the waiting list</a> to hear when they open.</p>
+        </details>
+        <details>
+          <summary><span class="st">Should I wait for a diagnosis before getting help?</span></summary>
+          <p>You don't have to. Schools should support your child based on their needs, with or without a diagnosis, and tuition doesn't need one. Waits for assessment can be long, and every term without the right teaching can widen the gap. <a href="#waiting">More on waiting for a diagnosis</a>.</p>
         </details>
         <details>
           <summary><span class="st">When and where do sessions happen?</span></summary>
@@ -664,7 +706,11 @@
         </details>
         <details>
           <summary><span class="st">How long does the intervention last?</span></summary>
-          <p>It depends on the nature of your child's difficulties; however, progress is reviewed at regular intervals.</p>
+          <p>It depends on the nature of your child's difficulties, so there is no fixed-length course to sign up to. Progress is reviewed regularly, and you pay monthly or one block of six sessions at a time, so you can decide at each stage.</p>
+        </details>
+        <details>
+          <summary><span class="st">Can I spread the cost?</span></summary>
+          <p>Yes. Tuition can be paid monthly, in advance, for that month's sessions, or in blocks of six sessions split into two instalments. The LNA can be paid in two instalments of £150. A small number of reduced-fee places are available each term for families who would otherwise not be able to afford support: just ask, in confidence, on your free call.</p>
         </details>
         <details>
           <summary><span class="st">What is different about the DALP intervention versus school phonics lessons?</span></summary>
