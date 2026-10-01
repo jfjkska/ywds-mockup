@@ -360,7 +360,7 @@
   .altgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
   @media (max-width:900px){.altgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media (max-width:600px){.altgrid{grid-template-columns:1fr}}
-  .altcard{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--sage);border-radius:14px;padding:16px 16px 10px;min-width:0;overflow-wrap:break-word}
+  .altcard{background:var(--fam-bg,var(--card));border:1px solid var(--line);border-top:4px solid var(--sage);border-radius:14px;padding:16px 16px 10px;min-width:0;overflow-wrap:break-word}
   .altcard:nth-child(3n+1){border-top-color:var(--navy)}
   .altcard:nth-child(3n+2){border-top-color:var(--olive)}
   .althead{display:flex;align-items:center;gap:12px;margin-bottom:.6em}
@@ -386,6 +386,14 @@
   .pagehead{padding-bottom:0}
   .pagehead::after{content:"";display:block;height:clamp(40px,5vw,72px);margin-top:clamp(4px,1.5vw,12px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z' fill='%23DCE5D5'/%3E%3Cpath d='M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z' fill='%23B9CBAF'/%3E%3Cpath d='M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z' fill='%2393AA8C'/%3E%3Cpath d='M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z' fill='%23F7F4EC'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
   .headgrid{grid-template-columns:1fr}
+  /* ---------- shading family (logo colours): .fam-sky / .fam-sage / .fam-cream / .fam-deep pick one, .famset rotates them, .famtint paints the box ---------- */
+  .fam-sky,.famset>:nth-child(4n+1){--fam-bg:color-mix(in srgb,var(--sky) 90%,var(--card));--fam-bg-h:var(--sky);--fam-bar:color-mix(in srgb,var(--navy) 45%,var(--sky));--fam-tile:color-mix(in srgb,var(--navy) 14%,var(--sky));--fam-icon:var(--navy)}
+  .fam-sage,.famset>:nth-child(4n+2){--fam-bg:color-mix(in srgb,var(--sage-tint) 90%,var(--card));--fam-bg-h:var(--sage-tint);--fam-bar:var(--sage);--fam-tile:color-mix(in srgb,var(--sage-soft) 75%,var(--card));--fam-icon:var(--olive-deep)}
+  .fam-cream,.famset>:nth-child(4n+3){--fam-bg:color-mix(in srgb,var(--cream-deep) 90%,var(--card));--fam-bg-h:var(--cream-deep);--fam-bar:color-mix(in srgb,var(--line) 75%,var(--olive-deep));--fam-tile:color-mix(in srgb,var(--line) 60%,var(--card));--fam-icon:var(--olive-deep)}
+  .fam-deep,.famset>:nth-child(4n+4){--fam-bg:color-mix(in srgb,var(--sage-soft) 55%,var(--card));--fam-bg-h:color-mix(in srgb,var(--sage-soft) 62%,var(--card));--fam-bar:var(--olive);--fam-tile:color-mix(in srgb,var(--sage-soft) 90%,var(--olive));--fam-icon:var(--olive-deep)}
+  :root .famtint{background:linear-gradient(var(--fam-bar),var(--fam-bar)) top / 100% 5px no-repeat,var(--fam-bg);border-color:color-mix(in srgb,var(--fam-bar) 40%,var(--line))}
+  :root .famtint.famedge{background:var(--fam-bg);border-left-color:var(--fam-bar)}
+  :root .famtint .ico{background:var(--fam-tile);color:var(--fam-icon)}
 </style>
 <!-- Cloudflare Web Analytics --><script src="/js/analytics.js"></script><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
@@ -514,7 +522,7 @@
           <figure class="signcard">
             <h3 class="alttitle">Alternatives to written recording</h3>
             <div class="altgrid">
-              <div class="altcard">
+              <div class="altcard fam-sky">
                 <div class="althead"><h4>Images</h4></div>
                 <ul>
                   <li>Making posters</li>
@@ -524,7 +532,7 @@
                   <li>Digital photo spreads</li>
                 </ul>
               </div>
-              <div class="altcard">
+              <div class="altcard fam-deep">
                 <div class="althead"><h4>Charts</h4></div>
                 <ul>
                   <li>Flowcharts</li>
@@ -533,7 +541,7 @@
                   <li>Mind mapping</li>
                 </ul>
               </div>
-              <div class="altcard">
+              <div class="altcard fam-sage">
                 <div class="althead"><h4>Spoken word</h4></div>
                 <ul>
                   <li>Audio recording</li>
@@ -541,7 +549,7 @@
                   <li>Oral presentation</li>
                 </ul>
               </div>
-              <div class="altcard">
+              <div class="altcard fam-sky">
                 <div class="althead"><h4>Ready-made text</h4></div>
                 <ul>
                   <li>Cloze: filling in missing words in a text</li>
@@ -551,7 +559,7 @@
                   <li>Tops and tails: matching the beginnings and endings of sentences, paragraphs or whole texts</li>
                 </ul>
               </div>
-              <div class="altcard">
+              <div class="altcard fam-deep">
                 <div class="althead"><h4>ICT</h4></div>
                 <ul>
                   <li>Word processing with on-screen word grids</li>
@@ -560,7 +568,7 @@
                   <li>Predictive or voice-operated word processing software</li>
                 </ul>
               </div>
-              <div class="altcard">
+              <div class="altcard fam-sage">
                 <div class="althead"><h4>Sorting and labelling</h4></div>
                 <ul>
                   <li>Object sorts (for example by first sound)</li>
@@ -569,21 +577,21 @@
                   <li>Matching labels to quantities, shapes and solids</li>
                 </ul>
               </div>
-              <div class="altcard">
+              <div class="altcard fam-sky">
                 <div class="althead"><h4>Symbols</h4></div>
                 <ul>
                   <li>Choosing or ordering symbol cards (such as Bliss, TEACCH or Writing with Symbols)</li>
                   <li>Specialist alternative forms of recording, such as Braille</li>
                 </ul>
               </div>
-              <div class="altcard">
+              <div class="altcard fam-deep">
                 <div class="althead"><h4>Scribing</h4></div>
                 <ul>
                   <li>Paired recording with a fluent writer</li>
                   <li>Dictating to a helper</li>
                 </ul>
               </div>
-              <div class="altcard">
+              <div class="altcard fam-sage">
                 <div class="althead"><h4>Numbers</h4></div>
                 <ul>
                   <li>Highlighting answers on a 100 square or number line</li>
