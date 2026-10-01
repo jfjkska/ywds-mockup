@@ -315,11 +315,11 @@
   form.contact .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   @media (max-width:640px){form.contact .row{grid-template-columns:1fr}}
   form.contact label{font-size:.82rem;font-weight:700;color:var(--ink-soft);display:block;margin-bottom:4px;letter-spacing:.04em}
-  form.contact input,form.contact textarea{
+  form.contact input,form.contact textarea,form.contact select{
     width:100%;padding:13px 15px;border-radius:12px;border:1.5px solid var(--line);
     background:var(--card);color:var(--ink);font-family:inherit;font-size:.95rem;
   }
-  form.contact input:focus,form.contact textarea:focus{border-color:var(--navy);outline:none}
+  form.contact input:focus,form.contact textarea:focus,form.contact select:focus{border-color:var(--navy);outline:none}
 
   /* ---------- footer ---------- */
   footer.site{background:var(--navy-deep);color:#C9D6D0;padding:48px 0 30px;margin-top:0}
@@ -388,7 +388,7 @@
         <li><a href="../resources/">Resources</a></li>
         <li><a href="../blog/">Blog</a></li>
         <li><a href="../contact/" aria-current="page">Contact</a></li>
-        <li><a class="cta-mini" href="https://cal.com/natalie-langley-1sztkj/20min" target="_blank" rel="noopener">Book a free call</a></li>
+        <li><a class="cta-mini" href="/book/" target="_blank" rel="noopener">Book a free call</a></li>
       </ul>
     </nav>
   </div>
@@ -409,7 +409,7 @@
           <p class="eyebrow" style="color:var(--sage)">Free intro call</p>
           <h3>20 minutes, no obligation</h3>
           <p>A chance to talk through what you're looking for and how the service works. Pick a time that suits you and you'll get a calendar invite straight away.</p>
-          <div class="btnrow"><a class="btn green" href="https://cal.com/natalie-langley-1sztkj/20min" target="_blank" rel="noopener">Book the free 20-min call</a></div>
+          <div class="btnrow"><a class="btn green" href="/book/" target="_blank" rel="noopener">Book the free 20-min call</a></div>
           <div class="meta">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
             20 min · Phone or video · Free
@@ -417,7 +417,7 @@
         </div>
         <div class="calmock" style="padding:12px">
           <div id="cal-embed" style="width:100%;height:clamp(430px,58vh,560px);overflow:auto;-webkit-overflow-scrolling:touch"></div>
-          <p style="font-size:.78rem;color:var(--ink-soft);text-align:center;margin:8px 0 4px">Calendar not loading? <a href="https://cal.com/natalie-langley-1sztkj/20min" target="_blank" rel="noopener">Open the booking page</a></p>
+          <p style="font-size:.78rem;color:var(--ink-soft);text-align:center;margin:8px 0 4px">Calendar not loading? <a href="/book/" target="_blank" rel="noopener">Open the booking page</a></p>
         </div>
       </div>
 
@@ -427,7 +427,7 @@
           <div id="sent-note" style="display:none;background:var(--sage-tint);border:1.5px solid var(--sage);border-radius:12px;padding:14px 18px;margin-bottom:14px;font-size:.95rem">Thank you, your message has been sent. I'll get back to you soon.</div>
           <form class="contact" action="https://formsubmit.co/natalie@ywds.co.uk" method="POST">
             <input type="hidden" name="_subject" value="Website enquiry from Yorkshire Wolds Dyslexia Service">
-            <input type="hidden" name="_next" value="https://yorkshirewoldsdyslexiaservice.co.uk/contact/?sent=1">
+            <input type="hidden" name="_next" value="https://yorkshirewoldsdyslexiaservice.co.uk/thanks/">
             <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
             <div class="row">
               <div><label for="fn">First name *</label><input id="fn" name="first_name" required></div>
@@ -435,6 +435,17 @@
             </div>
             <div><label for="em">Email *</label><input id="em" name="email" type="email" required></div>
             <div><label for="sub">Subject</label><input id="sub" name="subject"></div>
+            <div><label for="heard">How did you hear about me?</label><select id="heard" name="heard_about">
+              <option value="">Please choose</option>
+              <option>A friend or family member</option>
+              <option>My child's school or SENCO</option>
+              <option>A school newsletter</option>
+              <option>Google search</option>
+              <option>Google Maps</option>
+              <option>Facebook</option>
+              <option>A leaflet or poster</option>
+              <option>Other</option>
+            </select></div>
             <div><label for="msg">Message *</label><textarea id="msg" name="message" rows="5" required></textarea></div>
             <div><button class="btn primary" type="submit">Send message</button></div>
           </form>
