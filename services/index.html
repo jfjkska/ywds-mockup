@@ -6,7 +6,6 @@
 <meta name="color-scheme" content="light">
 <title>Screening, Learning Needs Assessment &amp; 1-1 Tuition | Yorkshire Wolds Dyslexia Service</title>
 <meta name="description" content="Screening, learning needs assessment and specialist 1-to-1 tuition in East Yorkshire. Learning Needs Assessment £300, weekly sessions £50 an hour.">
-<link rel="canonical" href="https://yorkshirewoldsdyslexiaservice.co.uk/services/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Yorkshire Wolds Dyslexia Service">
 <meta property="og:title" content="Screening, Learning Needs Assessment &amp; 1-1 Tuition | Yorkshire Wolds Dyslexia Service">
@@ -16,8 +15,9 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Screening, Learning Needs Assessment &amp; 1-1 Tuition | Yorkshire Wolds Dyslexia Service">
 <meta name="twitter:description" content="Screening, learning needs assessment and specialist 1-to-1 tuition in East Yorkshire. Learning Needs Assessment £300, weekly sessions £50 an hour.">
-<link rel="icon" type="image/png" href="../img/favicon.png">
-<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="canonical" href="https://yorkshirewoldsdyslexiaservice.co.uk/services/">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <meta name="theme-color" content="#F7F4EC">
 <style>
   :root{
@@ -96,9 +96,8 @@
 
   .eyebrow{
     font-family:Verdana,sans-serif;
-    font-size:.78rem;
-    letter-spacing:.32em;
-    text-transform:uppercase;
+    font-size:.92rem;
+    letter-spacing:.01em;
     color:var(--olive);
     font-weight:700;
     margin:0 0 .9em;
@@ -360,10 +359,82 @@
     font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
     padding:4px 12px;border-radius:999px;margin-left:8px;vertical-align:middle;
   }
+  /* ---------- services: at a glance + click-to-open rows ---------- */
+  details[id]{scroll-margin-top:96px}
+  .glance{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .glance>*,.svc>*{min-width:0}
+  @media (max-width:760px){.glance{grid-template-columns:1fr}}
+  .glance .card h2{font-size:1.4rem;margin-bottom:.4em}
+  .glance .card .eyebrow{margin-bottom:.5em;color:var(--olive)}
+  .glance .card ul{font-size:.94rem;color:var(--ink);margin:0 0 .8em}
+  .glance .card .price{margin:auto 0 0;padding-top:.3em}
+  .glance .card .btnrow{margin-top:.8em}
+  .glance .card .formlink{margin:1em 0 0;font-size:.88rem}
+  .svc{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(22px,4vw,48px);align-items:start;margin-top:1.2em}
+  @media (max-width:860px){.svc{grid-template-columns:1fr}}
+  .faqlist summary{
+    margin:-18px -22px;padding:18px 22px;min-height:44px;align-items:center;border-radius:16px;
+  }
+  .faqlist details[open]>summary{margin-bottom:0}
+  .faqlist summary:hover{background:var(--sage-tint)}
+  .faqlist summary:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  .faqlist details ul{margin:.9em 0 0;font-size:.95rem;color:var(--ink-soft)}
+  .faqlist details h4{margin:1.1em 0 0;font-size:1rem}
+  .faqlist details .btn{max-width:100%}
+
+  /* ---------- icons and spot illustrations ---------- */
+  .ico{width:44px;height:44px;border-radius:12px;background:var(--sage-tint);color:var(--olive-deep);display:grid;place-items:center;flex-shrink:0}
+  .ico svg{width:24px;height:24px}
+  .ico.sm{width:34px;height:34px;border-radius:10px}
+  .ico.sm svg{width:19px;height:19px}
+  .headgrid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(20px,4vw,56px);align-items:center}
+  .headgrid>*{min-width:0}
+  img.spot{display:block;width:100%;max-width:400px;height:auto;border-radius:18px;margin:0 auto}
+  @media (max-width:800px){
+    .headgrid{grid-template-columns:1fr}
+    img.spot{max-width:300px;margin:8px 0 0}
+  }
+  .glance .card>.ico{margin-bottom:12px}
+  .fact{display:flex;gap:12px;align-items:center}
+  .fact>span:last-child{min-width:0}
+  .glance .card ul.icolist{list-style:none;padding:0}
+  .icolist li{display:flex;gap:12px;align-items:center;margin-bottom:.55em}
+  .icolist li>span:last-child{min-width:0}
+  .steps{list-style:none;padding:0;margin:1.6em 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:14px}
+  .steps li{margin:0;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;font-size:.92rem;line-height:1.45;color:var(--ink)}
+  .steps .top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+  .steps .num{width:30px;height:30px;border-radius:50%;background:var(--navy);color:var(--cream);display:grid;place-items:center;flex-shrink:0;font-family:"Aptos","Segoe UI",sans-serif;font-weight:800;font-size:.95rem;line-height:1}
+  .faqlist summary{justify-content:flex-start}
+  .faqlist summary .st{flex:1;min-width:0}
+  .faqlist summary:hover .ico{background:var(--card)}
+  .faqlist ul.timeline{list-style:none;padding:0;margin:.9em 0 0}
+  .timeline li{display:flex;gap:14px;align-items:center;position:relative;margin:0;padding:0 0 14px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li:not(:last-child)::before{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:var(--sage-soft)}
+  .timeline li>span:last-child{min-width:0}
+  @media (max-width:480px){.steps{grid-template-columns:1fr}}
+  .steps li,.icolist li{overflow-wrap:break-word}
+  .faqlist details ol{margin:.9em 0 0;font-size:.95rem;color:var(--ink-soft)}
+  .soon{background:var(--sage-tint);border:1.5px solid var(--sage);border-radius:12px;padding:10px 14px;margin:0 0 .9em}
+  .glance .card p.soon{font-size:.9rem;color:var(--ink)}
+  .soon a{font-weight:700}
+  .waitlist{background:var(--card);border:1.5px solid var(--sage);border-radius:18px;padding:clamp(20px,4vw,32px);box-shadow:var(--shadow);margin-top:28px}
+  .waitlist h3{margin-bottom:.4em}
+  form.wl{display:grid;gap:14px;margin-top:1.2em;max-width:560px}
+  form.wl .row{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:end}
+  @media (max-width:640px){form.wl .row{grid-template-columns:1fr}}
+  form.wl label{font-size:.82rem;font-weight:700;color:var(--ink-soft);display:block;margin-bottom:4px;letter-spacing:.04em}
+  form.wl input,form.wl select{width:100%;padding:13px 15px;border-radius:12px;border:1.5px solid var(--line);background:var(--cream);color:var(--ink);font-family:inherit;font-size:.95rem}
+  form.wl input:focus,form.wl select:focus{border-color:var(--navy);outline:none}
+  form.wl .small{font-size:.82rem;color:var(--ink-soft);margin:0}
+  /* page headers: the logo's layered Wolds hills as a band along the bottom */
+  .pagehead{padding-bottom:0}
+  .pagehead::after{content:"";display:block;height:clamp(40px,5vw,72px);margin-top:clamp(4px,1.5vw,12px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z' fill='%23DCE5D5'/%3E%3Cpath d='M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z' fill='%23B9CBAF'/%3E%3Cpath d='M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z' fill='%2393AA8C'/%3E%3Cpath d='M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z' fill='%23F7F4EC'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
+  .headgrid{grid-template-columns:1fr}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business", "name": "Yorkshire Wolds Dyslexia Service", "alternateName": "YWDS", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "logo": "https://yorkshirewoldsdyslexiaservice.co.uk/img/logo.webp", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "email": "natalie@ywds.co.uk", "description": "Specialist literacy support, dyslexia intervention and learning needs assessments for children and young people in East Yorkshire.", "priceRange": "££", "address": {"@type": "PostalAddress", "addressLocality": "Pocklington", "addressRegion": "East Yorkshire", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Pocklington"}, {"@type": "City", "name": "York"}, {"@type": "City", "name": "Market Weighton"}, {"@type": "City", "name": "Driffield"}, {"@type": "City", "name": "Beverley"}, {"@type": "AdministrativeArea", "name": "East Riding of Yorkshire"}], "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties", "Dyslexia Action Literacy Programme", "Learning Needs Assessment", "Speech, language and communication needs"], "founder": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "priceCurrency": "GBP", "price": "300", "itemOffered": {"@type": "Service", "name": "Learning Needs Assessment", "description": "A two-hour standardised psychometric assessment with a detailed written report, for ages 6-16."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "1-to-1 Literacy Intervention", "description": "Weekly hour-long structured, multi-sensory sessions using the Dyslexia Action Literacy Programme, for ages 7-16."}}]}}, {"@type": "WebPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/services/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/services/", "name": "Screening, Learning Needs Assessment & 1-1 Tuition | Yorkshire Wolds Dyslexia Service", "description": "Screening, learning needs assessment and specialist 1-to-1 tuition in East Yorkshire. Learning Needs Assessment £300, weekly sessions £50 an hour.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "about": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}}, {"@type": "WebSite", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "name": "Yorkshire Wolds Dyslexia Service", "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "inLanguage": "en-GB"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Services & Pricing", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/services/"}]}, {"@type": "FAQPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/services/#faq", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/services/#webpage"}, "mainEntity": [{"@type": "Question", "name": "How much does an assessment cost?", "acceptedAnswer": {"@type": "Answer", "text": "A Learning Needs Assessment is £300. That covers the two-hour assessment and the written report that follows it. It can be paid in two instalments of £150."}}, {"@type": "Question", "name": "What ages do you work with?", "acceptedAnswer": {"@type": "Answer", "text": "Learning Needs Assessments are for children aged 6 to 16. Specialist 1-to-1 tuition, the structured literacy intervention, is for children and young people aged 7 to 16."}}, {"@type": "Question", "name": "How long does an assessment take, and what do I get?", "acceptedAnswer": {"@type": "Answer", "text": "The assessment takes approximately two hours. You receive a report detailing your child's strengths and areas for development, an analysis of barriers to learning, and recommendations and strategies to make learning more accessible. You receive the written report within two weeks of the assessment."}}, {"@type": "Question", "name": "Is a Learning Needs Assessment a diagnosis of dyslexia?", "acceptedAnswer": {"@type": "Answer", "text": "No, it does not offer a diagnosis. It identifies strengths, barriers to learning and what would help. Full diagnostic dyslexia assessments are in preparation, so please get in touch if you would like to be told when they open."}}, {"@type": "Question", "name": "When and where do sessions happen?", "acceptedAnswer": {"@type": "Answer", "text": "Sessions are delivered in person, one to one, during the school day. I work within about 20 miles of Pocklington, including York, Market Weighton, Driffield and Beverley. The school day is already demanding for a dyslexic child, so I avoid adding sessions after school or at weekends. I work in partnership with you and your child's school to find a time that suits everyone. If sessions in school aren't possible, for example if your child is home-educated or their school can't host sessions, please still get in touch. I can sometimes work at your home or in a local space, and we will find the best arrangement for your child."}}, {"@type": "Question", "name": "Does my child need an assessment before tuition?", "acceptedAnswer": {"@type": "Answer", "text": "No. The first tuition session includes a screening that pinpoints exactly where your child's difficulties lie, so the programme can be tailored to them from the start."}}, {"@type": "Question", "name": "How long does the intervention last?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the nature of your child's difficulties; however, progress is reviewed at regular intervals."}}, {"@type": "Question", "name": "What is different about the DALP intervention versus school phonics lessons?", "acceptedAnswer": {"@type": "Answer", "text": "Systematic Synthetic Phonics instruction is not a universal fix. Research indicates that up to 25% of children, including most children with dyslexia and specific learning difficulties, cannot learn to read using phonics alone. Dyslexic learners benefit from multi-sensory approaches that incorporate morphological instruction that build sight word vocabulary."}},{"@type": "Question", "name": "How do I get started?", "acceptedAnswer": {"@type": "Answer", "text": "Book a free 20-minute call, by phone or video, and tell me what you are looking for. There is no obligation."}}]}]}</script>
-  <!-- Cloudflare Web Analytics --><script src="/js/analytics.js"></script><!-- End Cloudflare Web Analytics -->
+<!-- Cloudflare Web Analytics --><script src="/js/analytics.js"></script><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business", "name": "Yorkshire Wolds Dyslexia Service", "alternateName": "YWDS", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "logo": "https://yorkshirewoldsdyslexiaservice.co.uk/img/logo.webp", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "email": "natalie@ywds.co.uk", "description": "Specialist literacy support, dyslexia intervention and learning needs assessments for children and young people in East Yorkshire.", "priceRange": "££", "address": {"@type": "PostalAddress", "addressLocality": "Pocklington", "addressRegion": "East Yorkshire", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Pocklington"}, {"@type": "City", "name": "York"}, {"@type": "City", "name": "Market Weighton"}, {"@type": "City", "name": "Driffield"}, {"@type": "City", "name": "Beverley"}, {"@type": "AdministrativeArea", "name": "East Riding of Yorkshire"}], "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties", "Dyslexia Action Literacy Programme", "Learning Needs Assessment", "Speech, language and communication needs"], "founder": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "priceCurrency": "GBP", "price": "300", "itemOffered": {"@type": "Service", "name": "Learning Needs Assessment", "description": "A two-hour standardised psychometric assessment with a detailed written report, for ages 6-16."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "1-to-1 Literacy Intervention", "description": "Weekly hour-long structured, multi-sensory sessions using the Dyslexia Action Literacy Programme, for ages 7-16."}}]}}, {"@type": "WebPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/services/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/services/", "name": "Screening, Learning Needs Assessment & 1-1 Tuition | Yorkshire Wolds Dyslexia Service", "description": "Screening, learning needs assessment and specialist 1-to-1 tuition in East Yorkshire. Learning Needs Assessment £300, weekly sessions £50 an hour.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "about": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}}, {"@type": "WebSite", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "name": "Yorkshire Wolds Dyslexia Service", "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "inLanguage": "en-GB"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Services & Pricing", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/services/"}]}, {"@type": "FAQPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/services/#faq", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/services/#webpage"}, "mainEntity": [{"@type": "Question", "name": "How much does an assessment cost?", "acceptedAnswer": {"@type": "Answer", "text": "A Learning Needs Assessment is £300. That covers the two-hour assessment and the written report that follows it. It can be paid in two instalments of £150."}}, {"@type": "Question", "name": "What ages do you work with?", "acceptedAnswer": {"@type": "Answer", "text": "Learning Needs Assessments are for children aged 6 to 16. Specialist 1-to-1 tuition, the structured literacy intervention, is for children and young people aged 7 to 16."}}, {"@type": "Question", "name": "How long does an assessment take, and what do I get?", "acceptedAnswer": {"@type": "Answer", "text": "The assessment takes approximately two hours. You receive a report detailing your child's strengths and areas for development, an analysis of barriers to learning, and recommendations and strategies to make learning more accessible. You receive the written report within two weeks of the assessment."}}, {"@type": "Question", "name": "Is a Learning Needs Assessment a diagnosis of dyslexia?", "acceptedAnswer": {"@type": "Answer", "text": "No, it does not offer a diagnosis. It identifies strengths, barriers to learning and what would help. Full diagnostic dyslexia assessments are in preparation, so please get in touch if you would like to be told when they open."}}, {"@type": "Question", "name": "When and where do sessions happen?", "acceptedAnswer": {"@type": "Answer", "text": "Sessions are delivered in person, one to one, during the school day. I work within about 20 miles of Pocklington, including York, Market Weighton, Driffield and Beverley. The school day is already demanding for a dyslexic child, so I avoid adding sessions after school or at weekends. I work in partnership with you and your child's school to find a time that suits everyone. If sessions in school aren't possible, for example if your child is home-educated or their school can't host sessions, please still get in touch. I can sometimes work at your home or in a local space, and we will find the best arrangement for your child."}}, {"@type": "Question", "name": "Does my child need an assessment before tuition?", "acceptedAnswer": {"@type": "Answer", "text": "No. The first tuition session includes a screening that pinpoints exactly where your child's difficulties lie, so the programme can be tailored to them from the start."}}, {"@type": "Question", "name": "How long does the intervention last?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the nature of your child's difficulties; however, progress is reviewed at regular intervals."}}, {"@type": "Question", "name": "What is different about the DALP intervention versus school phonics lessons?", "acceptedAnswer": {"@type": "Answer", "text": "Systematic Synthetic Phonics instruction is not a universal fix. Research indicates that up to 25% of children, including most children with dyslexia and specific learning difficulties, cannot learn to read using phonics alone. Dyslexic learners benefit from multi-sensory approaches that incorporate morphological instruction that build sight word vocabulary."}},{"@type": "Question", "name": "How do I get started?", "acceptedAnswer": {"@type": "Answer", "text": "Book a free 20-minute call, by phone or video, and tell me what you are looking for. There is no obligation."}}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -402,7 +473,7 @@
         <li><a href="../services/" aria-current="page">Services</a></li>
         <li><a href="../literacy/">Literacy</a></li>
         <li><a href="../dyslexia/">Dyslexia</a></li>
-        <li><a href="../splds/">SpLDs</a></li>
+        <li><a href="../splds/">Beyond dyslexia</a></li>
         <li><a href="../glossary/">Glossary</a></li>
         <li><a href="../resources/">Resources</a></li>
         <li><a href="../blog/">Blog</a></li>
@@ -415,93 +486,201 @@
 <main id="main">
 
   <div class="pagehead">
-    <div class="wrap">
-      <p class="eyebrow">Services</p>
-      <h1>Screening, learning needs assessment and 1-1 tuition</h1>
-      <p class="lead">Clear pricing, structured approaches, and reports you can act on.</p>
+    <div class="wrap headgrid">
+      <div>
+        <p class="eyebrow">Services</p>
+        <h1>Screening, learning needs assessment and 1-1 tuition</h1>
+      </div>
     </div>
   </div>
 
-  <section class="block" id="specialist" style="padding-top:20px">
+  <section class="block" id="glance" style="padding-top:20px;padding-bottom:20px">
+    <div class="wrap">
+      <div class="glance">
+        <div class="card">
+          
+          <p class="eyebrow">At a glance</p>
+          <h2>Learning Needs Assessment</h2>
+          <p class="who"><strong>Who it is for:</strong> children aged 6–16 who aren't making progress, when you want to know why.</p>
+          <ul>
+            <li>An assessment of approximately two hours.</li>
+            <li>A report detailing your child's strengths and areas for development.</li>
+            <li>Recommendations and strategies to make learning more accessible.</li>
+            <li>Your report within two weeks of the assessment.</li>
+          </ul>
+          <p class="soon"><strong>Not a diagnosis of dyslexia.</strong> Diagnostic assessments are planned for 2027. <a href="#waitlist">Join the waiting list</a></p>
+          <p class="price">£300<small>, or two instalments of £150</small></p>
+          <div class="btnrow">
+            <a class="btn primary" href="/book/" target="_blank" rel="noopener">Book a free call</a>
+            <a class="btn ghost" href="#lna">More detail</a>
+          </div>
+          <p class="formlink"><a href="/downloads/ywds-booking-assessment.pdf" download>Assessment booking and consent form (PDF)</a></p>
+        </div>
+        <div class="card">
+          
+          <p class="eyebrow">At a glance</p>
+          <h2>1-1 Literacy Intervention</h2>
+          <p class="who"><strong>Who it is for:</strong> children aged 7–16 experiencing literacy difficulties.</p>
+          <ul>
+            <li>A free call first, before you commit to anything.</li>
+            <li>A placement screening in the first session.</li>
+            <li>Weekly 1-to-1 sessions, an hour each.</li>
+            <li>Regular progress reviews.</li>
+            <li>Partnership with school: I work with you and your child's school.</li>
+            <li>Reduced-fee places each term, on request.</li>
+          </ul>
+          <p class="price">£50<small>/hour, paid monthly or in blocks of six</small></p>
+          <div class="btnrow">
+            <a class="btn primary" href="/book/" target="_blank" rel="noopener">Book a free call</a>
+            <a class="btn ghost" href="#intervention">More detail</a>
+          </div>
+          <p class="formlink"><a href="/downloads/ywds-booking-intervention.pdf" download>Intervention booking and consent form (PDF)</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:20px;padding-bottom:20px">
     <div class="wrap narrow">
       <p class="eyebrow">Specialist teaching</p>
-      <h2>What is a dyslexia specialist?</h2>
-      <ul class="quals">
-        <li>To practise at this level, I have a Diploma in Specialist Teaching for Literacy Difficulties (Level 5).</li>
-        <li>I am a member of the Dyslexia Guild.</li>
-        <li>My training enables me to develop your child’s cognitive tools to navigate language independently.</li>
-        <li>I teach explicit metacognitive strategies so that they can self-correct independently.</li>
-        <li>I use a multi-sensory framework to rewire neural pathways.</li>
-        <li>I facilitate learning by carefully controlling lesson content, ensuring all elements positively reinforce what is taught.</li>
-        <li>I enable your child to assimilate the new learning taught each session by focusing on information that they have been explicitly taught and shown to be secure with before introducing new learning.</li>
-      </ul>
+      <div class="faqlist" style="margin-top:0">
+        <details id="specialist">
+          <summary><span class="st">What is a dyslexia specialist?</span></summary>
+          <ul class="quals">
+            <li>To practise at this level, I have a Diploma in Specialist Teaching for Literacy Difficulties (Level 5).</li>
+            <li>I am a member of the Dyslexia Guild.</li>
+            <li>My training enables me to develop your child’s cognitive tools to navigate language independently.</li>
+            <li>I teach explicit metacognitive strategies so that they can self-correct independently.</li>
+            <li>I use a multi-sensory framework to rewire neural pathways.</li>
+            <li>I facilitate learning by carefully controlling lesson content, ensuring all elements positively reinforce what is taught.</li>
+            <li>I enable your child to assimilate the new learning taught each session by focusing on information that they have been explicitly taught and shown to be secure with before introducing new learning.</li>
+          </ul>
+        </details>
+      </div>
     </div>
   </section>
 
   <section class="block" style="padding-top:20px">
-    <div class="wrap narrow">
-      <h2 id="lna">Learning Needs Assessment <small style="font-size:.9rem;color:var(--olive);font-family:Verdana">£300, or two instalments of £150 · ages 6–16</small></h2>
-      <p>Waiting for answers from school about why your child isn't making progress? Educational psychology time is stretched, and it often runs out before every child who needs it has been seen. As a dyslexia specialist I can help you explore the difficulties your child is experiencing and identify their barriers to learning.</p>
-      <p>A Learning Needs Assessment (LNA) looks at the gap between where your child is now with their learning and where they need to be, so that support is based on evidence.</p>
-      <p>An LNA takes approximately two hours and enables me to hypothesise why your child might have difficulty with progress, attainment, or achievement. You receive a report detailing your child's strengths and areas for development and recommendations and strategies to make learning more accessible, within two weeks of the assessment. <strong>It does not offer a diagnosis.</strong></p>
-      <p>Payment, cancellation and consent details are in the <a href="../terms/#assessments">terms and conditions</a> and the <a href="../downloads/ywds-booking-assessment.pdf" download>assessment booking and consent form (PDF)</a>.</p>
-      <div class="defbox" id="diagnostic">
-        <h3 style="margin-top:0">Is this a diagnostic dyslexia assessment?</h3>
-        <p>A Learning Needs Assessment tells you where your child's strengths are, what is getting in the way of their learning, and what to do next. The written report sets out an analysis of the barriers, along with recommendations and strategies you can act on. Parents find it useful for conversations with school, and schools find it useful when they are planning support.</p>
-        <p>What it is not is a formal diagnosis of dyslexia. Full diagnostic dyslexia assessments are in preparation, and are not available yet. If that is what you are looking for, please get in touch and I will let you know as soon as they open.</p>
-        <p>In the meantime, there is plenty you can do. The assessment report can be shared with your child's school and used to shape the support they put in place. You may also find the <a href="../local-support/">local SEND support</a> page helpful, which lists East Riding services for families, and you are welcome to <a href="../contact/">get in touch</a> for a free call to talk your situation through.</p>
+    <div class="wrap">
+      <h2 id="lna">Learning Needs Assessment</h2>
+      <div class="svc">
+        <div>
+          <p>A Learning Needs Assessment (LNA) looks at the gap between where your child is now with their learning and where they need to be, so that support is based on evidence.</p>
+          <p>An LNA takes approximately two hours and enables me to hypothesise why your child might have difficulty with progress, attainment, or achievement. You receive a report detailing your child's strengths and areas for development and recommendations and strategies to make learning more accessible, within two weeks of the assessment.</p>
+          <p>Payment, cancellation and consent details are in the <a href="../terms/#assessments">terms and conditions</a> and the <a href="/downloads/ywds-booking-assessment.pdf" download>assessment booking and consent form (PDF)</a>.</p>
+        </div>
+        <div class="testi">
+          <p style="margin:0;max-width:none">"Natalie assessed my son at school, he was at first very reluctant to participate as he dislikes speaking with new people. He is diagnosed with ADHD and this brought challenge to his assessment also, affecting his concentration and movement. Natalie managed both of these obstacles with patience and skill, and in the end they successfully complete his assessment together. Communication with Natalie both during and post assessment was excellent."</p>
+          <div class="who">C. Danby, parent</div>
+        </div>
       </div>
-      <div class="testi" style="margin-top:1.6em">
-        <p style="margin:0;max-width:none">"Natalie assessed my son at school, he was at first very reluctant to participate as he dislikes speaking with new people. He is diagnosed with ADHD and this brought challenge to his assessment also, affecting his concentration and movement. Natalie managed both of these obstacles with patience and skill, and in the end they successfully complete his assessment together. Communication with Natalie both during and post assessment was excellent."</p>
-        <div class="who">C. Danby, parent</div>
+      <div class="faqlist narrow">
+        <details id="waiting">
+          <summary><span class="st">Waiting for a diagnosis, or for answers from school?</span></summary>
+          <p>Many parents decide to wait for a diagnosis before getting help. It is worth knowing:</p>
+          <ul>
+            <li><strong>You don't need a diagnosis to get support.</strong> Schools should put support in place based on what your child needs, with or without a diagnosis. My tuition doesn't need one either.</li>
+            <li><strong>Waiting has a cost.</strong> Educational psychology time is stretched, and waits can be long. Every term without the right teaching can widen the gap.</li>
+            <li><strong>An LNA isn't wasted if you want a diagnosis later.</strong> It gives you evidence to act on now, and if you go on to have a diagnostic assessment with me, 25% of your LNA fee comes off its price.</li>
+          </ul>
+          <p>As a dyslexia specialist I can help you explore the difficulties your child is experiencing and identify their barriers to learning, now.</p>
+        </details>
+        <details id="diagnostic">
+          <summary><span class="st">Is this a diagnostic dyslexia assessment?</span></summary>
+          <p>A Learning Needs Assessment tells you where your child's strengths are, what is getting in the way of their learning, and what to do next. The written report sets out an analysis of the barriers, along with recommendations and strategies you can act on. Parents find it useful for conversations with school, and schools find it useful when they are planning support.</p>
+          <p>What it is not is a formal diagnosis of dyslexia. Full diagnostic dyslexia assessments are planned for 2027. If that is what you are looking for, <a href="#waitlist">join the waiting list</a> and I will let you know as soon as they open.</p>
+          <p>In the meantime, there is plenty you can do. The assessment report can be shared with your child's school and used to shape the support they put in place. You may also find the <a href="../local-support/">local SEND support</a> page helpful, which lists East Riding services for families, and you are welcome to <a href="../contact/">get in touch</a> for a free call to talk your situation through.</p>
+        </details>
+      </div>
+      <div class="waitlist narrow" id="waitlist">
+        <p class="eyebrow">Coming in 2027</p>
+        <h3>Diagnostic dyslexia assessments: join the waiting list</h3>
+        <p>Full diagnostic dyslexia assessments are planned for 2027. Leave your details and I will email you as soon as bookings open. There is nothing to pay and no obligation.</p>
+        <p>If your child has a Learning Needs Assessment with me first, 25% of the LNA fee comes off the price of their diagnostic assessment.</p>
+        <form class="wl" action="https://formsubmit.co/natalie@ywds.co.uk" method="POST">
+          <input type="hidden" name="_subject" value="Diagnostic assessment waiting list">
+          <input type="hidden" name="_next" value="https://yorkshirewoldsdyslexiaservice.co.uk/thanks-waitlist/">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="row">
+            <div><label for="wl-name">Your name *</label><input id="wl-name" name="name" required autocomplete="name"></div>
+            <div><label for="wl-email">Email *</label><input id="wl-email" name="email" type="email" required autocomplete="email"></div>
+          </div>
+          <div class="row">
+            <div><label for="wl-age">Child's age (optional)</label><input id="wl-age" name="child_age" inputmode="numeric"></div>
+            <div><label for="wl-heard">How did you hear about me? (optional)</label><select id="wl-heard" name="heard_about">
+              <option value="">Please choose</option>
+              <option>A friend or family member</option>
+              <option>My child's school or SENCO</option>
+              <option>A school newsletter</option>
+              <option>Google search</option>
+              <option>Google Maps</option>
+              <option>Facebook</option>
+              <option>A leaflet or poster</option>
+              <option>Other</option>
+            </select></div>
+          </div>
+          <p class="small">I will only use your details to tell you when diagnostic assessments open. See the <a href="../privacy/">privacy notice</a>.</p>
+          <div><button class="btn primary" type="submit">Join the waiting list</button></div>
+        </form>
       </div>
     </div>
   </section>
 
   <section class="block skyt">
-    <div class="wrap narrow">
-      <h2 id="intervention">1-1 Literacy Intervention <small style="font-size:.9rem;color:var(--olive);font-family:Verdana">£50/hour · ages 7–16</small></h2>
-      <p>Specialist 1-to-1 tuition (structured literacy intervention): evidence-based support for children experiencing literacy difficulties, in-person, hour-long sessions that are cumulative, individually tailored, structured and multi-sensory, using the DALP framework with children aged 7–16.</p>
-      <div class="defbox">
-        <p class="eyebrow">Getting started</p>
-        <p style="margin:0">The first session uses the DALP's Diagnostic Placement Screening to identify gaps in knowledge and create a targeted plan.</p>
+    <div class="wrap">
+      <h2 id="intervention">1-1 Literacy Intervention</h2>
+      <div class="svc">
+        <div>
+          <p>Specialist 1-to-1 tuition (structured literacy intervention): evidence-based support for children experiencing literacy difficulties, in-person, hour-long sessions that are cumulative, individually tailored, structured and multi-sensory, using the DALP framework with children aged 7–16.</p>
+          <p><strong>Getting started:</strong> The first session uses the DALP's Diagnostic Placement Screening to identify gaps in knowledge and create a targeted plan.</p>
+          <img class="photo" src="/img/tuition-back-slogan.webp" alt="Natalie, in a green Yorkshire Wolds Dyslexia Service hoodie reading 'Teaching your child the way their brain learns best!', working with a child and magnetic letters at a table" width="1200" height="900" loading="lazy" style="margin-top:.6em;height:auto;aspect-ratio:4/3;object-position:left center">
+        </div>
+        <div class="testi">
+          <p style="margin:0;max-width:none">"Natalie likes to make the session fun and engaging as this is how our son learns best. Natalie is full of praise and he looks forward to the lesson each week."</p>
+          <div class="who">C. Bell, parent</div>
+        </div>
       </div>
-      <h3>What does a typical session look like?</h3>
-      <p>By using structure, this enables the child to feel secure. Sessions are fast-paced, so your child won’t get bored or tired.</p>
-      <h4>Outline of a typical session</h4>
-      <ul>
-        <li>Visual and auditory warm-ups.</li>
-        <li>Review of previous patterns (overlearning).</li>
-        <li>Introduction of one small, logical, new concept.</li>
-        <li>Structured reading and spelling practice using the new concept.</li>
-        <li>Metacognitive review: what did you use to figure that out?</li>
-        <li>A game.</li>
-      </ul>
-      <div class="testi" style="margin-top:1.6em">
-        <p style="margin:0;max-width:none">"Natalie likes to make the session fun and engaging as this is how our son learns best. Natalie is full of praise and he looks forward to the lesson each week."</p>
-        <div class="who">C. Bell, parent</div>
-      </div>
-      <h3>What the DALP covers</h3>
-      <p>The DALP framework focuses on phonemic awareness, coding subskills (syllable types and grapheme–phoneme correspondence), punctuation and syntax, suffixing, coding attack patterns, and metacognition, helping a learner understand how they think and learn.</p>
-      <div class="defbox">
-        <p class="eyebrow">What's included</p>
-        <ul style="margin-bottom:0">
-          <li><strong>A free call first:</strong> a chat about your child's needs before you commit to anything.</li>
-          <li><strong>A placement screening:</strong> the first session pinpoints where your child's difficulties lie, so the programme starts in the right place.</li>
-          <li><strong>Weekly 1-to-1 sessions:</strong> an hour each, structured, cumulative and multi-sensory, at £50 per hour.</li>
-          <li><strong>Regular progress reviews:</strong> so the plan keeps pace with your child.</li>
-          <li><strong>Partnership with school:</strong> I work with you and your child's school to find a session time that suits everyone.</li>
-        </ul>
-      </div>
-      <div class="defbox" id="terms">
-        <p class="eyebrow">Terms at a glance</p>
-        <ul>
-          <li>Sessions are £50 per hour, paid for in blocks of six weekly sessions, by bank transfer. Each block can be paid in two instalments.</li>
-          <li>Cancellations with less than 48 hours' notice are charged in full.</li>
-          <li>Late starts don't extend the session.</li>
-        </ul>
-        <p style="margin:0">Read the <a href="../terms/#intervention">full terms and conditions</a>.</p>
-        <p style="margin:1em 0 0"><a class="btn ghost" href="../downloads/ywds-booking-intervention.pdf" download>Download: Intervention booking and consent form (PDF)</a></p>
+      <div class="faqlist narrow">
+        <details id="session">
+          <summary><span class="st">What does a typical session look like?</span></summary>
+          <p>By using structure, this enables the child to feel secure. Sessions are fast-paced, so your child won’t get bored or tired.</p>
+          <h4>Outline of a typical session</h4>
+          <ol>
+            <li>Visual and auditory warm-ups.</li>
+            <li>Review of previous patterns (overlearning).</li>
+            <li>Introduction of one small, logical, new concept.</li>
+            <li>Structured reading and spelling practice using the new concept.</li>
+            <li>Metacognitive review: what did you use to figure that out?</li>
+            <li>A game.</li>
+          </ol>
+        </details>
+        <details id="dalp">
+          <summary><span class="st">What the DALP covers</span></summary>
+          <p>The DALP framework focuses on phonemic awareness, coding subskills (syllable types and grapheme–phoneme correspondence), punctuation and syntax, suffixing, coding attack patterns, and metacognition, helping a learner understand how they think and learn.</p>
+        </details>
+        <details id="included">
+          <summary><span class="st">What's included</span></summary>
+          <ul>
+            <li><strong>A free call first:</strong> a chat about your child's needs before you commit to anything.</li>
+            <li><strong>A placement screening:</strong> the first session pinpoints where your child's difficulties lie, so the programme starts in the right place.</li>
+            <li><strong>Weekly 1-to-1 sessions:</strong> an hour of face-to-face, individually tailored support, structured, cumulative and multi-sensory, at £50 per hour.</li>
+            <li><strong>Resources made for your child:</strong> bespoke materials, created from scratch for each session.</li>
+            <li><strong>Travel:</strong> I come to your child's school or home.</li>
+            <li><strong>Regular feedback and progress reviews:</strong> so you know how things are going and the plan keeps pace with your child.</li>
+            <li><strong>Partnership with school:</strong> I work with you and your child's school to find a session time that suits everyone.</li>
+          </ul>
+        </details>
+        <details id="terms">
+          <summary><span class="st">Terms at a glance</span></summary>
+          <ul>
+            <li>Sessions are £50 per hour, paid by bank transfer, in advance. You can pay monthly for that month's sessions, or in blocks of six weekly sessions (each block can be paid in two instalments).</li>
+            <li>A small number of reduced-fee places are available each term for families who would otherwise not be able to afford support. Ask in confidence on your free call.</li>
+            <li>Cancellations with less than 48 hours' notice are charged in full.</li>
+            <li>Late starts don't extend the session.</li>
+          </ul>
+          <p>Read the <a href="../terms/#intervention">full terms and conditions</a>.</p>
+          <p><a class="btn ghost" href="/downloads/ywds-booking-intervention.pdf" download>Download: Intervention booking and consent form (PDF)</a></p>
+        </details>
       </div>
     </div>
   </section>
@@ -513,40 +692,48 @@
       <h2>Common questions</h2>
       <div class="faqlist">
         <details>
-          <summary>How much does an assessment cost?</summary>
-          <p>A Learning Needs Assessment is £300. That covers the two-hour assessment and the written report that follows it. It can be paid in two instalments of £150.</p>
+          <summary><span class="st">How much does an assessment cost?</span></summary>
+          <p>A Learning Needs Assessment is £300. That covers the two-hour assessment and the written report that follows it. It can be paid in two instalments of £150. If your child goes on to have a diagnostic assessment with me, 25% of the LNA fee comes off its price.</p>
         </details>
         <details>
-          <summary>What ages do you work with?</summary>
+          <summary><span class="st">What ages do you work with?</span></summary>
           <p>Learning Needs Assessments are for children aged 6 to 16. Specialist 1-to-1 tuition, the structured literacy intervention, is for children and young people aged 7 to 16.</p>
         </details>
         <details>
-          <summary>How long does an assessment take, and what do I get?</summary>
+          <summary><span class="st">How long does an assessment take, and what do I get?</span></summary>
           <p>The assessment takes approximately two hours. You receive a report detailing your child's strengths and areas for development, an analysis of barriers to learning, and recommendations and strategies to make learning more accessible. You receive the written report within two weeks of the assessment.</p>
         </details>
         <details>
-          <summary>Is a Learning Needs Assessment a diagnosis of dyslexia?</summary>
-          <p>No, it does not offer a diagnosis. It identifies strengths, barriers to learning and what would help. Full diagnostic dyslexia assessments are in preparation, so please get in touch if you would like to be told when they open.</p>
+          <summary><span class="st">Is a Learning Needs Assessment a diagnosis of dyslexia?</span></summary>
+          <p>No. It identifies strengths, barriers to learning and what would help, so you can act now. Full diagnostic dyslexia assessments are planned for 2027: <a href="#waitlist">join the waiting list</a> to hear when they open.</p>
         </details>
         <details>
-          <summary>When and where do sessions happen?</summary>
+          <summary><span class="st">Should I wait for a diagnosis before getting help?</span></summary>
+          <p>You don't have to. Schools should support your child based on their needs, with or without a diagnosis, and tuition doesn't need one. Waits for assessment can be long, and every term without the right teaching can widen the gap. <a href="#waiting">More on waiting for a diagnosis</a>.</p>
+        </details>
+        <details>
+          <summary><span class="st">When and where do sessions happen?</span></summary>
           <p>Sessions are delivered in person, one to one, during the school day. I work within about 20 miles of Pocklington, including York, Market Weighton, Driffield and Beverley. The school day is already demanding for a dyslexic child, so I avoid adding sessions after school or at weekends. I work in partnership with you and your child's school to find a time that suits everyone.</p>
           <p>If sessions in school aren't possible, for example if your child is home-educated or their school can't host sessions, please still get in touch. I can sometimes work at your home or in a local space, and we will find the best arrangement for your child.</p>
         </details>
         <details>
-          <summary>Does my child need an assessment before tuition?</summary>
+          <summary><span class="st">Does my child need an assessment before tuition?</span></summary>
           <p>No. The first tuition session includes a screening that pinpoints exactly where your child's difficulties lie, so the programme can be tailored to them from the start.</p>
         </details>
         <details>
-          <summary>How long does the intervention last?</summary>
-          <p>It depends on the nature of your child's difficulties; however, progress is reviewed at regular intervals.</p>
+          <summary><span class="st">How long does the intervention last?</span></summary>
+          <p>It depends on the nature of your child's difficulties, so there is no fixed-length course to sign up to. Progress is reviewed regularly, and you pay monthly or one block of six sessions at a time, so you can decide at each stage.</p>
         </details>
         <details>
-          <summary>What is different about the DALP intervention versus school phonics lessons?</summary>
+          <summary><span class="st">Can I spread the cost?</span></summary>
+          <p>Yes. Tuition can be paid monthly, in advance, for that month's sessions, or in blocks of six sessions split into two instalments. The LNA can be paid in two instalments of £150. A small number of reduced-fee places are available each term for families who would otherwise not be able to afford support: just ask, in confidence, on your free call.</p>
+        </details>
+        <details>
+          <summary><span class="st">What is different about the DALP intervention versus school phonics lessons?</span></summary>
           <p>Systematic Synthetic Phonics instruction is not a universal fix. Research indicates that up to 25% of children, including most children with dyslexia and specific learning difficulties, cannot learn to read using phonics alone. Dyslexic learners benefit from multi-sensory approaches that incorporate morphological instruction that build sight word vocabulary.</p>
         </details>
         <details>
-          <summary>How do I get started?</summary>
+          <summary><span class="st">How do I get started?</span></summary>
           <p><a href="/book/" target="_blank" rel="noopener">Book a free 20-minute call</a>, by phone or video, and tell me what you are looking for. There is no obligation.</p>
         </details>
       </div>
@@ -592,6 +779,22 @@ function toggleMenu(btn){
   const open = nav.classList.toggle('open');
   btn.setAttribute('aria-expanded', open);
 }
+/* open a closed click-to-open row when the URL hash points at it or inside it */
+function openHashTarget(){
+  var id;
+  try{ id = decodeURIComponent(location.hash.slice(1)); }catch(e){ return; }
+  if(!id) return;
+  var el = document.getElementById(id);
+  if(!el) return;
+  var d = el.closest('details'), opened = false;
+  while(d){
+    if(!d.open){ d.open = true; opened = true; }
+    d = d.parentElement ? d.parentElement.closest('details') : null;
+  }
+  if(opened) el.scrollIntoView();
+}
+window.addEventListener('hashchange', openHashTarget);
+document.addEventListener('DOMContentLoaded', openHashTarget);
 </script>
 
 </body>
