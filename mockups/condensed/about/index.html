@@ -370,13 +370,10 @@
   /* about: text-led hero with fact tiles */
   .abouttop{padding-bottom:clamp(30px,5vw,52px)}
   .abouttop .lead{font-size:1.1rem;max-width:62ch}
-  .facts{list-style:none;margin:clamp(22px,4vw,36px) 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-  .facts li{
-    margin:0;min-width:0;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--sage);
-    border-radius:14px;padding:16px 20px;box-shadow:var(--shadow);
-  }
-  .facts b{display:block;font-family:"Aptos","Segoe UI",sans-serif;font-size:1.45rem;font-weight:800;color:var(--navy);line-height:1.2}
-  .facts span{display:block;font-size:.9rem;color:var(--ink-soft);margin-top:4px}
+  .facts{list-style:none;margin:clamp(18px,3vw,26px) 0 0;padding:0;display:grid;gap:8px}
+  .facts li{margin:0;position:relative;padding-left:26px;font-size:.98rem;color:var(--ink-soft)}
+  .facts li::before{content:"";position:absolute;left:2px;top:.38em;width:13px;height:7px;border-left:2.5px solid var(--olive);border-bottom:2.5px solid var(--olive);transform:rotate(-45deg)}
+  .facts b{color:var(--navy);font-weight:700}
   /* about: photo and bio beside the timeline */
   .bgsplit{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:clamp(28px,5vw,60px);align-items:start;margin-top:1.6em}
   .bgsplit .timeline{margin-top:0}
@@ -445,9 +442,9 @@
       <h1>Welcome to Yorkshire Wolds Dyslexia Service</h1>
       <p class="lead">I believe that a child's learning profile is more than just a label. I look beyond the surface of reading and writing, into the mechanics of learning, to give each child a roadmap to success.</p>
       <ul class="facts" aria-label="At a glance">
-        <li><b>15 years</b><span>supporting children and young people with SEND</span></li>
-        <li><b>Pocklington</b><span>based in East Yorkshire</span></li>
-        <li><b>Dyslexic myself</b><span>lived experience of the challenges</span></li>
+        <li><b>15 years</b> supporting children and young people with SEND</li>
+        <li>Based in <b>Pocklington</b>, East Yorkshire</li>
+        <li><b>Dyslexic myself</b>, with lived experience of the challenges</li>
       </ul>
     </div>
   </div>
