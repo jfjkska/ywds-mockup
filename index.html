@@ -362,7 +362,27 @@
   @media (min-width:1000px){.guides{grid-template-columns:repeat(4,minmax(0,1fr))}}
   @media (max-width:600px){.guides{grid-template-columns:1fr}}
 
-  /* ---------- logo-colour family: colours come from .famset (shading family, end of styles) ---------- */
+  /* ---------- logo-colour family: 1 sky, 2 light sage, 3 cream path, 4 deep sage ---------- */
+  .guides>li:nth-child(4n+1)>a{
+    --fam-bg:color-mix(in srgb,var(--sky) 90%,var(--card));--fam-bg-h:var(--sky);
+    --fam-bar:color-mix(in srgb,var(--navy) 45%,var(--sky));
+    --fam-tile:color-mix(in srgb,var(--navy) 14%,var(--sky));--fam-icon:var(--navy);
+  }
+  .guides>li:nth-child(4n+2)>a{
+    --fam-bg:color-mix(in srgb,var(--sage-tint) 90%,var(--card));--fam-bg-h:var(--sage-tint);
+    --fam-bar:var(--sage);
+    --fam-tile:color-mix(in srgb,var(--sage-soft) 75%,var(--card));--fam-icon:var(--olive-deep);
+  }
+  .guides>li:nth-child(4n+3)>a{
+    --fam-bg:color-mix(in srgb,var(--cream-deep) 90%,var(--card));--fam-bg-h:var(--cream-deep);
+    --fam-bar:color-mix(in srgb,var(--line) 75%,var(--olive-deep));
+    --fam-tile:color-mix(in srgb,var(--line) 60%,var(--card));--fam-icon:var(--olive-deep);
+  }
+  .guides>li:nth-child(4n+4)>a{
+    --fam-bg:color-mix(in srgb,var(--sage-soft) 55%,var(--card));--fam-bg-h:color-mix(in srgb,var(--sage-soft) 62%,var(--card));
+    --fam-bar:var(--olive);
+    --fam-tile:color-mix(in srgb,var(--sage-soft) 90%,var(--olive));--fam-icon:var(--olive-deep);
+  }
   .guides>li>a{
     background:linear-gradient(var(--fam-bar),var(--fam-bar)) top / 100% 5px no-repeat,var(--fam-bg);
     border-color:color-mix(in srgb,var(--fam-bar) 40%,var(--line));
@@ -376,14 +396,6 @@
   .pagehead{padding-bottom:0}
   .pagehead::after{content:"";display:block;height:clamp(40px,5vw,72px);margin-top:clamp(4px,1.5vw,12px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z' fill='%23DCE5D5'/%3E%3Cpath d='M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z' fill='%23B9CBAF'/%3E%3Cpath d='M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z' fill='%2393AA8C'/%3E%3Cpath d='M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z' fill='%23F7F4EC'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
   .headgrid{grid-template-columns:1fr}
-  /* ---------- shading family (logo colours): .fam-sky / .fam-sage / .fam-cream / .fam-deep pick one, .famset rotates them, .famtint paints the box ---------- */
-  .fam-sky,.famset>:nth-child(4n+1){--fam-bg:color-mix(in srgb,var(--sky) 90%,var(--card));--fam-bg-h:var(--sky);--fam-bar:color-mix(in srgb,var(--navy) 45%,var(--sky));--fam-tile:color-mix(in srgb,var(--navy) 14%,var(--sky));--fam-icon:var(--navy)}
-  .fam-sage,.famset>:nth-child(4n+2){--fam-bg:color-mix(in srgb,var(--sage-tint) 90%,var(--card));--fam-bg-h:var(--sage-tint);--fam-bar:var(--sage);--fam-tile:color-mix(in srgb,var(--sage-soft) 75%,var(--card));--fam-icon:var(--olive-deep)}
-  .fam-cream,.famset>:nth-child(4n+3){--fam-bg:color-mix(in srgb,var(--cream-deep) 90%,var(--card));--fam-bg-h:var(--cream-deep);--fam-bar:color-mix(in srgb,var(--line) 75%,var(--olive-deep));--fam-tile:color-mix(in srgb,var(--line) 60%,var(--card));--fam-icon:var(--olive-deep)}
-  .fam-deep,.famset>:nth-child(4n+4){--fam-bg:color-mix(in srgb,var(--sage-soft) 55%,var(--card));--fam-bg-h:color-mix(in srgb,var(--sage-soft) 62%,var(--card));--fam-bar:var(--olive);--fam-tile:color-mix(in srgb,var(--sage-soft) 90%,var(--olive));--fam-icon:var(--olive-deep)}
-  :root .famtint{background:linear-gradient(var(--fam-bar),var(--fam-bar)) top / 100% 5px no-repeat,var(--fam-bg);border-color:color-mix(in srgb,var(--fam-bar) 40%,var(--line))}
-  :root .famtint.famedge{background:var(--fam-bg);border-left-color:var(--fam-bar)}
-  :root .famtint .ico{background:var(--fam-tile);color:var(--fam-icon)}
 </style>
 <!-- Cloudflare Web Analytics --><script src="/js/analytics.js"></script><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
@@ -467,7 +479,7 @@
         <p>Based in Pocklington and working with families within about 20 miles, including York, Market Weighton, Driffield and Beverley.</p>
         <a class="btn ghost" href="services/">Explore services</a>
       </div>
-      <div class="card famtint fam-sky">
+      <div class="card">
         <h3>Qualified and checked</h3>
         <ul class="quals">
           <li>Diploma in Specialist Teaching for Literacy Difficulties (Level 5)</li>
@@ -487,7 +499,7 @@
       <p class="eyebrow">How I can help</p>
       <h2>Support built around your child</h2>
       <div class="cardgrid">
-        <div class="card famtint fam-sage">
+        <div class="card">
           
           <h3>Learning Needs Assessment</h3>
           <p>A two-hour battery of standardised, psychometric tests to pinpoint strengths and needs and identify barriers to learning, with a detailed written report and practical recommendations within two weeks.</p>
@@ -495,7 +507,7 @@
           <div class="price">£300 <small>or two instalments of £150</small></div>
           <a class="more" href="services/#lna">About the LNA</a>
         </div>
-        <div class="card famtint fam-cream">
+        <div class="card">
           
           <h3>1-1 Literacy Intervention</h3>
           <p>Specialist 1-to-1 tuition: weekly, hour-long sessions delivered in person during the school day, using the structured, multi-sensory Dyslexia Action Literacy Programme (DALP), individually tailored for ages 7–16.</p>
@@ -511,7 +523,7 @@
       <p class="eyebrow">Not sure where to start?</p>
       <h2>Free guides for families</h2>
       <p>If you are wondering whether your child may be dyslexic, start here. These are free to read, download and share with school.</p>
-      <ul class="linklist guides famset">
+      <ul class="linklist guides">
         <li><a href="dyslexia/#signs">Signs of dyslexia<span>What to look for in primary and secondary aged children</span></a></li>
         <li><a href="/downloads/ywds-causes.pdf" download>What causes dyslexia?<span>Printable A3 sheet (PDF)</span></a></li>
         <li><a href="/downloads/ywds-brain.pdf" download>Dyslexia and the brain<span>Printable A3 sheet (PDF)</span></a></li>
@@ -525,19 +537,19 @@
       <p class="eyebrow">Kind words</p>
       <h2>What families and schools say</h2>
       <div class="testis">
-<div class="testi famtint fam-sky">
+<div class="testi">
           <p class="qt">"Natalie assessed my son at school, he was at first very reluctant to participate as he dislikes speaking with new people. He is diagnosed with ADHD and this brought challenge to his assessment also, affecting his concentration and movement. Natalie managed both of these obstacles with patience and skill, and in the end they successfully complete his assessment together. Communication with Natalie both during and post assessment was excellent."</p>
           <div class="who">C. Danby, parent</div>
         </div>
-        <div class="testi famtint fam-sage">
+        <div class="testi">
           <p class="qt">"We are incredibly grateful for the support and encouragement our son has received from Natalie. From the very beginning, she has been patient, understanding and genuinely caring, creating a positive and supportive environment where our son feels comfortable and confident. The sessions have helped not only with reading, spelling and learning strategies, but also with building his confidence. We have seen such a positive difference, and it has been wonderful to watch our son become more willing to try things without feeling worried about making mistakes. Natalie keeps me updated with everything she is going to teach each week and then how each session has gone. This is super helpful as we are keen to know what he's learning. Natalie likes to make the session fun and engaging as this is how our son learns best. Natalie is full of praise and he looks forward to the lesson each week. As a parent, it is reassuring to know that your child is being supported by someone who truly understands dyslexia and takes the time to find approaches that work for them as an individual. We cannot thank her enough for all the hard work, patience and dedication. We would highly recommend them to any parent looking for specialist dyslexia support."</p>
           <div class="who">C. Bell, parent</div>
         </div>
-        <div class="testi famtint fam-deep">
+        <div class="testi">
           <p class="qt">"I am extremely happy with the support and approaches used by Natalie when helping us to support pupils at our school. I would strongly recommend Natalie and her fantastic skill set. She was sensitive to our pupils' needs, and her reports have allowed us to support our pupils in the best possible way."</p>
           <div class="who">Zoe Douthwaite, SENDCo, Russell Hall Primary School</div>
         </div>
-        <div class="testi famtint fam-sky">
+        <div class="testi">
           <p class="qt">"Natalie provides a calm, professional and child-centred approach when working with pupils, carrying out individual assessments to help identify specific areas of need and inform appropriate next steps. Her work supports schools in developing a clearer understanding of learners' strengths and barriers, ensuring that pupils receive the right support at the right time. She builds strong rapport with children, creating an environment where they feel at ease and able to engage fully throughout the assessment process. Schools value her clear insights and the practical value of her findings in supporting effective provision planning."</p>
           <div class="who">Sophie Kirk, SENDCo, Pocklington Junior School</div>
         </div>

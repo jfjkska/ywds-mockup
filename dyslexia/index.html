@@ -273,7 +273,6 @@
     background:var(--sage-tint);color:var(--olive);padding:4px 10px;border-radius:999px;font-weight:700;
   }
   .signcard ul{columns:1;font-size:.93rem;color:var(--ink-soft)}
-  .signcard.famtint .agechip{background:var(--fam-tile)}
 
   .band-label{display:flex;align-items:center;gap:10px;font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:var(--olive);margin:1.8em 0 .6em}
   .band-label .tag{font-size:.66rem;letter-spacing:.15em;background:var(--sage-tint);color:var(--olive-deep);border-radius:999px;padding:2px 10px;border:1px solid var(--sage-soft)}
@@ -467,7 +466,27 @@
   @media (min-width:1000px){.checklists{grid-template-columns:repeat(4,minmax(0,1fr))}}
   @media (max-width:600px){.checklists{grid-template-columns:1fr}}
 
-  /* ---------- logo-colour family: colours come from .famset (shading family, end of styles) ---------- */
+  /* ---------- logo-colour family: 1 sky, 2 light sage, 3 cream path, 4 deep sage ---------- */
+  .checklists>li:nth-child(4n+1)>a{
+    --fam-bg:color-mix(in srgb,var(--sky) 90%,var(--card));--fam-bg-h:var(--sky);
+    --fam-bar:color-mix(in srgb,var(--navy) 45%,var(--sky));
+    --fam-tile:color-mix(in srgb,var(--navy) 14%,var(--sky));
+  }
+  .checklists>li:nth-child(4n+2)>a{
+    --fam-bg:color-mix(in srgb,var(--sage-tint) 90%,var(--card));--fam-bg-h:var(--sage-tint);
+    --fam-bar:var(--sage);
+    --fam-tile:color-mix(in srgb,var(--sage-soft) 75%,var(--card));
+  }
+  .checklists>li:nth-child(4n+3)>a{
+    --fam-bg:color-mix(in srgb,var(--cream-deep) 90%,var(--card));--fam-bg-h:var(--cream-deep);
+    --fam-bar:color-mix(in srgb,var(--line) 75%,var(--olive-deep));
+    --fam-tile:color-mix(in srgb,var(--line) 60%,var(--card));
+  }
+  .checklists>li:nth-child(4n+4)>a{
+    --fam-bg:color-mix(in srgb,var(--sage-soft) 55%,var(--card));--fam-bg-h:color-mix(in srgb,var(--sage-soft) 62%,var(--card));
+    --fam-bar:var(--olive);
+    --fam-tile:color-mix(in srgb,var(--sage-soft) 90%,var(--olive));
+  }
   .checklists>li>a{
     background:linear-gradient(var(--fam-bar),var(--fam-bar)) top / 100% 5px no-repeat,var(--fam-bg);
     border-color:color-mix(in srgb,var(--fam-bar) 40%,var(--line));
@@ -482,14 +501,6 @@
   .pagehead{padding-bottom:0}
   .pagehead::after{content:"";display:block;height:clamp(40px,5vw,72px);margin-top:clamp(4px,1.5vw,12px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z' fill='%23DCE5D5'/%3E%3Cpath d='M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z' fill='%23B9CBAF'/%3E%3Cpath d='M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z' fill='%2393AA8C'/%3E%3Cpath d='M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z' fill='%23F7F4EC'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
   .headgrid{grid-template-columns:1fr}
-  /* ---------- shading family (logo colours): .fam-sky / .fam-sage / .fam-cream / .fam-deep pick one, .famset rotates them, .famtint paints the box ---------- */
-  .fam-sky,.famset>:nth-child(4n+1){--fam-bg:color-mix(in srgb,var(--sky) 90%,var(--card));--fam-bg-h:var(--sky);--fam-bar:color-mix(in srgb,var(--navy) 45%,var(--sky));--fam-tile:color-mix(in srgb,var(--navy) 14%,var(--sky));--fam-icon:var(--navy)}
-  .fam-sage,.famset>:nth-child(4n+2){--fam-bg:color-mix(in srgb,var(--sage-tint) 90%,var(--card));--fam-bg-h:var(--sage-tint);--fam-bar:var(--sage);--fam-tile:color-mix(in srgb,var(--sage-soft) 75%,var(--card));--fam-icon:var(--olive-deep)}
-  .fam-cream,.famset>:nth-child(4n+3){--fam-bg:color-mix(in srgb,var(--cream-deep) 90%,var(--card));--fam-bg-h:var(--cream-deep);--fam-bar:color-mix(in srgb,var(--line) 75%,var(--olive-deep));--fam-tile:color-mix(in srgb,var(--line) 60%,var(--card));--fam-icon:var(--olive-deep)}
-  .fam-deep,.famset>:nth-child(4n+4){--fam-bg:color-mix(in srgb,var(--sage-soft) 55%,var(--card));--fam-bg-h:color-mix(in srgb,var(--sage-soft) 62%,var(--card));--fam-bar:var(--olive);--fam-tile:color-mix(in srgb,var(--sage-soft) 90%,var(--olive));--fam-icon:var(--olive-deep)}
-  :root .famtint{background:linear-gradient(var(--fam-bar),var(--fam-bar)) top / 100% 5px no-repeat,var(--fam-bg);border-color:color-mix(in srgb,var(--fam-bar) 40%,var(--line))}
-  :root .famtint.famedge{background:var(--fam-bg);border-left-color:var(--fam-bar)}
-  :root .famtint .ico{background:var(--fam-tile);color:var(--fam-icon)}
 </style>
 <!-- Cloudflare Web Analytics --><script src="/js/analytics.js"></script><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
@@ -572,7 +583,7 @@
     <div class="wrap narrow">
       <h2 id="what">What is dyslexia?</h2>
       <p>Dyslexia is a specific learning difficulty that primarily affects reading and writing skills, but it doesn't only affect those. Dyslexia is really about <strong>information processing</strong>: dyslexic people may have difficulty processing and remembering information they see and hear, which can affect learning and the acquisition of literacy skills. It can also impact other areas, such as organisational skills. Approximately 10% of children have dyslexia.</p>
-      <div class="defbox famtint fam-sky">
+      <div class="defbox">
         <p class="eyebrow">The Delphi definition (2024)</p>
         <p style="margin:0">"Dyslexia is a set of processing difficulties that affect the acquisition of reading and spelling." <span style="font-size:.85rem;color:var(--ink-soft)">This is the headline definition from the 2024 Delphi consensus study (Carroll et al.), which brought a wide range of experts together to reduce confusion about how dyslexia is defined.</span></p>
       </div>
@@ -580,7 +591,7 @@
     <div class="wrap">
       <h2 id="signs">Signs of dyslexia</h2>
       <div class="signcols">
-        <div class="signcard famtint fam-sky">
+        <div class="signcard">
           <h3>Primary <span class="agechip">ages 5–11</span></h3>
           <ul>
             <li>Learning letters</li>
@@ -594,7 +605,7 @@
             <li>Remembering instructions; not finishing work</li>
           </ul>
         </div>
-        <div class="signcard famtint fam-sage">
+        <div class="signcard">
           <h3>Secondary <span class="agechip">ages 11–16</span></h3>
           <ul>
             <li>Poor reading fluency and comprehension</li>
@@ -609,7 +620,7 @@
         </div>
       </div>
       <h3 class="checkhead">Dyslexia checklists from the British Dyslexia Association</h3>
-      <ul class="linklist checklists famset">
+      <ul class="linklist checklists">
         <li><a href="https://cdn.bdadyslexia.org.uk/uploads/documents/Foundation-Stage-Checklist.pdf?v=1705333950" target="_blank" rel="noopener"><img src="/img/logos/british-dyslexia-association.webp" alt="" width="32" height="32" loading="lazy" decoding="async">Early years<span>Foundation stage checklist (PDF)</span></a></li>
         <li><a href="https://cdn.bdadyslexia.org.uk/uploads/documents/Primary-Checklist.pdf?v=1705333948" target="_blank" rel="noopener"><img src="/img/logos/british-dyslexia-association.webp" alt="" width="32" height="32" loading="lazy" decoding="async">Primary<span>Primary school checklist (PDF)</span></a></li>
         <li><a href="https://cdn.bdadyslexia.org.uk/uploads/documents/Secondary-Checklist.pdf?v=1705333949" target="_blank" rel="noopener"><img src="/img/logos/british-dyslexia-association.webp" alt="" width="32" height="32" loading="lazy" decoding="async">Secondary<span>Secondary school checklist (PDF)</span></a></li>
@@ -657,7 +668,7 @@
       <p class="band-label">Acquired <span class="tag">Rare</span></p>
       <p>Occasionally, reading difficulties start later in life. This can happen after a brain injury, a stroke or an illness that affects the brain. It is called acquired dyslexia, and it is different from the developmental dyslexia most children have.</p>
       <div class="twobox">
-        <div class="box-sage famtint famedge fam-cream"><strong>What dyslexia is not.</strong> Dyslexia is not a sign of low intelligence, laziness or poor parenting. Dyslexic children are often working much harder than their classmates to read the same page.</div>
+        <div class="box-sage"><strong>What dyslexia is not.</strong> Dyslexia is not a sign of low intelligence, laziness or poor parenting. Dyslexic children are often working much harder than their classmates to read the same page.</div>
         <div class="box-navy"><strong>What this means for your child.</strong> Dyslexia is lifelong, but the right teaching makes a real difference. Structured, multi-sensory teaching builds the skills that do not come automatically, and helps children understand how they learn best.</div>
       </div>
 
@@ -720,7 +731,7 @@
         </div>
       </div>
       <div class="twobox">
-        <div class="box-sage famtint famedge fam-cream"><strong>How the brain compensates.</strong> Because the left-side pathways work less efficiently, a dyslexic brain often draws more on the right side, which is better at the big picture than at step-by-step detail. This detour makes reading slower and more tiring. Some dyslexic people also have real strengths in visual and big-picture thinking, although this varies from person to person.</div>
+        <div class="box-sage"><strong>How the brain compensates.</strong> Because the left-side pathways work less efficiently, a dyslexic brain often draws more on the right side, which is better at the big picture than at step-by-step detail. This detour makes reading slower and more tiring. Some dyslexic people also have real strengths in visual and big-picture thinking, although this varies from person to person.</div>
         <div class="box-navy"><strong>The good news.</strong> Brain-imaging studies show that structured, intensive reading teaching can increase activity in the left-side reading areas. With the right support, the brain can build a stronger reading pathway. <span class="boxsrc">Temple et al. (2003); Shaywitz et al. (2004).</span></div>
       </div>
       <div class="btnrow">
@@ -890,7 +901,7 @@
       <h2>Dyslexia and vision</h2>
       <p>Because dyslexia shows itself when a child looks at print, it is easy to assume the problem lies with the eyes. Letters that seem to "jump around", or b's and d's swapping places, sound like vision problems. They aren't.</p>
       <p>Dyslexia is a language-based difficulty. It starts with how the brain processes the <em>sounds</em> within words and maps them onto letters, not with how the eyes see the page. Decades of research, summarised by the International Dyslexia Association, is clear on three points:</p>
-      <div class="defbox famtint fam-sky">
+      <div class="defbox">
         <ul style="margin:0">
           <li>There is <strong>no evidence that vision problems cause dyslexia</strong>.</li>
           <li>There is <strong>no evidence that eye exercises or vision therapy</strong> improve a child's reading or comprehension.</li>
@@ -909,7 +920,7 @@
 
   <section class="block tint" id="reading">
     <div class="wrap narrow">
-      <div class="bookcard famtint fam-sky">
+      <div class="bookcard">
         <div>
           <p class="eyebrow">Recommended reading</p>
           <h2>Books about dyslexia</h2>

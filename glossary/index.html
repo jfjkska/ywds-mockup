@@ -218,14 +218,6 @@
   .pagehead{padding-bottom:0}
   .pagehead::after{content:"";display:block;height:clamp(40px,5vw,72px);margin-top:clamp(4px,1.5vw,12px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z' fill='%23DCE5D5'/%3E%3Cpath d='M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z' fill='%23B9CBAF'/%3E%3Cpath d='M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z' fill='%2393AA8C'/%3E%3Cpath d='M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z' fill='%23F7F4EC'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
   .headgrid{grid-template-columns:1fr}
-  /* ---------- shading family (logo colours): .fam-sky / .fam-sage / .fam-cream / .fam-deep pick one, .famset rotates them, .famtint paints the box ---------- */
-  .fam-sky,.famset>:nth-child(4n+1){--fam-bg:color-mix(in srgb,var(--sky) 90%,var(--card));--fam-bg-h:var(--sky);--fam-bar:color-mix(in srgb,var(--navy) 45%,var(--sky));--fam-tile:color-mix(in srgb,var(--navy) 14%,var(--sky));--fam-icon:var(--navy)}
-  .fam-sage,.famset>:nth-child(4n+2){--fam-bg:color-mix(in srgb,var(--sage-tint) 90%,var(--card));--fam-bg-h:var(--sage-tint);--fam-bar:var(--sage);--fam-tile:color-mix(in srgb,var(--sage-soft) 75%,var(--card));--fam-icon:var(--olive-deep)}
-  .fam-cream,.famset>:nth-child(4n+3){--fam-bg:color-mix(in srgb,var(--cream-deep) 90%,var(--card));--fam-bg-h:var(--cream-deep);--fam-bar:color-mix(in srgb,var(--line) 75%,var(--olive-deep));--fam-tile:color-mix(in srgb,var(--line) 60%,var(--card));--fam-icon:var(--olive-deep)}
-  .fam-deep,.famset>:nth-child(4n+4){--fam-bg:color-mix(in srgb,var(--sage-soft) 55%,var(--card));--fam-bg-h:color-mix(in srgb,var(--sage-soft) 62%,var(--card));--fam-bar:var(--olive);--fam-tile:color-mix(in srgb,var(--sage-soft) 90%,var(--olive));--fam-icon:var(--olive-deep)}
-  :root .famtint{background:linear-gradient(var(--fam-bar),var(--fam-bar)) top / 100% 5px no-repeat,var(--fam-bg);border-color:color-mix(in srgb,var(--fam-bar) 40%,var(--line))}
-  :root .famtint.famedge{background:var(--fam-bg);border-left-color:var(--fam-bar)}
-  :root .famtint .ico{background:var(--fam-tile);color:var(--fam-icon)}
 </style>
 <!-- Cloudflare Web Analytics --><script src="/js/analytics.js"></script><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
