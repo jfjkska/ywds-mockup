@@ -363,8 +363,12 @@
   .altcard{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--sage);border-radius:14px;padding:16px 16px 10px;min-width:0;overflow-wrap:break-word}
   .altcard:nth-child(3n+1){border-top-color:var(--navy)}
   .altcard:nth-child(3n+2){border-top-color:var(--olive)}
-  .althead{display:flex;align-items:center;gap:12px;margin-bottom:.6em}
-  .altcard h4{margin:0;font-size:1.05rem}
+  .althead{display:flex;align-items:center;gap:10px;margin-bottom:.6em}
+  .althead .ico{width:38px;height:38px;border-radius:10px;background:var(--sage-tint);color:var(--olive)}
+  .althead .ico svg{width:22px;height:22px}
+  .altcard:nth-child(3n+1) .ico{background:color-mix(in srgb,var(--navy) 14%,var(--sky));color:var(--navy)}
+  .altcard:nth-child(3n+2) .ico{background:color-mix(in srgb,var(--sage-soft) 75%,var(--card));color:var(--olive-deep)}
+  .altcard h4{margin:0;font-size:1.05rem;min-width:0}
   .altcard ul{margin:0;padding-left:1.1em;font-size:.88rem;line-height:1.55;color:var(--ink-soft)}
   .altcard li{margin-bottom:.35em}
   .wwfig{max-width:760px}
@@ -515,7 +519,7 @@
             <h3 class="alttitle">Alternatives to written recording</h3>
             <div class="altgrid">
               <div class="altcard">
-                <div class="althead"><h4>Images</h4></div>
+                <div class="althead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="m21 15-5-5L5 20"/></svg></span><h4>Images</h4></div>
                 <ul>
                   <li>Making posters</li>
                   <li>Drawings and diagrams</li>
@@ -525,7 +529,7 @@
                 </ul>
               </div>
               <div class="altcard">
-                <div class="althead"><h4>Charts</h4></div>
+                <div class="althead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M8 17v-5M13 17V7M18 17v-8"/></svg></span><h4>Charts</h4></div>
                 <ul>
                   <li>Flowcharts</li>
                   <li>Card sorts and sorting boards</li>
@@ -534,7 +538,7 @@
                 </ul>
               </div>
               <div class="altcard">
-                <div class="althead"><h4>Spoken word</h4></div>
+                <div class="althead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></svg></span><h4>Spoken word</h4></div>
                 <ul>
                   <li>Audio recording</li>
                   <li>Role-play</li>
@@ -542,7 +546,7 @@
                 </ul>
               </div>
               <div class="altcard">
-                <div class="althead"><h4>Ready-made text</h4></div>
+                <div class="althead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 9h2M9 13h6M9 17h6"/></svg></span><h4>Ready-made text</h4></div>
                 <ul>
                   <li>Cloze: filling in missing words in a text</li>
                   <li>Sorting sentences, paragraphs or short texts (for example into autobiography or biography)</li>
@@ -552,7 +556,7 @@
                 </ul>
               </div>
               <div class="altcard">
-                <div class="althead"><h4>ICT</h4></div>
+                <div class="althead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19.5h20"/></svg></span><h4>ICT</h4></div>
                 <ul>
                   <li>Word processing with on-screen word grids</li>
                   <li>Specialist keyboards and switch devices for computer access</li>
@@ -561,7 +565,7 @@
                 </ul>
               </div>
               <div class="altcard">
-                <div class="althead"><h4>Sorting and labelling</h4></div>
+                <div class="althead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></span><h4>Sorting and labelling</h4></div>
                 <ul>
                   <li>Object sorts (for example by first sound)</li>
                   <li>Matching labels to parts of diagrams or pictures</li>
@@ -570,21 +574,21 @@
                 </ul>
               </div>
               <div class="altcard">
-                <div class="althead"><h4>Symbols</h4></div>
+                <div class="althead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3.5"/><path d="m17 3.5 4 7h-8z"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><path d="M17 13.5v7M13.5 17h7"/></svg></span><h4>Symbols</h4></div>
                 <ul>
                   <li>Choosing or ordering symbol cards (such as Bliss, TEACCH or Writing with Symbols)</li>
                   <li>Specialist alternative forms of recording, such as Braille</li>
                 </ul>
               </div>
               <div class="altcard">
-                <div class="althead"><h4>Scribing</h4></div>
+                <div class="althead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16.5 3.5 4 4L8 20l-5 1 1-5z"/><path d="m14 6 4 4"/></svg></span><h4>Scribing</h4></div>
                 <ul>
                   <li>Paired recording with a fluent writer</li>
                   <li>Dictating to a helper</li>
                 </ul>
               </div>
               <div class="altcard">
-                <div class="althead"><h4>Numbers</h4></div>
+                <div class="althead"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></svg></span><h4>Numbers</h4></div>
                 <ul>
                   <li>Highlighting answers on a 100 square or number line</li>
                   <li>Sticky-back numerals or shapes instead of writing numbers or drawing shapes</li>
