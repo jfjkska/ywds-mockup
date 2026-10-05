@@ -5,16 +5,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light">
-<title>What is Literacy? | Yorkshire Wolds Dyslexia Service</title>
-<meta name="description" content="What literacy is and why it matters: reading, writing, speaking and listening underpin almost all learning at school and in everyday life.">
+<title>About Natalie Fisher | Yorkshire Wolds Dyslexia Service</title>
+<meta name="description" content="Meet Natalie Fisher: dyslexia specialist and assessor with 15 years supporting children with SEND, based in Pocklington, East Yorkshire.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Yorkshire Wolds Dyslexia Service">
-<meta property="og:title" content="What is Literacy? | Yorkshire Wolds Dyslexia Service">
-<meta property="og:description" content="What literacy is and why it matters: reading, writing, speaking and listening underpin almost all learning at school and in everyday life.">
-<meta property="og:url" content="https://yorkshirewoldsdyslexiaservice.co.uk/literacy/">
+<meta property="og:title" content="About Natalie Fisher | Yorkshire Wolds Dyslexia Service">
+<meta property="og:description" content="Meet Natalie Fisher: dyslexia specialist and assessor with 15 years supporting children with SEND, based in Pocklington, East Yorkshire.">
+<meta property="og:url" content="https://yorkshirewoldsdyslexiaservice.co.uk/about/">
 <meta property="og:image" content="https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://yorkshirewoldsdyslexiaservice.co.uk/literacy/">
+<link rel="canonical" href="https://yorkshirewoldsdyslexiaservice.co.uk/about/">
 <link rel="icon" type="image/png" href="/img/favicon.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <meta name="theme-color" content="#F7F4EC">
@@ -342,27 +342,47 @@
     padding:4px 12px;border-radius:999px;margin-left:8px;vertical-align:middle;
   }
 
-  /* ---------- visuals: icon tiles and spot illustrations ---------- */
-  .ico{width:44px;height:44px;flex:none;border-radius:12px;background:var(--sage-tint);color:var(--olive-deep);display:grid;place-items:center}
-  .ico svg{width:24px;height:24px}
-  .card>.ico{margin-bottom:12px}
-  .icohead{display:flex;align-items:center;gap:12px}
-  section.tint>.wrap>.icohead>.ico{background:var(--card)}
-  img.spot{display:block;max-width:100%;height:auto;border-radius:18px}
-  .headgrid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(20px,4vw,56px);align-items:center}
-  @media (max-width:800px){
-    .headgrid{grid-template-columns:1fr}
-    .headgrid img.spot{max-width:min(340px,100%)}
+  /* ---------- about page ---------- */
+  .aboutsplit{grid-template-columns:.8fr 1.2fr;align-items:center}
+  @media (max-width:800px){.aboutsplit{grid-template-columns:1fr}}
+  .creds{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:clamp(28px,5vw,48px)}
+  .cred{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:22px 22px 12px;min-width:0;
   }
-  .signcard h3{flex-wrap:wrap}
-  .icolist{list-style:none;padding:0;margin:0 0 1em;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:10px 20px}
-  .icolist li{margin:0;display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:center}
-  .icorow{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 1em}
-  .rows summary.hasico{grid-template-columns:44px minmax(0,1fr) auto}
-  .rows summary.hasico>*{grid-column:2}
-  .rows summary.hasico>.ico{grid-column:1;grid-row:1 / span 2;align-self:center}
-  .rows summary.hasico::after{grid-column:3}
-  .rows summary:hover .ico{background:var(--card)}
+  .cred h3{font-size:1.08rem}
+  .cred .quals li:last-child{border-bottom:0}
+  .timeline{list-style:none;margin:1.6em 0 0;padding:0;border-left:3px solid var(--olive)}
+  .timeline li{position:relative;margin:0;padding:0 0 1.5em 26px}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{
+    content:"";position:absolute;left:-9.5px;top:.3em;width:16px;height:16px;
+    border-radius:50%;background:var(--olive);
+  }
+  .timeline h3{font-size:1.08rem;margin-bottom:.25em}
+  .timeline p{margin:0;color:var(--ink-soft);font-size:.96rem}
+
+  /* ---------- shared visuals ---------- */
+  .ico{width:44px;height:44px;border-radius:12px;background:var(--sage-tint);color:var(--olive-deep);display:grid;place-items:center;flex-shrink:0}
+  .ico svg{width:24px;height:24px}
+  .hico{display:flex;align-items:center;gap:12px}
+  .card .ico{margin-bottom:12px}
+  /* about: text-led hero with fact tiles */
+  .abouttop{padding-bottom:clamp(30px,5vw,52px)}
+  .abouttop .lead{font-size:1.1rem;max-width:62ch}
+  .facts{list-style:none;margin:clamp(18px,3vw,26px) 0 0;padding:0;display:grid;gap:8px}
+  .facts li{margin:0;position:relative;padding-left:26px;font-size:.98rem;color:var(--ink-soft)}
+  .facts li::before{content:"";position:absolute;left:2px;top:.38em;width:13px;height:7px;border-left:2.5px solid var(--olive);border-bottom:2.5px solid var(--olive);transform:rotate(-45deg)}
+  .facts b{color:var(--navy);font-weight:700}
+  /* about: photo beside the background story */
+  .bgsplit{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:clamp(28px,5vw,60px);align-items:start;margin-top:1.6em}
+  .bgsplit .timeline{margin-top:0}
+  .bio img{display:block;width:100%;max-width:260px;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:18px;box-shadow:var(--shadow)}
+  .bio h3{font-size:1.2rem;margin:1em 0 .3em}
+  .bio p{font-size:.94rem;color:var(--ink-soft)}
+  .story p{max-width:64ch}
+  .story .pull{margin:1.4em 0 0;padding:18px 22px;font-size:1rem;max-width:60ch}
+  @media (max-width:800px){.bgsplit{grid-template-columns:minmax(0,1fr)}.bio{text-align:center}.bio img{max-width:220px;margin:0 auto}}
   /* page headers: the logo's layered Wolds hills as a band along the bottom */
   .pagehead{padding-bottom:0}
   .pagehead::after{content:"";display:block;height:clamp(40px,5vw,72px);margin-top:clamp(4px,1.5vw,12px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z' fill='%23DCE5D5'/%3E%3Cpath d='M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z' fill='%23B9CBAF'/%3E%3Cpath d='M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z' fill='%2393AA8C'/%3E%3Cpath d='M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z' fill='%23F7F4EC'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
@@ -377,20 +397,13 @@
 </style>
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business", "sameAs": ["https://www.facebook.com/natalieywds", "https://www.instagram.com/natalieywds/"], "name": "Yorkshire Wolds Dyslexia Service", "alternateName": "YWDS", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "logo": "https://yorkshirewoldsdyslexiaservice.co.uk/img/logo.webp", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "email": "natalie@ywds.co.uk", "description": "Specialist literacy support, dyslexia intervention and learning needs assessments for children and young people in East Yorkshire.", "priceRange": "££", "address": {"@type": "PostalAddress", "addressLocality": "Pocklington", "addressRegion": "East Yorkshire", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Pocklington"}, {"@type": "City", "name": "York"}, {"@type": "City", "name": "Market Weighton"}, {"@type": "City", "name": "Driffield"}, {"@type": "City", "name": "Beverley"}, {"@type": "AdministrativeArea", "name": "East Riding of Yorkshire"}], "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties", "Dyslexia Action Literacy Programme", "Learning Needs Assessment", "Speech, language and communication needs"], "founder": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "priceCurrency": "GBP", "price": "300", "itemOffered": {"@type": "Service", "name": "Learning Needs Assessment", "description": "A two-hour standardised psychometric assessment with a detailed written report, for ages 6-16."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "1-to-1 Literacy Intervention", "description": "Weekly hour-long structured, multi-sensory sessions using the Dyslexia Action Literacy Programme, for ages 7-16."}}]}}, {"@type": "WebPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/literacy/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/literacy/", "name": "What is Literacy? | Yorkshire Wolds Dyslexia Service", "description": "What literacy is and why it matters: reading, writing, speaking and listening underpin almost all learning at school and in everyday life.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "about": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}}, {"@type": "WebSite", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "name": "Yorkshire Wolds Dyslexia Service", "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "inLanguage": "en-GB"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "What is Literacy?", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/literacy/"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business", "sameAs": ["https://www.facebook.com/natalieywds", "https://www.instagram.com/natalieywds/"], "name": "Yorkshire Wolds Dyslexia Service", "alternateName": "YWDS", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "logo": "https://yorkshirewoldsdyslexiaservice.co.uk/img/logo.webp", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "email": "natalie@ywds.co.uk", "description": "Specialist literacy support, dyslexia intervention and learning needs assessments for children and young people in East Yorkshire.", "priceRange": "££", "address": {"@type": "PostalAddress", "addressLocality": "Pocklington", "addressRegion": "East Yorkshire", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Pocklington"}, {"@type": "City", "name": "York"}, {"@type": "City", "name": "Market Weighton"}, {"@type": "City", "name": "Driffield"}, {"@type": "City", "name": "Beverley"}, {"@type": "AdministrativeArea", "name": "East Riding of Yorkshire"}], "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties", "Dyslexia Action Literacy Programme", "Learning Needs Assessment", "Speech, language and communication needs"], "founder": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "priceCurrency": "GBP", "price": "300", "itemOffered": {"@type": "Service", "name": "Learning Needs Assessment", "description": "A two-hour standardised psychometric assessment with a detailed written report, for ages 6-16."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "1-to-1 Literacy Intervention", "description": "Weekly hour-long structured, multi-sensory sessions using the Dyslexia Action Literacy Programme, for ages 7-16."}}]}}, {"@type": "Person", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie", "name": "Natalie Fisher", "jobTitle": "Dyslexia Specialist and Assessor", "worksFor": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "url": "https://yorkshirewoldsdyslexiaservice.co.uk/about/", "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties"], "hasCredential": [{"@type": "EducationalOccupationalCredential", "name": "MSc Psychology"}, {"@type": "EducationalOccupationalCredential", "name": "BA (Hons) English Literature"}, {"@type": "EducationalOccupationalCredential", "name": "Diploma in Specialist Teaching for Literacy Difficulties (Level 5)"}, {"@type": "EducationalOccupationalCredential", "name": "Certificate of Competence in Educational Testing (Level 7)"}], "memberOf": [{"@type": "Organization", "name": "British Psychological Society"}, {"@type": "Organization", "name": "Dyslexia Guild"}]}, {"@type": "WebPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/about/", "name": "About Natalie Fisher | Yorkshire Wolds Dyslexia Service", "description": "Meet Natalie Fisher: dyslexia specialist and assessor with 15 years supporting children with SEND, based in Pocklington, East Yorkshire.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "about": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}}, {"@type": "WebSite", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "name": "Yorkshire Wolds Dyslexia Service", "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "inLanguage": "en-GB"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "About Natalie Fisher", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/about/"}]}]}</script>
 </head>
 <body>
 <div style="background:#274A68;color:#fff;font:700 .85rem/1.4 Verdana,sans-serif;text-align:center;padding:6px 12px">Mock-up for review, not the live site</div>
 <details class="reviewaid">
   <summary>What's different from the live page</summary>
-  <div class="inner">
-    <p>This version proposes the following. It is a draft for Nat to correct.</p>
-    <ul>
-      <li><strong>Practical next steps added</strong> after the existing introduction: signs worth noticing, things to try at home, questions to ask school, and a free-call prompt. The live page ends with explanation only.</li>
-      <li>The topics match what parents type into Google when they find the site (Search Console, last 3 months): "how to help a child with dyslexia read", "could it be dyslexia", "dyslexia test".</li>
-      <li>No new claims about Nat's services. Signs are described as worth noticing, not as proof of dyslexia.</li>
-    </ul>
-  </div>
+  <div class="inner"><p>No content changes. This copy of the live page is here so browsing stays inside the mock-up.</p></div>
 </details>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site">
@@ -423,12 +436,12 @@
     <button class="menu-btn" aria-expanded="false" aria-controls="mainnav" onclick="toggleMenu(this)">☰ Menu</button>
     <nav class="main" id="mainnav" aria-label="Main">
       <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="/mockups/support-first/about/">About Nat</a></li>
+        <li><a href="/mockups/support-first/">Home</a></li>
+        <li><a href="/mockups/support-first/about/" aria-current="page">About Nat</a></li>
         <li><a href="/mockups/support-first/dyslexia/">Dyslexia</a></li>
-        <li><a href="../services/">Support &amp; prices</a></li>
-        <li><a href="../schools/">For schools &amp; assessors</a></li>
-        <li><a href="../resources/">Parent resources</a></li>
+        <li><a href="/mockups/support-first/services/">Support &amp; prices</a></li>
+        <li><a href="/mockups/support-first/schools/">For schools &amp; assessors</a></li>
+        <li><a href="/mockups/support-first/resources/">Parent resources</a></li>
         <li><a href="/mockups/support-first/contact/">Contact</a></li>
         <li><a class="cta-mini" href="/book/" target="_blank" rel="noopener">Book a free call</a></li>
       </ul>
@@ -437,72 +450,92 @@
 </header>
 <main id="main">
 
-  <div class="pagehead">
-    <div class="wrap headgrid">
-      <div>
-      <p class="eyebrow">Literacy</p>
-      <h1>What is literacy, and why does it matter?</h1>
-      </div>
+  <div class="pagehead abouttop">
+    <div class="wrap">
+      <p class="eyebrow">About</p>
+      <h1>Welcome to Yorkshire Wolds Dyslexia Service</h1>
+      <p class="lead">I believe that a child's learning profile is more than just a label. I look beyond the surface of reading and writing, into the mechanics of learning, to give each child a roadmap to success.</p>
+      <ul class="facts" aria-label="At a glance">
+        <li><b>15 years</b> supporting children and young people with SEND</li>
+        <li>Based in <b>Pocklington</b>, East Yorkshire</li>
+        <li><b>Dyslexic myself</b>, with lived experience of the challenges</li>
+      </ul>
     </div>
   </div>
-  <section class="block" style="padding-top:20px">
-    <div class="wrap narrow">
-      <h2>What is literacy?</h2>
-      <p>Literacy is the ability to read, write, speak and listen in a way that allows us to communicate effectively and make sense of the world around us.</p>
-      <h2 style="margin-top:1.6em">The importance of literacy</h2>
-      <p>Literacy is a fundamental life skill. Without it, life would be very challenging. Literacy skills help you to develop and communicate, and they underpin most learning at school. Reading, writing, listening and speaking are integral to success and to day-to-day engagement with learning activities.</p>
-      <blockquote class="pull">
-        "The more that you read, the more things you will know. The more that you learn, the more places you'll go."
-        <footer>Dr. Seuss</footer>
-      </blockquote>
-      <div class="btnrow"><a class="btn ghost" href="/mockups/support-first/dyslexia/">Next: About dyslexia →</a></div>
-    </div>
-  </section>
-
-  <section class="block tint">
-    <div class="wrap narrow">
-      <p class="eyebrow">What you can do</p>
-      <h2>Is your child finding reading or spelling hard?</h2>
-      <p>These are common signs that reading or spelling is taking more effort than it should. None of them on its own means your child is dyslexic, but they are worth noticing.</p>
-      <ul>
-        <li>Reading slowly or with a lot of effort, or guessing words from the first letter.</li>
-        <li>Spelling the same word in different ways in one piece of writing.</li>
-        <li>Avoiding reading, or getting tired or upset at homework time.</li>
-        <li>Understanding a story read aloud much better than one they read themselves.</li>
-      </ul>
-      <p><a href="/mockups/support-first/dyslexia/#signs">More signs to look for, by age</a></p>
-    </div>
-  </section>
-
-  <section class="block">
-    <div class="wrap narrow">
-      <h2>Things to try at home</h2>
-      <ul>
-        <li><strong>Keep reading to your child, whatever their age.</strong> Hearing books read aloud builds vocabulary and keeps the enjoyment of stories going while reading itself is hard.</li>
-        <li><strong>Try an audiobook alongside the printed book,</strong> so they can follow the words while they listen.</li>
-        <li><strong>Keep practice short and often.</strong> Ten relaxed minutes does more than an hour of struggle.</li>
-        <li><strong>Praise effort and the strategies they use,</strong> not just right answers.</li>
-        <li><strong>Let them choose what to read,</strong> including comics, magazines and non-fiction.</li>
-      </ul>
-      <h2 style="margin-top:1.6em">Questions to ask school</h2>
-      <ul>
-        <li>What have you noticed about my child's reading and spelling?</li>
-        <li>What support is in place now, and how will we know if it is working?</li>
-        <li>Would any assessment in school help us understand the difficulty?</li>
-        <li>Who is the best person to talk to, for example the SENDCo?</li>
-      </ul>
-      <p>For free, independent help with these conversations, see <a href="/mockups/support-first/local-support/">local SEND support</a>.</p>
-    </div>
-  </section>
-
-  <section class="block tint">
-    <div class="wrap narrow" style="text-align:center">
-      <h2 style="margin-inline:auto">Still worried?</h2>
-      <p style="margin-inline:auto">Your child does not need a diagnosis to get help. Book a free 20-minute call and we can talk it through.</p>
-      <div class="btnrow" style="justify-content:center">
-        <a class="btn primary" href="/book/" target="_blank" rel="noopener">Book a free 20-minute call</a>
-        <a class="btn ghost" href="../services/">See support &amp; prices</a>
+  <section class="block" style="padding-top:clamp(24px,4vw,40px)">
+    <div class="wrap">
+      <p class="eyebrow">My background</p>
+      <h2>How I became a dyslexia specialist</h2>
+      <div class="bgsplit">
+        <div class="bio">
+          <img src="/img/natalie-portrait.webp" alt="Natalie Fisher" width="640" height="800" loading="lazy">
+          <h3>Natalie Fisher</h3>
+        </div>
+        <div class="story">
+          <p>I live in Pocklington, East Yorkshire. For 15 years I have worked across primary, secondary and specialist educational settings, supporting children and young people with SpLDs, autism, ADHD, SEMH needs, and severe and complex needs.</p>
+          <p>I have always loved reading. At secondary school I was a paired reader, helping younger pupils who found reading harder, and at university I ran story hubs to help Key Stage 1 and 2 children improve their reading. I went on to work as a primary literacy assistant and then a teaching assistant, which gave me a taste for working in education.</p>
+          <p>Youth work led me to psychology, because I wanted to understand why some young people refused school and did not meet their targets. I then spent a couple of years as an assistant speech and language therapist in the NHS, and several years in educational psychology for a Local Authority.</p>
+          <p>Again and again I saw children who were anxious about school because of their difficulties. Then I received my own dyslexia diagnosis, and that spurred me on to complete my specialist training.</p>
+          <blockquote class="pull">
+            "I am passionate about literacy and believe everybody can learn and progress in the right environment with the right type of support."
+            <footer>Natalie Fisher</footer>
+          </blockquote>
+        </div>
       </div>
+    </div>
+  </section>
+  <section class="block skyt">
+    <div class="wrap">
+      <div class="creds">
+        <div class="cred">
+          <h3 class="hico">Qualifications</h3>
+          <ul class="quals">
+            <li>BA (Hons) English Literature</li>
+            <li>MSc Psychology</li>
+            <li>Diploma in Specialist Teaching for Literacy Difficulties (Level 5)</li>
+            <li>Certificate of Competence in Educational Testing (Level 7)</li>
+          </ul>
+        </div>
+        <div class="cred">
+          <h3 class="hico">Memberships</h3>
+          <ul class="quals">
+            <li>British Psychological Society</li>
+            <li>Dyslexia Guild</li>
+          </ul>
+        </div>
+        <div class="cred">
+          <h3 class="hico">Checks and insurance</h3>
+          <ul class="quals">
+            <li>Enhanced DBS, on the Update Service</li>
+            <li>Professional indemnity insurance</li>
+            <li>Public liability insurance</li>
+            <li>ICO registered (ZC172167)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="block tint">
+    <div class="wrap">
+      <h2>Why choose YWDS?</h2>
+      <div class="cardgrid">
+        <div class="card">
+          
+          <h3>Local</h3>
+          <p>I understand the East Yorkshire educational landscape and the specific hurdles families face.</p>
+        </div>
+        <div class="card">
+          
+          <h3>Evidence-based</h3>
+          <p>My approach is rooted in cognition and learning theory.</p>
+        </div>
+        <div class="card">
+          
+          <h3>Lived experience</h3>
+          <p>I am dyslexic myself and appreciate the challenges that children and adults alike face day to day.</p>
+        </div>
+      </div>
+      <div class="btnrow"><a class="btn primary" href="/mockups/support-first/contact/">Get in touch</a></div>
     </div>
   </section>
 
