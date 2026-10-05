@@ -493,6 +493,9 @@
   .hero .facts{font-family:"Segoe UI",Verdana,sans-serif;color:var(--navy);font-size:.98rem;margin:0 0 .2em;max-width:none}
   .hero .facts b{color:var(--olive-deep)}
   .hero .facts .nw{white-space:nowrap}
+  .hero-photo .ph{position:relative;display:block;width:min(380px,100%);text-decoration:none}
+  .hero-photo .ph img{width:100%}
+  .hero-photo .cap{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.92);color:var(--navy);font:700 .85rem/1.2 "Segoe UI",Verdana,sans-serif;padding:7px 12px;border-radius:999px}
   .hero .hello{margin:1.1em 0 0;color:var(--ink-soft);max-width:54ch}
   .hero .hello a{font-weight:700;color:var(--navy)}
   .offerstrip{display:flex;flex-wrap:wrap;gap:6px 0;margin:0 0 1em;padding:0;list-style:none;background:var(--card);border:1.5px solid var(--sage);border-radius:16px;box-shadow:var(--shadow)}
@@ -507,6 +510,7 @@
   @media (max-width:800px){
     .hero-photo{order:-1;justify-content:flex-start}
     .hero-photo{justify-content:stretch}
+    .hero-photo .ph{width:100%}
     .hero-photo img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;object-position:50% 8%;border-radius:20px;box-shadow:0 10px 26px rgba(34,56,74,.16)}
     .hero-grid{gap:14px}
     .hero .heroquote{display:none}
@@ -550,7 +554,7 @@
       <li><strong>Local, searchable title and description.</strong> Only 3 of 68 visits came from Google. This version leads the page title and meta description with "dyslexia specialist in Pocklington" and the 7–16 age range.</li>
       <li><strong>Individual support now comes before the LNA</strong>, and the LNA is marked as optional. The diagnostic waiting list moves to a small note at the end of the services.</li>
       <li><strong>A numbered "How it starts" section</strong> replaces the bare "Book a call" route: call, suitability and place, first-session screening, weekly sessions, review.</li>
-      <li><strong>A one-line hello at the top</strong> ("a dyslexia specialist, and dyslexic myself") links down to the full introduction, which stays below the testimonials. The parent quote in the hero is hidden on phones to shorten the first screen.</li>
+      <li><strong>Nat's name sits on her photo</strong> as a caption ("Natalie Fisher, dyslexia specialist") and links to her introduction lower down. The small "Dyslexia specialist, Pocklington" label above the headline is gone, as the headline already says it. The parent quote in the hero is hidden on phones.</li>
       <li><strong>"Helping at home" added to the free guides</strong>, linking to the new practical Literacy page.</li>
       <li><strong>Testimonials keep the live grid</strong>, including the student quote (RB).</li>
       <li><strong>A short link for schools and assessors</strong> points to the new page.</li>
@@ -607,7 +611,6 @@
   <div class="hero">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow">Dyslexia specialist, Pocklington</p>
         <h1>Specialist dyslexia support for children in Pocklington and East Yorkshire</h1>
         <p class="lead">One-to-one help with reading, spelling and confidence, for ages 7–16, with or without a diagnosis.</p>
         <p class="facts"><span class="nw"><b>£50 an hour</b></span><span aria-hidden="true"> · </span><span class="nw">School-day sessions</span><span aria-hidden="true"> · </span><span class="nw">Free 20-minute call</span></p>
@@ -615,11 +618,10 @@
           <a class="btn primary" href="/book/" target="_blank" rel="noopener">Book a free 20-minute call</a>
           <a class="btn ghost" href="services/">See support &amp; prices</a>
         </div>
-        <p class="hello">I'm Natalie, a dyslexia specialist, and dyslexic myself. <a href="#about-nat">More about me</a></p>
         <blockquote class="heroquote">"It has been wonderful to watch our son become more willing to try things without feeling worried about making mistakes."<footer>C. Bell, parent</footer></blockquote>
       </div>
       <div class="hero-photo">
-        <img src="/img/natalie-portrait.webp" alt="Natalie Fisher, dyslexia specialist" width="640" height="800" fetchpriority="high">
+        <a class="ph" href="#about-nat"><img src="/img/natalie-portrait.webp" alt="Natalie Fisher, dyslexia specialist" width="640" height="800" fetchpriority="high"><span class="cap">Natalie Fisher, dyslexia specialist</span></a>
       </div>
     </div>
     <svg class="hills" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true" style="height:clamp(40px,5vw,72px)"><path d="M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z" fill="#DCE5D5"/><path d="M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z" fill="#B9CBAF"/><path d="M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z" fill="#93AA8C"/><path d="M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z" fill="var(--sage-tint)"/></svg>
