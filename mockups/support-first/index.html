@@ -490,6 +490,11 @@
   mark.nat{background:#FFE94D;color:#1b1b1b;padding:1px 6px;border-radius:4px;font-weight:700;box-decoration-break:clone;-webkit-box-decoration-break:clone}
   .hero{padding-top:clamp(28px,5vw,64px)}
   .hero h1{font-size:clamp(1.7rem,4.6vw,2.9rem)}
+  .hero .facts{font-family:"Segoe UI",Verdana,sans-serif;color:var(--navy);font-size:.98rem;margin:0 0 .2em;max-width:none}
+  .hero .facts b{color:var(--olive-deep)}
+  .hero .facts .nw{white-space:nowrap}
+  .hero .hello{margin:1.1em 0 0;color:var(--ink-soft);max-width:54ch}
+  .hero .hello a{font-weight:700;color:var(--navy)}
   .offerstrip{display:flex;flex-wrap:wrap;gap:6px 0;margin:0 0 1em;padding:0;list-style:none;background:var(--card);border:1.5px solid var(--sage);border-radius:16px;box-shadow:var(--shadow)}
   .offerstrip li{margin:0;padding:10px 16px;font-family:"Segoe UI",Verdana,sans-serif;font-weight:700;color:var(--navy);font-size:.98rem;line-height:1.3}
   .offerstrip li+li{border-left:1px solid var(--line)}
@@ -500,9 +505,10 @@
   }
   .nodiag{border-left:5px solid var(--sage);background:var(--card);border-radius:0 14px 14px 0;padding:12px 18px;margin:0 0 1em;font-weight:700;color:var(--navy);max-width:54ch;box-shadow:var(--shadow)}
   @media (max-width:800px){
-    .hero-photo{order:2}
-    .hero-photo img{width:min(220px,58vw)}
-    .hero-grid{gap:18px}
+    .hero-photo{order:-1;justify-content:flex-start}
+    .hero-photo img{width:112px;height:112px;object-fit:cover;object-position:50% 18%;border-radius:50%;box-shadow:0 6px 18px rgba(34,56,74,.16)}
+    .hero-grid{gap:14px}
+    .hero .heroquote{display:none}
   }
   .tight{padding-top:20px;padding-bottom:20px}
   .steps.five{grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr))}
@@ -538,12 +544,14 @@
   <div class="inner">
     <p>This version proposes the following. Nothing here is live and nothing has been approved.</p>
     <ul>
-      <li><strong>First screen carries the offer.</strong> In the last 7 days, 50 of 68 visits landed on the homepage and 25 of 68 were on phones. This version puts the £50 price, school-day sessions, the free call and "no diagnosis needed" in the first screen, with the short intro under them.</li>
+      <li><strong>Nat first, and "dyslexia" in the headline.</strong> Both local competitors open with a large photo and the word dyslexia, and it is what parents type into Google. On phones Nat's photo now sits at the top as a small round portrait. "Reading, spelling and confidence" moves into the line under the headline.</li>
+      <li><strong>One quiet facts line instead of two boxes:</strong> £50 an hour, school-day sessions, free 20-minute call. "With or without a diagnosis" is in the opening line; the LNA detail is on Support &amp; prices.</li>
       <li><strong>Local, searchable title and description.</strong> Only 3 of 68 visits came from Google. This version leads the page title and meta description with "dyslexia specialist in Pocklington" and the 7–16 age range.</li>
       <li><strong>Individual support now comes before the LNA</strong>, and the LNA is marked as optional. The diagnostic waiting list moves to a small note at the end of the services.</li>
       <li><strong>A numbered "How it starts" section</strong> replaces the bare "Book a call" route: call, suitability and place, first-session screening, weekly sessions, review.</li>
-      <li><strong>The longer career introduction moves lower</strong>, under the testimonials. Nat's photo stays in the first screen. On a phone it sits below the offer so the price is visible without scrolling.</li>
-      <li><strong>Testimonials keep the live grid</strong>, including the student quote (R.B.).</li>
+      <li><strong>A one-line hello at the top</strong> ("a dyslexia specialist, and dyslexic myself") links down to the full introduction, which stays below the testimonials. The parent quote in the hero is hidden on phones to shorten the first screen.</li>
+      <li><strong>"Helping at home" added to the free guides</strong>, linking to the new practical Literacy page.</li>
+      <li><strong>Testimonials keep the live grid</strong>, including the student quote (RB).</li>
       <li><strong>A short link for schools and assessors</strong> points to the new page.</li>
       <li>This version drops the "Why literacy matters" statistics block to shorten the page. That is a choice for Nat to confirm.</li>
       <li>Navigation drops from ten tabs to seven: Home, About Nat, Dyslexia, Support &amp; prices, For schools &amp; assessors, Parent resources, Contact. Literacy, Beyond dyslexia, Glossary and Blog move under Parent resources, with their addresses unchanged.</li>
@@ -598,19 +606,15 @@
   <div class="hero">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow">Dyslexia specialist, Pocklington, East Yorkshire</p>
-        <h1>Specialist help with reading and spelling in Pocklington and the surrounding area</h1>
-        <ul class="offerstrip" aria-label="The offer at a glance">
-          <li><b>£50</b> per hour</li>
-          <li>School-day sessions</li>
-          <li>Free 20-minute call</li>
-        </ul>
-        <p class="nodiag">Your child does not need a dyslexia diagnosis or a separate Learning Needs Assessment to begin.</p>
-        <p class="lead">I'm Natalie, a dyslexia specialist based in Pocklington. I provide individual literacy support for children aged 7–16, helping them develop reading and spelling skills, confidence and independence.</p>
+        <p class="eyebrow">Dyslexia specialist, Pocklington</p>
+        <h1>Specialist dyslexia support for children in Pocklington and East Yorkshire</h1>
+        <p class="lead">One-to-one help with reading, spelling and confidence, for ages 7–16, with or without a diagnosis.</p>
+        <p class="facts"><span class="nw"><b>£50 an hour</b></span><span aria-hidden="true"> · </span><span class="nw">School-day sessions</span><span aria-hidden="true"> · </span><span class="nw">Free 20-minute call</span></p>
         <div class="btnrow">
           <a class="btn primary" href="/book/" target="_blank" rel="noopener">Book a free 20-minute call</a>
           <a class="btn ghost" href="services/">See support &amp; prices</a>
         </div>
+        <p class="hello">I'm Natalie, a dyslexia specialist, and dyslexic myself. <a href="#about-nat">More about me</a></p>
         <blockquote class="heroquote">"It has been wonderful to watch our son become more willing to try things without feeling worried about making mistakes."<footer>C. Bell, parent</footer></blockquote>
       </div>
       <div class="hero-photo">
@@ -682,7 +686,7 @@
         </div>
         <div class="testi">
           <p class="qt">"Natalie is really nice, fun because she plays games with me &amp; she helps me when I get words wrong. I like doing the sessions with her."</p>
-          <div class="who">R.B., student</div>
+          <div class="who">RB, student</div>
         </div>
         <div class="testi">
           <p class="qt">"I am extremely happy with the support and approaches used by Natalie when helping us to support pupils at our school. I would strongly recommend Natalie and her fantastic skill set. She was sensitive to our pupils' needs, and her reports have allowed us to support our pupils in the best possible way."</p>
@@ -727,6 +731,7 @@
       <h2>Free guides for families</h2>
       <p>If you are wondering whether your child may be dyslexic, start here. These are free to read, download and share with school.</p>
       <ul class="linklist guides">
+        <li><a href="literacy/">Helping at home<span>Signs worth noticing, things to try, and what to ask school</span></a></li>
         <li><a href="/dyslexia/#signs">Signs of dyslexia<span>What to look for in primary and secondary aged children</span></a></li>
         <li><a href="/downloads/ywds-causes.pdf" download>What causes dyslexia?<span>Printable A3 sheet (PDF)</span></a></li>
         <li><a href="/downloads/ywds-brain.pdf" download>Dyslexia and the brain<span>Printable A3 sheet (PDF)</span></a></li>
