@@ -213,7 +213,15 @@
   .pagehead{padding-bottom:0}
   .pagehead::after{content:"";display:block;height:clamp(40px,5vw,72px);margin-top:clamp(4px,1.5vw,12px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z' fill='%23DCE5D5'/%3E%3Cpath d='M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z' fill='%23B9CBAF'/%3E%3Cpath d='M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z' fill='%2393AA8C'/%3E%3Cpath d='M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z' fill='%23F7F4EC'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
   .headgrid{grid-template-columns:1fr}
+  .reviewaid{background:var(--card);border-bottom:2px solid var(--navy);font-size:.9rem;line-height:1.55}
+  .reviewaid summary{cursor:pointer;font-weight:700;color:var(--navy);padding:10px clamp(18px,4vw,40px);max-width:1200px;margin:0 auto;font-family:"Segoe UI",Verdana,sans-serif}
+  .reviewaid .inner{max-width:1200px;margin:0 auto;padding:0 clamp(18px,4vw,40px) 14px}
+  .reviewaid ul{margin:.2em 0 .6em;padding-left:1.2em}
+  .reviewaid li{margin-bottom:.3em}
+  .reviewaid p{max-width:none;margin:0 0 .5em;color:var(--ink-soft)}
+  mark.nat{background:#FFE94D;color:#1b1b1b;padding:1px 6px;border-radius:4px;font-weight:700;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 </style>
+<!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <!-- Cloudflare Web Analytics --><script src="/js/analytics.js"></script><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/privacy/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/privacy/", "name": "Privacy notice | Yorkshire Wolds Dyslexia Service", "description": "How Yorkshire Wolds Dyslexia Service collects, uses, stores and protects information about you and your child.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "inLanguage": "en-GB"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Privacy notice", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/privacy/"}]}]}</script>
@@ -222,7 +230,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site">
   <div class="bar">
-    <a class="brand" href="../">
+    <a class="brand" href="/">
       <svg viewBox="0 0 120 120" aria-hidden="true">
         <defs>
           <clipPath id="c2"><circle cx="60" cy="60" r="56"/></clipPath>
@@ -250,16 +258,13 @@
     <button class="menu-btn" aria-expanded="false" aria-controls="mainnav" onclick="toggleMenu(this)">☰ Menu</button>
     <nav class="main" id="mainnav" aria-label="Main">
       <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../about/">About</a></li>
-        <li><a href="../services/">Services</a></li>
-        <li><a href="../literacy/">Literacy</a></li>
-        <li><a href="../dyslexia/">Dyslexia</a></li>
-        <li><a href="../splds/">Beyond dyslexia</a></li>
-        <li><a href="../glossary/">Glossary</a></li>
-        <li><a href="../resources/">Resources</a></li>
-        <li><a href="../blog/">Blog</a></li>
-        <li><a href="../contact/">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About Nat</a></li>
+        <li><a href="/dyslexia/">Dyslexia</a></li>
+        <li><a href="/services/">Support &amp; prices</a></li>
+        <li><a href="/schools/">For schools &amp; assessors</a></li>
+        <li><a href="/resources/">Parent resources</a></li>
+        <li><a href="/contact/">Contact</a></li>
         <li><a class="cta-mini" href="/book/" target="_blank" rel="noopener">Book a free call</a></li>
       </ul>
     </nav>
@@ -333,12 +338,12 @@
     <div>
       <h4>Explore</h4>
       <ul>
-        <li><a href="../about/">About Natalie</a></li>
-        <li><a href="../services/">Services &amp; pricing</a></li>
-        <li><a href="../dyslexia/">Signs of dyslexia</a></li>
-        <li><a href="../resources/">Resources</a></li>
-        <li><a href="../local-support/">Local SEND support</a></li>
-        <li><a href="../blog/">Blog</a></li>
+        <li><a href="/about/">About Natalie</a></li>
+        <li><a href="/services/">Services &amp; pricing</a></li>
+        <li><a href="/dyslexia/">Signs of dyslexia</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/local-support/">Local SEND support</a></li>
+        <li><a href="/blog/">Blog</a></li>
       </ul>
     </div>
     <div>
@@ -354,7 +359,7 @@
     </div>
   </div>
   <div class="wrap fine">
-    <span>© Natalie Fisher · Yorkshire Wolds Dyslexia Service · <a href="../privacy/">Privacy notice</a> · <a href="../terms/">Terms</a></span>
+    <span>© Natalie Fisher · Yorkshire Wolds Dyslexia Service · <a href="/privacy/">Privacy notice</a> · <a href="/terms/">Terms</a></span>
   </div>
 </footer>
 <script>

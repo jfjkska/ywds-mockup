@@ -218,7 +218,15 @@
   .pagehead{padding-bottom:0}
   .pagehead::after{content:"";display:block;height:clamp(40px,5vw,72px);margin-top:clamp(4px,1.5vw,12px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z' fill='%23DCE5D5'/%3E%3Cpath d='M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z' fill='%23B9CBAF'/%3E%3Cpath d='M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z' fill='%2393AA8C'/%3E%3Cpath d='M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z' fill='%23F7F4EC'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
   .headgrid{grid-template-columns:1fr}
+  .reviewaid{background:var(--card);border-bottom:2px solid var(--navy);font-size:.9rem;line-height:1.55}
+  .reviewaid summary{cursor:pointer;font-weight:700;color:var(--navy);padding:10px clamp(18px,4vw,40px);max-width:1200px;margin:0 auto;font-family:"Segoe UI",Verdana,sans-serif}
+  .reviewaid .inner{max-width:1200px;margin:0 auto;padding:0 clamp(18px,4vw,40px) 14px}
+  .reviewaid ul{margin:.2em 0 .6em;padding-left:1.2em}
+  .reviewaid li{margin-bottom:.3em}
+  .reviewaid p{max-width:none;margin:0 0 .5em;color:var(--ink-soft)}
+  mark.nat{background:#FFE94D;color:#1b1b1b;padding:1px 6px;border-radius:4px;font-weight:700;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 </style>
+<!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <!-- Cloudflare Web Analytics --><script src="/js/analytics.js"></script><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business", "sameAs": ["https://www.facebook.com/natalieywds", "https://www.instagram.com/natalieywds/"], "name": "Yorkshire Wolds Dyslexia Service", "alternateName": "YWDS", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "logo": "https://yorkshirewoldsdyslexiaservice.co.uk/img/logo.webp", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "email": "natalie@ywds.co.uk", "description": "Specialist literacy support, dyslexia intervention and learning needs assessments for children and young people in East Yorkshire.", "priceRange": "££", "address": {"@type": "PostalAddress", "addressLocality": "Pocklington", "addressRegion": "East Yorkshire", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Pocklington"}, {"@type": "City", "name": "York"}, {"@type": "City", "name": "Market Weighton"}, {"@type": "City", "name": "Driffield"}, {"@type": "City", "name": "Beverley"}, {"@type": "AdministrativeArea", "name": "East Riding of Yorkshire"}], "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties", "Dyslexia Action Literacy Programme", "Learning Needs Assessment", "Speech, language and communication needs"], "founder": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie"}}, {"@type": "WebPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/glossary/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/glossary/", "name": "Glossary | Yorkshire Wolds Dyslexia Service", "description": "Plain-English explanations of the terms you'll meet in assessment reports and school meetings.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "about": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}}, {"@type": "WebSite", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "name": "Yorkshire Wolds Dyslexia Service", "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "inLanguage": "en-GB"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Glossary", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/glossary/"}]}]}</script>
@@ -227,7 +235,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site">
   <div class="bar">
-    <a class="brand" href="../">
+    <a class="brand" href="/">
       <svg viewBox="0 0 120 120" aria-hidden="true">
         <defs>
           <clipPath id="c2"><circle cx="60" cy="60" r="56"/></clipPath>
@@ -255,16 +263,13 @@
     <button class="menu-btn" aria-expanded="false" aria-controls="mainnav" onclick="toggleMenu(this)">☰ Menu</button>
     <nav class="main" id="mainnav" aria-label="Main">
       <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../about/">About</a></li>
-        <li><a href="../services/">Services</a></li>
-        <li><a href="../literacy/">Literacy</a></li>
-        <li><a href="../dyslexia/">Dyslexia</a></li>
-        <li><a href="../splds/">Beyond dyslexia</a></li>
-        <li><a href="../glossary/" aria-current="page">Glossary</a></li>
-        <li><a href="../resources/">Resources</a></li>
-        <li><a href="../blog/">Blog</a></li>
-        <li><a href="../contact/">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About Nat</a></li>
+        <li><a href="/dyslexia/">Dyslexia</a></li>
+        <li><a href="/services/">Support &amp; prices</a></li>
+        <li><a href="/schools/">For schools &amp; assessors</a></li>
+        <li><a href="/resources/">Parent resources</a></li>
+        <li><a href="/contact/">Contact</a></li>
         <li><a class="cta-mini" href="/book/" target="_blank" rel="noopener">Book a free call</a></li>
       </ul>
     </nav>
@@ -284,7 +289,7 @@
 
   <section class="block" style="padding-top:20px">
     <div class="wrap narrow">
-      <p>You shouldn't need a dictionary to understand a report about your own child. If you meet a term that isn't here, <a href="../contact/">ask me</a>, I'm always happy to explain.</p>
+      <p>You shouldn't need a dictionary to understand a report about your own child. If you meet a term that isn't here, <a href="/contact/">ask me</a>, I'm always happy to explain.</p>
 
       <nav class="letternav" aria-label="Jump to letter">
         <a href="#g-a">A</a><a href="#g-d">D</a><a href="#g-e">E</a><a href="#g-f">F</a><a href="#g-i">I</a><a href="#g-m">M</a><a href="#g-o">O</a><a href="#g-p">P</a><a href="#g-r">R</a><a href="#g-s">S</a><a href="#g-v">V</a><a href="#g-w">W</a>
@@ -322,7 +327,7 @@
         </div>
         <div class="gterm">
           <h3>Dyslexia</h3>
-          <p>A specific learning difficulty that primarily affects reading and spelling. It stems from how the brain processes information, particularly the sounds within words, and is not linked to intelligence. See <a href="../dyslexia/">Understanding dyslexia</a>.</p>
+          <p>A specific learning difficulty that primarily affects reading and spelling. It stems from how the brain processes information, particularly the sounds within words, and is not linked to intelligence. See <a href="/dyslexia/">Understanding dyslexia</a>.</p>
         </div>
       </div>
 
@@ -422,7 +427,7 @@
         </div>
         <div class="gterm">
           <h3>SpLD (Specific Learning Difficulty)</h3>
-          <p>A difficulty with particular aspects of learning, in a child whose overall ability may be anywhere on the range. Dyslexia, dyscalculia, dyspraxia and ADHD all sit under this umbrella. See <a href="../splds/">SpLDs &amp; co-occurrence</a>.</p>
+          <p>A difficulty with particular aspects of learning, in a child whose overall ability may be anywhere on the range. Dyslexia, dyscalculia, dyspraxia and ADHD all sit under this umbrella. See <a href="/splds/">SpLDs &amp; co-occurrence</a>.</p>
         </div>
         <div class="gterm">
           <h3>Standardised score</h3>
@@ -438,7 +443,7 @@
         <div class="ghead"><span class="gbadge">V</span></div>
         <div class="gterm">
           <h3>Visual stress</h3>
-          <p>Discomfort some people experience when looking at text: glare, blurring or apparent movement. It is not dyslexia and doesn't cause it, though some people experience both. Coloured overlays can ease visual stress, but they don't teach reading. See <a href="../dyslexia/#vision">dyslexia and vision</a>.</p>
+          <p>Discomfort some people experience when looking at text: glare, blurring or apparent movement. It is not dyslexia and doesn't cause it, though some people experience both. Coloured overlays can ease visual stress, but they don't teach reading. See <a href="/dyslexia/#vision">dyslexia and vision</a>.</p>
         </div>
       </div>
 
@@ -451,7 +456,7 @@
       </div>
 
       <div class="btnrow" style="margin-top:2.4em">
-        <a class="btn ghost" href="../dyslexia/">Understanding dyslexia</a>
+        <a class="btn ghost" href="/dyslexia/">Understanding dyslexia</a>
         <a class="btn green" href="/book/" target="_blank" rel="noopener">Book a free 20-minute call</a>
       </div>
     </div>
@@ -468,12 +473,12 @@
     <div>
       <h4>Explore</h4>
       <ul>
-        <li><a href="../about/">About Natalie</a></li>
-        <li><a href="../services/">Services &amp; pricing</a></li>
-        <li><a href="../dyslexia/">Signs of dyslexia</a></li>
-        <li><a href="../resources/">Resources</a></li>
-        <li><a href="../local-support/">Local SEND support</a></li>
-        <li><a href="../blog/">Blog</a></li>
+        <li><a href="/about/">About Natalie</a></li>
+        <li><a href="/services/">Services &amp; pricing</a></li>
+        <li><a href="/dyslexia/">Signs of dyslexia</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/local-support/">Local SEND support</a></li>
+        <li><a href="/blog/">Blog</a></li>
       </ul>
     </div>
     <div>
@@ -489,7 +494,7 @@
     </div>
   </div>
   <div class="wrap fine">
-    <span>© Natalie Fisher · Yorkshire Wolds Dyslexia Service · <a href="../privacy/">Privacy notice</a> · <a href="../terms/">Terms</a></span>
+    <span>© Natalie Fisher · Yorkshire Wolds Dyslexia Service · <a href="/privacy/">Privacy notice</a> · <a href="/terms/">Terms</a></span>
   </div>
 </footer>
 <script>
