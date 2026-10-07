@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light">
-<title>Blog | Yorkshire Wolds Dyslexia Service</title>
-<meta name="description" content="News and articles on literacy, dyslexia and supporting young people.">
-<meta property="og:type" content="website">
+<title>Dyslexia Awareness Week 2026: helping children understand different ways of learning | Yorkshire Wolds Dyslexia Service</title>
+<meta name="description" content="Free BDA resources for Dyslexia Awareness Week 2026: a primary schools pack, family conversation ideas and social media graphics.">
+<meta property="og:type" content="article">
 <meta property="og:site_name" content="Yorkshire Wolds Dyslexia Service">
-<meta property="og:title" content="Blog | Yorkshire Wolds Dyslexia Service">
-<meta property="og:description" content="News and articles on literacy, dyslexia and supporting young people.">
-<meta property="og:url" content="https://yorkshirewoldsdyslexiaservice.co.uk/blog/">
+<meta property="og:title" content="Dyslexia Awareness Week 2026: helping children understand different ways of learning | Yorkshire Wolds Dyslexia Service">
+<meta property="og:description" content="Free BDA resources for Dyslexia Awareness Week 2026: a primary schools pack, family conversation ideas and social media graphics.">
+<meta property="og:url" content="https://yorkshirewoldsdyslexiaservice.co.uk/blog/dyslexia-awareness-week-2026-schools-resources/">
 <meta property="og:image" content="https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://yorkshirewoldsdyslexiaservice.co.uk/blog/">
+<link rel="canonical" href="https://yorkshirewoldsdyslexiaservice.co.uk/blog/dyslexia-awareness-week-2026-schools-resources/">
 <link rel="icon" type="image/png" href="/img/favicon.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <meta name="theme-color" content="#F7F4EC">
@@ -345,28 +345,18 @@
   article.post{max-width:780px}
   article.post + article.post{border-top:1px solid var(--line);margin-top:3.2em;padding-top:3.2em}
 
-  .postlist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
-  @media (max-width:980px){.postlist{grid-template-columns:repeat(2,minmax(0,1fr))}}
-  @media (max-width:640px){.postlist{grid-template-columns:minmax(0,1fr)}}
-  .postcard{
-    background:var(--card);border:1px solid var(--line);border-radius:18px;
-    box-shadow:var(--shadow);overflow:hidden;min-width:0;
-    display:flex;flex-direction:column;padding-bottom:20px;
+  /* ---------- single post ---------- */
+  .backlink{display:inline-block;font-size:.85rem;font-weight:700;text-decoration:none;margin-bottom:1.4em}
+  .backlink:hover{text-decoration:underline}
+  .postnav{
+    display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    max-width:780px;border-top:1px solid var(--line);margin-top:3em;padding-top:1.6em;font-size:.9rem;
   }
-  .postcard img.cardimg{
-    display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;
-    border-radius:17px 17px 0 0;border-bottom:1px solid var(--line);margin-bottom:18px;
-  }
-  .postcard > :not(img){margin-left:22px;margin-right:22px}
-  .postcard > p:last-child{margin-top:auto;margin-bottom:0}
-  .postcard .eyebrow{margin-bottom:.5em;letter-spacing:.01em;font-size:.85rem}
-  .postcard h2{font-size:1.25rem;margin-bottom:.5em;overflow-wrap:break-word}
-  .postcard h2 a{text-decoration:none;color:var(--navy)}
-  .postcard h2 a:hover{text-decoration:underline}
-  .postcard p{color:var(--ink-soft);font-size:.98rem}
-  .postcard a.more{font-size:.9rem;font-weight:700;text-decoration:none}
-  .postcard a.more::after{content:" \2192"}
-  .postcard a.more:hover{text-decoration:underline}
+  .postnav a{font-weight:700;text-decoration:none}
+  .postnav a:hover{text-decoration:underline}
+  .postnav .lbl{display:block;font-weight:400;color:var(--ink-soft);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+  article.post img.postimg{width:100%;border-radius:18px;box-shadow:var(--shadow);margin-bottom:1.6em}
+  article.post img.postbanner{display:block;width:100%;max-width:780px;height:auto;aspect-ratio:1200/630;object-fit:cover;border:1px solid var(--line)}
   /* page headers: the logo's layered Wolds hills as a band along the bottom */
   .pagehead{padding-bottom:0}
   .pagehead::after{content:"";display:block;height:clamp(40px,5vw,72px);margin-top:clamp(4px,1.5vw,12px);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 58C170 26 360 20 560 42S910 76 1110 42 1350 24 1440 36V100H0Z' fill='%23DCE5D5'/%3E%3Cpath d='M0 72C210 46 430 50 650 66S1010 88 1230 60 1400 50 1440 56V100H0Z' fill='%23B9CBAF'/%3E%3Cpath d='M0 86C250 66 520 70 770 82S1190 96 1440 76V100H0Z' fill='%2393AA8C'/%3E%3Cpath d='M0 100C320 90 640 92 960 97S1320 95 1440 93V100Z' fill='%23F7F4EC'/%3E%3C/svg%3E") bottom/100% 100% no-repeat}
@@ -382,13 +372,10 @@
 <!-- Cloudflare Web Analytics --><!-- End Cloudflare Web Analytics -->
 <!-- Cloudflare Web Analytics --><script src="/js/analytics.js"></script><!-- End Cloudflare Web Analytics -->
 <script src="/js/a11y.js" defer></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business", "sameAs": ["https://www.facebook.com/natalieywds", "https://www.instagram.com/natalieywds/"], "name": "Yorkshire Wolds Dyslexia Service", "alternateName": "YWDS", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "logo": "https://yorkshirewoldsdyslexiaservice.co.uk/img/logo.webp", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "email": "natalie@ywds.co.uk", "description": "Specialist literacy support, dyslexia intervention and learning needs assessments for children and young people in East Yorkshire.", "priceRange": "££", "address": {"@type": "PostalAddress", "addressLocality": "Pocklington", "addressRegion": "East Yorkshire", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Pocklington"}, {"@type": "City", "name": "York"}, {"@type": "City", "name": "Market Weighton"}, {"@type": "City", "name": "Driffield"}, {"@type": "City", "name": "Beverley"}, {"@type": "AdministrativeArea", "name": "East Riding of Yorkshire"}], "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties", "Dyslexia Action Literacy Programme", "Learning Needs Assessment", "Speech, language and communication needs"], "founder": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "priceCurrency": "GBP", "price": "300", "itemOffered": {"@type": "Service", "name": "Learning Needs Assessment", "description": "A two-hour standardised psychometric assessment with a detailed written report, for ages 6-16."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "1-to-1 Literacy Intervention", "description": "Weekly hour-long structured, multi-sensory sessions using the Dyslexia Action Literacy Programme, for ages 7-16."}}]}}, {"@type": ["WebPage", "CollectionPage"], "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/", "name": "Blog | Yorkshire Wolds Dyslexia Service", "description": "News and articles on literacy, dyslexia and supporting young people.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "about": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}}, {"@type": "WebSite", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "name": "Yorkshire Wolds Dyslexia Service", "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "inLanguage": "en-GB"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business", "sameAs": ["https://www.facebook.com/natalieywds", "https://www.instagram.com/natalieywds/"], "name": "Yorkshire Wolds Dyslexia Service", "alternateName": "YWDS", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "logo": "https://yorkshirewoldsdyslexiaservice.co.uk/img/logo.webp", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "email": "natalie@ywds.co.uk", "description": "Specialist literacy support, dyslexia intervention and learning needs assessments for children and young people in East Yorkshire.", "priceRange": "££", "address": {"@type": "PostalAddress", "addressLocality": "Pocklington", "addressRegion": "East Yorkshire", "addressCountry": "GB"}, "areaServed": [{"@type": "City", "name": "Pocklington"}, {"@type": "City", "name": "York"}, {"@type": "City", "name": "Market Weighton"}, {"@type": "City", "name": "Driffield"}, {"@type": "City", "name": "Beverley"}, {"@type": "AdministrativeArea", "name": "East Riding of Yorkshire"}], "knowsAbout": ["Dyslexia", "Literacy difficulties", "Specific Learning Difficulties", "Dyslexia Action Literacy Programme", "Learning Needs Assessment", "Speech, language and communication needs"], "founder": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/about/#natalie"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "priceCurrency": "GBP", "price": "300", "itemOffered": {"@type": "Service", "name": "Learning Needs Assessment", "description": "A two-hour standardised psychometric assessment with a detailed written report, for ages 6-16."}}, {"@type": "Offer", "priceCurrency": "GBP", "price": "50", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "50", "priceCurrency": "GBP", "unitCode": "HUR"}, "itemOffered": {"@type": "Service", "name": "1-to-1 Literacy Intervention", "description": "Weekly hour-long structured, multi-sensory sessions using the Dyslexia Action Literacy Programme, for ages 7-16."}}]}}, {"@type": "WebSite", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/", "name": "Yorkshire Wolds Dyslexia Service", "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "inLanguage": "en-GB"}, {"@type": "BlogPosting", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/dyslexia-awareness-week-2026-schools-resources/#post", "headline": "Dyslexia Awareness Week 2026: helping children understand different ways of learning", "description": "Free BDA resources for Dyslexia Awareness Week 2026: a primary schools pack, family conversation ideas and social media graphics.", "datePublished": "2026-10-07", "dateModified": "2026-10-07", "author": {"@type": "Person", "name": "Natalie Fisher", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/about/"}, "publisher": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "mainEntityOfPage": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/dyslexia-awareness-week-2026-schools-resources/", "image": "https://yorkshirewoldsdyslexiaservice.co.uk/img/social-card.jpg", "articleSection": "News", "inLanguage": "en-GB", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/#webpage"}}, {"@type": "WebPage", "@id": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/dyslexia-awareness-week-2026-schools-resources/#webpage", "url": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/dyslexia-awareness-week-2026-schools-resources/", "name": "Dyslexia Awareness Week 2026: helping children understand different ways of learning | Yorkshire Wolds Dyslexia Service", "description": "Free BDA resources for Dyslexia Awareness Week 2026: a primary schools pack, family conversation ideas and social media graphics.", "isPartOf": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#website"}, "about": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/#business"}, "primaryImageOfPage": {"@id": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/dyslexia-awareness-week-2026-schools-resources/#post"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/"}, {"@type": "ListItem", "position": 3, "name": "Dyslexia Awareness Week 2026: helping children understand different ways of learning", "item": "https://yorkshirewoldsdyslexiaservice.co.uk/blog/dyslexia-awareness-week-2026-schools-resources/"}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<script>
-(function(){var p=(location.hash||'').replace('#','');var posts=['building-a-nation-of-readers','national-year-of-reading-2026','childrens-writing-in-2026','dyslexia-speech-and-language-overlap','dyslexia-awareness-week-2026','pathway-interrupted','spld-send-reforms','gcse-gap-2026','spld-identification-study','lost-in-the-system','send-pressure-nfer'];if(posts.indexOf(p)>-1){location.replace(p+'/');}})();
-</script>
 <header class="site">
   <div class="bar">
     <a class="brand" href="/">
@@ -435,125 +422,34 @@
 
   <div class="pagehead">
     <div class="wrap">
-      <p class="eyebrow">Blog</p>
-      <h1>News &amp; articles</h1>
+      <p class="eyebrow"><time datetime="2026-10-07">7 October 2026</time> &middot; News</p>
+      <h1>Dyslexia Awareness Week 2026: helping children understand different ways of learning</h1>
     </div>
   </div>
-  <section class="block" style="padding-top:20px">
+  <section class="block" style="padding-top:24px">
     <div class="wrap">
-      <div class="postlist">
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/dyslexia-awareness-week-2026-schools-resources.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-10-07">7 October 2026</time> &middot; News</p>
-        <h2><a href="/blog/dyslexia-awareness-week-2026-schools-resources/">Dyslexia Awareness Week 2026: helping children understand different ways of learning</a></h2>
-        <p>Free BDA resources to help primary schools and families talk about different ways of learning, plus social media graphics for Dyslexia Awareness Week.</p>
-        <p><a class="more" href="/blog/dyslexia-awareness-week-2026-schools-resources/">Read more</a></p>
+      <a class="backlink" href="/blog/">&larr; All posts</a>
+      <article class="post">
+        <img class="postimg postbanner" src="/img/blog/dyslexia-awareness-week-2026-schools-resources.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
+        <p>Dyslexia Awareness Week runs from <strong>5–11 October</strong>. This year, the British Dyslexia Association is focusing on dyslexia at work—exploring people’s experiences and how workplaces can help them thrive. It’s also an opportunity to start conversations with children about understanding and supporting one another. <a href="https://www.bdadyslexia.org.uk/support-us/awareness-events">Find out about this year’s campaign.</a></p>
+        <p>At Yorkshire Wolds Dyslexia Service, I want children to feel comfortable talking about what they find difficult, what they enjoy and what helps them learn. Awareness Week gives families and schools a useful starting point for those conversations.</p>
+        <p>The British Dyslexia Association has created a <strong>free resource pack for primary schools</strong>, suitable for children aged 5–11. It includes an assembly or lesson presentation, a quiz, discussion activities and guidance for staff, with adaptations for different age groups.</p>
+        <p>One activity invites children to create their own “everyday toolkit”: choosing or designing tools that help them learn, communicate, organise themselves or feel more confident. The pack encourages children to explore different needs without asking anyone to disclose a diagnosis. <a href="https://www.bdadyslexia.org.uk/support-us/awareness-events/schools-pack-and-presentation">Explore and download the schools pack and presentation.</a></p>
+        <p>The message behind the activity matters: an adjustment helps someone participate and show what they can do. Understanding that can help children respond with kindness when a classmate uses a different tool or needs a different approach.</p>
+        <p>You could extend the conversation at home with a few simple questions:</p>
+        <ul>
+          <li>What helps you when something feels difficult?</li>
+          <li>What are you proud of learning?</li>
+          <li>How could you help someone who finds a task challenging?</li>
+        </ul>
+        <p>There’s no need to turn this into another lesson. A relaxed conversation can give children space to share their experiences—and give adults a chance to listen.</p>
+        <p>If you’d like to show your support online, the British Dyslexia Association also has <strong>free social media graphics</strong>, including versions you can personalise with a photograph or company logo. They ask supporters to tag <strong>@bdaadyslexia</strong> when sharing. <a href="https://www.bdadyslexia.org.uk/support-us/awareness-events/social-media-assets">Browse the Awareness Week social media assets.</a></p>
+        <p>For families and schools across Pocklington and the surrounding area, this week is a chance to begin a conversation that continues throughout the year: what does this child need, what helps them, and how can we work together to support them?</p>
       </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/follow-ywds-on-facebook-and-instagram.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-10-07">7 October 2026</time> &middot; News</p>
-        <h2><a href="/blog/follow-ywds-on-facebook-and-instagram/">Follow YWDS on Facebook and Instagram</a></h2>
-        <p>Yorkshire Wolds Dyslexia Service now has its own Facebook page and Instagram account. Follow along for new posts, tips for home and updates.</p>
-        <p><a class="more" href="/blog/follow-ywds-on-facebook-and-instagram/">Read more</a></p>
-      </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/building-a-nation-of-readers.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-09-27">27 September 2026</time> &middot; Research</p>
-        <h2><a href="/blog/building-a-nation-of-readers/">Beyond the reading crisis: what helps children become readers</a></h2>
-        <p>The Reading Agency looks past the headlines about a reading crisis to what the evidence says actually helps children fall in love with reading.</p>
-        <p><a class="more" href="/blog/building-a-nation-of-readers/">Read more</a></p>
-      </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/national-year-of-reading-2026.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-09-27">27 September 2026</time> &middot; News</p>
-        <h2><a href="/blog/national-year-of-reading-2026/">National Year of Reading 2026: going all in on reading for fun</a></h2>
-        <p>2026 is the National Year of Reading, a national campaign from the Department for Education and the National Literacy Trust to help children and families rediscover the fun of reading.</p>
-        <p><a class="more" href="/blog/national-year-of-reading-2026/">Read more</a></p>
-      </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/childrens-writing-in-2026.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-09-24">24 September 2026</time> &middot; Research</p>
-        <h2><a href="/blog/childrens-writing-in-2026/">Children&rsquo;s writing in 2026: more enjoyment, still a long way to go</a></h2>
-        <p>The National Literacy Trust&rsquo;s latest survey of 125,375 children and young people finds writing enjoyment rising a little, but writing for fun is still rare, especially in the teenage years.</p>
-        <p><a class="more" href="/blog/childrens-writing-in-2026/">Read more</a></p>
-      </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/dyslexia-speech-and-language-overlap.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-09-19">19 September 2026</time> &middot; Research</p>
-        <h2><a href="/blog/dyslexia-speech-and-language-overlap/">Can dyslexia affect speech? Where dyslexia and speech and language difficulties overlap</a></h2>
-        <p>Speech and Language Link published a clear piece by Rachel McMullen of the British Dyslexia Association on the ground that dyslexia and spoken language difficulties share, and where the two part company.</p>
-        <p><a class="more" href="/blog/dyslexia-speech-and-language-overlap/">Read more</a></p>
-      </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/dyslexia-awareness-week-2026.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-09-19">19 September 2026</time> &middot; News</p>
-        <h2><a href="/blog/dyslexia-awareness-week-2026/">Dyslexia Awareness Week 2026: dyslexia in real life, at work</a></h2>
-        <p>Dyslexia Awareness Week runs from 5 to 11 October, and the British Dyslexia Association is looking at how dyslexia plays out at work, which matters more for younger children than it first appears.</p>
-        <p><a class="more" href="/blog/dyslexia-awareness-week-2026/">Read more</a></p>
-      </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/pathway-interrupted.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-09-04">4 September 2026</time> &middot; Research</p>
-        <h2><a href="/blog/pathway-interrupted/">A pathway interrupted: dyslexic young people after school</a></h2>
-        <p>More than a million young people aged 16 to 24 in England were not in education, employment or training at the start of this year, and a new British Dyslexia Association report asks how many of them are dyslexic.</p>
-        <p><a class="more" href="/blog/pathway-interrupted/">Read more</a></p>
-      </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/spld-send-reforms.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-08-22">22 August 2026</time> &middot; News</p>
-        <h2><a href="/blog/spld-send-reforms/">Where do specific learning difficulties fit in the SEND reforms?</a></h2>
-        <p>The proposed SEND reforms have generated plenty of discussion, but one important question has received far less attention than it deserves: where do specific learning difficulties actually fit in the new framework?</p>
-        <p><a class="more" href="/blog/spld-send-reforms/">Read more</a></p>
-      </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/gcse-gap-2026.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-07-27">27 July 2026</time> &middot; News</p>
-        <h2><a href="/blog/gcse-gap-2026/">The GCSE gap for dyslexic pupils: a decade without progress</a></h2>
-        <p>The British Dyslexia Association has published a new analysis of Department for Education data, and its title says it all: <em>GCSE attainment: A decade without progress</em>.</p>
-        <p><a class="more" href="/blog/gcse-gap-2026/">Read more</a></p>
-      </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/spld-identification-study.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-07-20">20 July 2026</time> &middot; Research</p>
-        <h2><a href="/blog/spld-identification-study/">Who gets spotted? Big inequalities in identifying learning difficulties</a></h2>
-        <p>A major study from Durham University and the University of Oxford looked at over 540,000 Year 6 pupils across 14,800 schools in England and asked a simple question: which children get identified with a specific learning difficulty, and which get missed?</p>
-        <p><a class="more" href="/blog/spld-identification-study/">Read more</a></p>
-      </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/lost-in-the-system.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-07-13">13 July 2026</time> &middot; News</p>
-        <h2><a href="/blog/lost-in-the-system/">Lost in the system: Councils' blind spot on dyslexia</a></h2>
-        <p>A new report from the British Dyslexia Association found that although around 900,000 schoolchildren in England have dyslexia, fewer than 2% of local authorities could say how many dyslexic children live in their area.</p>
-        <p><a class="more" href="/blog/lost-in-the-system/">Read more</a></p>
-      </article>
-      <article class="postcard">
-        <img class="cardimg" src="/img/blog/send-pressure-nfer.svg" alt="" width="1200" height="630" loading="lazy" decoding="async">
-        <p class="eyebrow"><time datetime="2026-07-06">6 July 2026</time> &middot; News</p>
-        <h2><a href="/blog/send-pressure-nfer/">Schools "at breaking point": what growing SEND pressure means for families</a></h2>
-        <p>Schools Week has reported on an interim study by the National Foundation for Educational Research into how pupils with special educational needs and disabilities are spread across England's schools. The short version: very unevenly, and the gap is growing.</p>
-        <p><a class="more" href="/blog/send-pressure-nfer/">Read more</a></p>
-      </article>
-      </div>
-    </div>
-  </section>
-  <section class="block tint">
-    <div class="wrap">
-      <p class="eyebrow">Worth reading</p>
-      <h2>From elsewhere</h2>
-      <div class="cardgrid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:1.4em">
-        <div class="card">
-          <p class="eyebrow" style="margin-bottom:.4em">Research</p>
-          <h3>Reflections on the new consensus definition of dyslexia</h3>
-          <p>The 2024 Delphi definition was a real step forward in how we talk about dyslexia, and this commentary reflects honestly on what it gets right, and what still needs work, from prevalence rates to how schools should put it into practice. Our understanding of dyslexia is still evolving, and staying current with the research shapes how I assess and teach.</p>
-          <a class="more" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12705494/" target="_blank" rel="noopener">Read the paper</a>
-        </div>
-        <div class="card">
-          <p class="eyebrow" style="margin-bottom:.4em">Science</p>
-          <h3>Why we keep getting the cause of dyslexia wrong</h3>
-          <p>An accessible read on why there is no single 'cause' of dyslexia. Genetics, brain development, sound processing and environment all interact, and research suggests there may even be distinct subtypes. This is exactly why I take a holistic view of every child: no two dyslexic learners are the same, and the right support should reflect that.</p>
-          <a class="more" href="https://www.sciencefocus.com/wellbeing/what-causes-dyslexia" target="_blank" rel="noopener">Read the article</a>
-        </div>
-      </div>
+  <nav class="postnav" aria-label="More posts">
+        <span></span>
+        <a href="/blog/follow-ywds-on-facebook-and-instagram/" style="text-align:right"><span class="lbl">Older post</span>Follow YWDS on Facebook and Instagram &rarr;</a>
+  </nav>
     </div>
   </section>
 
