@@ -542,8 +542,28 @@
   /* Parent-facing DALP suitability and research panels. */
   .dalp-nav{display:flex;flex-wrap:wrap;gap:10px;margin:1em 0 0}
   .dalp-nav a{border:1px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--card);font-weight:700;font-size:.9rem}
-  #dalp-fit,#why-dalp,#dalp-evidence{scroll-margin-top:100px}
-  .dalp-intro{max-width:65ch}
+  #dalp-fit,#why-dalp,#dalp-evidence,#school-support,#research-context,#sessions,#included,#paying,#lna{scroll-margin-top:100px}
+  .section-heading{display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,4vw,48px);align-items:center;margin-bottom:24px}
+  .section-heading>*{min-width:0}
+  .section-heading h2,.section-heading .eyebrow{margin-bottom:.5em}
+  .section-heading p.dalp-intro{max-width:none;margin:0;color:var(--ink-soft)}
+  .pagehead .headgrid{grid-template-columns:1fr 1fr}
+  .pagehead .lead{margin:0}
+  .svc{grid-template-columns:1fr 1fr}
+  .school-support-grid,.detail-grid,.session-notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .school-support{margin-top:32px}
+  .school-support>h3{font-size:1.4rem;margin-bottom:18px}
+  .school-support-grid{gap:16px}
+  .school-support-grid article{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--sage);border-radius:14px;padding:22px}
+  .school-support-grid article:last-child{border-top-color:var(--navy)}
+  .school-support-grid h4{font-size:1.15rem;line-height:1.35}
+  .school-support-grid p{font-size:.94rem;max-width:none;margin:0}
+  .school-partnership{margin:16px 0 0;padding:16px 20px;border-left:4px solid var(--olive);max-width:none;font-size:.94rem}
+  .detail-grid{padding:8px 0 20px;gap:20px 30px}
+  .detail-grid h4{font-size:1rem;line-height:1.4;margin:0 0 8px}
+  .dalp-detail .detail-grid p{max-width:none;margin:0}
+  .session-notes{margin-top:26px;padding-top:24px;border-top:1px solid var(--line)}
+  .session-notes p{max-width:none;margin:0}
   .dalp-fit-grid,.dalp-benefit-grid,.dalp-evidence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:24px}
   .dalp-fit-grid{list-style:none;padding:0}
   .dalp-fit-grid li{margin:0;display:flex;align-items:flex-start;gap:12px;padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
@@ -555,8 +575,9 @@
   .dalp-assurance p{margin:0;max-width:60ch;font-size:.95rem}
   .dalp-benefit{border-top:4px solid var(--sage);padding:20px 0 6px}
   .dalp-benefit .ico{margin-bottom:12px;font-family:"Aptos","Segoe UI",sans-serif;font-size:1.1rem;font-weight:800}
-  .dalp-context{padding:16px 20px;border-left:4px solid var(--sage);background:var(--card);border-radius:0 12px 12px 0;margin-top:26px}
-  .dalp-context p{font-size:.95rem;margin:0;max-width:76ch}
+  .dalp-context{display:grid;grid-template-columns:1fr 2fr;gap:24px;align-items:center;padding:20px 24px;border-left:4px solid var(--sage);background:var(--card);border-radius:0 12px 12px 0;margin-top:26px}
+  .dalp-context h3{font-size:1.2rem;margin:0}
+  .dalp-context p{font-size:.95rem;margin:0;max-width:none}
   .dalp-study{border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;min-width:0;background:var(--card)}
   .dalp-study.navy{background:var(--navy);color:var(--cream);border-color:var(--navy)}
   .dalp-study.sage{background:var(--sage-tint);border-color:var(--sage)}
@@ -578,6 +599,7 @@
   .dalp-detail summary:focus-visible{outline:3px solid var(--navy);outline-offset:4px;border-radius:4px}
   @media(max-width:950px){.dalp-fit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.dalp-evidence-grid{grid-template-columns:1fr}}
   @media(max-width:700px){.dalp-fit-grid,.dalp-benefit-grid{grid-template-columns:1fr}.dalp-assurance{display:block}.dalp-assurance strong{display:block;margin-bottom:10px}.dalp-study{padding:22px}.dalp-benefit{display:grid;grid-template-columns:44px 1fr;column-gap:14px}.dalp-benefit .ico{grid-row:1/3}.dalp-benefit p{grid-column:2}.dalp-fit-grid li{padding:18px}}
+  @media(max-width:860px){.section-heading,.pagehead .headgrid,.svc,.school-support-grid,.detail-grid,.session-notes,.dalp-context{grid-template-columns:1fr}.section-heading{gap:12px}.dalp-context{gap:12px}.detail-grid{gap:22px}.session-notes{gap:20px}}
   @media print{.dalp-detail{break-inside:avoid}.dalp-fit-grid li,.dalp-study{break-inside:avoid}}
 
 </style>
@@ -636,8 +658,8 @@
       <div>
         <p class="eyebrow">Support &amp; prices</p>
         <h1>Specialist reading and spelling support</h1>
-        <p class="lead"><strong>1-1 structured literacy intervention (DALP)</strong> for children aged 7–16, from a dyslexia specialist in Pocklington.</p>
       </div>
+      <p class="lead"><strong>1-1 structured literacy intervention (DALP)</strong> for children aged 7–16, from a dyslexia specialist in Pocklington.</p>
     </div>
   </div>
 
@@ -665,9 +687,10 @@
 
   <section class="block tint" id="dalp-fit">
     <div class="wrap">
-      <p class="eyebrow">Who it helps</p>
-      <h2>Could DALP help your child?</h2>
-      <p class="dalp-intro">Specialist reading and spelling support may be useful when your child is finding literacy persistently difficult, particularly when extra help has not brought the progress you hoped for.</p>
+      <div class="section-heading">
+        <div><p class="eyebrow">Who it helps</p><h2>Could DALP help your child?</h2></div>
+        <p class="dalp-intro">Specialist reading and spelling support may be useful when your child is finding literacy persistently difficult, particularly when extra help has not brought the progress you hoped for.</p>
+      </div>
       <ul class="dalp-fit-grid">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 5h6l3 2 3-2h6v14h-6l-3 2-3-2H3zM12 7v14"/></svg><div><h3>Reading is still hard</h3><p>Reading skills are below those expected for their age, or unfamiliar words remain a struggle.</p></div></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 18h5v-5h5V8h6M16 4l4 4-4 4"/></svg><div><h3>Extra help is not sticking</h3><p>Despite individual or small-group support, they are still falling behind or need a different approach.</p></div></li>
@@ -677,16 +700,25 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 4h14v11H9l-5 4v-4H3zM9 8h4M8 11h6M18 9h3v12l-4-3h-4"/></svg><div><h3>English is an additional language</h3><p>If literacy is difficult too, we can discuss whether specialist literacy or language support is the right fit.</p></div></li>
       </ul>
       <div class="dalp-assurance"><strong>With or without dyslexia</strong><p>Your child does not need a diagnosis, or even suspected dyslexia. The starting point is the reading and spelling help they need.</p></div>
-      <details class="dalp-detail"><summary>What if my child has missed teaching, or already has school support?</summary><p>If the main issue is missed teaching, targeted catch-up support may be enough. Persistent difficulties or an inconsistent grasp of literacy skills may call for a more specialised approach. We can discuss this on the free call.</p><p>School adjustments help your child access learning. These sessions focus on developing reading and spelling skills, alongside school support. School liaison is included, with your agreement.</p></details>
+      <div class="school-support" id="school-support">
+        <h3>School adjustments and literacy intervention work together</h3>
+        <div class="school-support-grid">
+          <article><h4>Adjustments are essential for access</h4><p>Extra processing time, less copying and assistive technology can remove barriers and help your child take part in school. These adjustments are essential, but do not in themselves teach the reading and spelling skills your child finds difficult.</p></article>
+          <article><h4>Intervention develops literacy skills</h4><p>Persistent reading and spelling difficulties need targeted, evidence-based literacy intervention, alongside adjustments. This means explicitly teaching and practising the skills that are difficult, in manageable steps. Schools may already provide this; my individual DALP sessions can complement that support.</p></article>
+        </div>
+        <p class="school-partnership"><strong>School liaison is included.</strong> With your agreement, I’ll work with your child’s school to share relevant information and coordinate support, so sessions build on what is already in place.</p>
+      </div>
+      <details class="dalp-detail"><summary>What if my child has missed teaching?</summary><div class="detail-grid"><div><h4>When catch-up support may be enough</h4><p>If the main issue is missed teaching, targeted catch-up support may be enough to help your child rebuild the skills they have missed.</p></div><div><h4>When a different approach may help</h4><p>Persistent difficulties or an inconsistent grasp of literacy skills may call for a more specialised approach. On the free call, we can talk about what has already been tried and whether my support is a good fit.</p></div></div></details>
       <div class="btnrow"><a class="btn primary" href="/book/" target="_blank" rel="noopener">Talk about your child's needs</a></div>
     </div>
   </section>
 
   <section class="block" id="why-dalp">
     <div class="wrap">
-      <p class="eyebrow">The approach</p>
-      <h2>Why choose DALP?</h2>
-      <p class="dalp-intro">The Dyslexia Action Literacy Programme combines structured literacy work with strategies that help your child understand and take charge of their learning.</p>
+      <div class="section-heading">
+        <div><p class="eyebrow">The approach</p><h2>Why choose DALP?</h2></div>
+        <p class="dalp-intro">The Dyslexia Action Literacy Programme combines structured literacy work with strategies that help your child understand and take charge of their learning.</p>
+      </div>
       <div class="dalp-benefit-grid">
         <div class="dalp-benefit"><span class="ico" aria-hidden="true">01</span><h3>Matched to your child</h3><p>Placement screening identifies a starting point. Sessions build on their strengths and target the skills that need support.</p></div>
         <div class="dalp-benefit"><span class="ico" aria-hidden="true">02</span><h3>Skills, confidence and independence</h3><p>Small steps, repeated practice and self-checking help your child develop useful reading and spelling strategies.</p></div>
@@ -698,9 +730,10 @@
 
   <section class="block skyt" id="dalp-evidence">
     <div class="wrap">
-      <p class="eyebrow">Research at a glance</p>
-      <h2>What does the research show?</h2>
-      <p class="dalp-intro">Related literacy programmes have reported measurable gains. The studies below evaluated P4L / Units of Sound and RILL, rather than DALP or my own sessions.</p>
+      <div class="section-heading">
+        <div><p class="eyebrow">Research at a glance</p><h2>What does the research show?</h2></div>
+        <p class="dalp-intro">Related literacy programmes have reported measurable gains. The studies below evaluated P4L / Units of Sound and RILL, rather than DALP or my own sessions.</p>
+      </div>
       <div class="dalp-evidence-grid">
         <article class="dalp-study navy">
           <p class="study-label">P4L / UNITS OF SOUND · PRIMARY STUDY</p>
@@ -727,17 +760,24 @@
           <a href="https://doi.org/10.1007/s11145-023-10502-7" target="_blank" rel="noopener">Read the published study</a>
         </article>
       </div>
-      <details class="dalp-detail"><summary>Understanding the figures and how they relate to DALP</summary><p>Standard scores compare performance with other children of the same age. A gain in standard-score points is not a number of months of reading age.</p><p>P4L used Units of Sound within a school intervention project. RILL was a separate language-rich reading programme. Their findings provide wider literacy-intervention context, rather than a forecast for a child receiving DALP.</p><p>A later Units of Sound trial had delivery and evaluation problems and could not support firm conclusions. Brooks discusses this on pages 227–228.</p><p>The RILL trial randomly allocated 184 children. Its abstract reports 77 programme participants and 58 waiting-list participants at analysis, with effect sizes of 0.32 for reading accuracy and 0.63 for awareness of sounds in words.</p></details>
-      <div class="dalp-context"><p><strong>What matters for your child:</strong> the skills they develop, strategies they can use and how their confidence changes. We review their progress together. Research averages do not guarantee an individual result.</p></div>
+      <details class="dalp-detail" id="research-context"><summary>Understanding the figures and how they relate to DALP</summary><div class="detail-grid">
+        <div><h4>What the scores mean</h4><p>Standard scores compare performance with other children of the same age. A gain in standard-score points is not a number of months of reading age.</p></div>
+        <div><h4>Which programmes were studied</h4><p>P4L used Units of Sound within a school intervention project. RILL was a separate language-rich reading programme. Their findings provide wider literacy-intervention context, rather than a forecast for a child receiving DALP.</p></div>
+        <div><h4>Limitations of the evidence</h4><p>A later Units of Sound trial had delivery and evaluation problems and could not support firm conclusions. Brooks discusses this on pages 227–228.</p></div>
+        <div><h4>More about the RILL trial</h4><p>The RILL trial randomly allocated 184 children. Its abstract reports 77 programme participants and 58 waiting-list participants at analysis, with effect sizes of 0.32 for reading accuracy and 0.63 for awareness of sounds in words.</p></div>
+      </div></details>
+      <div class="dalp-context"><h3>What matters for your child</h3><p>The skills they develop, strategies they can use and how their confidence changes. We review their progress together. Research averages do not guarantee an individual result.</p></div>
     </div>
   </section>
 
-  <section class="block tight">
+  <section class="block tight" id="sessions">
     <div class="wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">During a session</p><h2>What the sessions are like</h2></div>
+        <p class="dalp-intro">Sessions are structured, cumulative and multi-sensory, using DALP. A familiar shape each week helps your child know what to expect. I adapt the pace and activities to how they are responding on the day.</p>
+      </div>
       <div class="svc">
         <div class="prose">
-          <h2>What the sessions are like</h2>
-          <p>Sessions are structured, cumulative and multi-sensory, using the Dyslexia Action Literacy Programme (DALP). The same shape each week helps your child know what to expect, and I adapt the pace and the activities to how your child is responding on the day.</p>
           <h3>A typical session</h3>
           <ol>
             <li>Visual and auditory warm-ups.</li>
@@ -747,9 +787,6 @@
             <li>A review of how your child worked it out: "what did you use to figure that out?"</li>
             <li>A game.</li>
           </ol>
-          <p>Activities connect sounds and letters, explore spelling patterns and word endings, and build practice with longer words and sentences. We also talk about which strategies help your child, so they can understand their own learning.</p>
-          <p>I plan each lesson carefully so that every part reinforces what has just been taught. New learning is introduced only once the earlier learning is secure. Your child is taught explicit strategies for checking their own work, so they can start to self-correct.</p>
-          <p>As a dyslexia specialist, I hold a Diploma in Specialist Teaching for Literacy Difficulties (Level 5) and I am a member of the Dyslexia Guild.</p>
         </div>
         <div>
           <img class="photo" src="/img/tuition-back-slogan.webp" alt="Natalie, in a green Yorkshire Wolds Dyslexia Service hoodie reading 'Teaching your child the way their brain learns best!', working with a child and magnetic letters at a table" width="1200" height="900" loading="lazy" style="height:auto;aspect-ratio:4/3;object-position:left center">
@@ -759,6 +796,11 @@
           </div>
         </div>
       </div>
+      <div class="session-notes">
+        <div><h3>Understanding words and patterns</h3><p>Activities connect sounds and letters, explore spelling patterns and word endings, and build practice with longer words and sentences. We also talk about which strategies help your child, so they can understand their own learning.</p></div>
+        <div><h3>Building secure, independent skills</h3><p>I plan each lesson carefully so that every part reinforces what has just been taught. New learning is introduced only once the earlier learning is secure. Your child is taught explicit strategies for checking their own work, so they can start to self-correct.</p></div>
+      </div>
+      <div class="dalp-context"><h3>Specialist qualifications</h3><p>As a dyslexia specialist, I hold a Diploma in Specialist Teaching for Literacy Difficulties (Level 5) and I am a member of the Dyslexia Guild.</p></div>
     </div>
   </section>
 
@@ -813,17 +855,18 @@
           </ul>
         </div>
       </div>
-      <p style="margin-top:1.2em">I will keep you updated on what we are working on. Progress depends on many things, including attendance and practice at home, so I cannot guarantee a particular result.</p>
+      <div class="dalp-context"><h3>Progress, reviewed together</h3><p>I will keep you updated on what we are working on. Progress depends on many things, including attendance and practice at home, so I cannot guarantee a particular result.</p></div>
     </div>
   </section>
 
   <section class="block" id="lna">
     <div class="wrap">
-      <p class="eyebrow">Optional</p>
-      <h2>Learning Needs Assessment (LNA)</h2>
+      <div class="section-heading">
+        <div><p class="eyebrow">Optional</p><h2>Learning Needs Assessment (LNA)</h2></div>
+        <p class="dalp-intro">You do not need an LNA before support starts. It is there if you would like a fuller picture of how your child learns, or a written report to share with school.</p>
+      </div>
       <div class="svc">
         <div>
-          <p>You do not need an LNA before support starts. It is there if you would like a fuller picture of how your child learns, or a written report to share with school.</p>
           <h3>What it is</h3>
           <ul>
             <li>For children aged 6–16.</li>
@@ -831,6 +874,8 @@
             <li>A written report within two weeks, setting out your child's strengths and areas for development, the barriers to learning, and recommendations and strategies to make learning more accessible.</li>
             <li>It gives an indication of whether dyslexia is likely, and can help to spot signs of other learning needs, which I can signpost you on.</li>
           </ul>
+        </div>
+        <div>
           <h3>What it is not</h3>
           <ul>
             <li>It is not a diagnosis of dyslexia.</li>
@@ -839,9 +884,7 @@
           <p class="price" style="font-family:'Aptos','Segoe UI',sans-serif;font-weight:800;font-size:1.5rem;color:var(--olive);margin:.6em 0">£300 <small style="font-size:.85rem;color:var(--ink-soft);font-weight:600">or two instalments of £150</small></p>
           <p>Payment, cancellation and consent details are in the <a href="/terms/#assessments">terms and conditions</a> and the <a href="/downloads/ywds-booking-assessment.pdf" download>assessment booking and consent form (PDF)</a>.</p>
           <div class="btnrow"><a class="btn ghost" href="/book/" target="_blank" rel="noopener">Book a free call to ask about the LNA</a></div>
-        </div>
-        <div>
-          <div class="testi">
+          <div class="testi" style="margin-top:24px">
           <p class="qt" style="margin:0;max-width:none">"Natalie assessed my son at school, he was at first very reluctant to participate as he dislikes speaking with new people. He is diagnosed with ADHD and this brought challenge to his assessment also, affecting his concentration and movement. Natalie managed both of these obstacles with patience and skill, and in the end they successfully complete his assessment together. Communication with Natalie both during and post assessment was excellent."</p>
           <div class="who">C. Danby, parent</div>
         </div>
