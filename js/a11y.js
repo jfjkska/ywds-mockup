@@ -69,7 +69,7 @@
     '#a11y :focus-visible{outline:3px solid var(--focus,#274A68);outline-offset:2px}',
     '@media (prefers-reduced-motion:no-preference){#a11y-btn{transition:background .15s}#a11y-panel:not([hidden]){animation:a11y-in .18s ease}}',
     '@keyframes a11y-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}',
-    '@media(max-width:800px){#a11y{position:relative;left:auto;bottom:auto;width:calc(100% - 36px);margin:8px auto;z-index:150}#a11y-btn{width:auto;height:40px;border-radius:999px;display:flex;gap:7px;padding:5px 12px;box-shadow:none;font-size:.8rem}#a11y-btn::after{content:"Reading options"}#a11y-btn svg{width:24px;height:24px}#a11y-panel{top:48px;bottom:auto}}',
+    '@media(max-width:1080px){nav.main.open{max-height:calc(100dvh - 70px);overflow-y:auto}#a11y{position:relative;left:auto;bottom:auto;width:100%;margin:10px 0 0;z-index:auto}#a11y-btn{width:auto;height:44px;border-radius:999px;display:flex;gap:7px;padding:6px 14px;box-shadow:none;font-size:.85rem}#a11y-btn::after{content:"Accessibility options"}#a11y-btn svg{width:24px;height:24px}#a11y-panel{position:relative;left:auto;bottom:auto;width:100%;max-width:100%;margin-top:10px;max-height:60vh}}',
     '@media print{#a11y{display:none}}'
   ].join('\n');
   var st=document.createElement('style');st.id='a11y-css';st.textContent=css;document.head.appendChild(st);
@@ -98,8 +98,9 @@
         '<p class="st">Reads the text you have selected, or the whole page.</p></fieldset>'+
       '<button type="button" class="all" data-a="reset">Reset all</button>'+
       '</div>';
-    var main=document.querySelector('main');
-    if(main)main.parentNode.insertBefore(box,main);else document.body.appendChild(box);
+    var nav=document.querySelector('nav.main'),mobile=window.matchMedia('(max-width:1080px)');
+    function place(){if(nav&&mobile.matches)nav.appendChild(box);else document.body.appendChild(box);}
+    place();mobile.addEventListener('change',place);
 
     var btn=box.querySelector('#a11y-btn'),panel=box.querySelector('#a11y-panel'),sizeOut=box.querySelector('#a11y-size');
     var q=function(a){return box.querySelector('[data-a="'+a+'"]');};
