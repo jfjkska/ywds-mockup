@@ -69,6 +69,7 @@
     '#a11y :focus-visible{outline:3px solid var(--focus,#274A68);outline-offset:2px}',
     '@media (prefers-reduced-motion:no-preference){#a11y-btn{transition:background .15s}#a11y-panel:not([hidden]){animation:a11y-in .18s ease}}',
     '@keyframes a11y-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}',
+    '@media(max-width:800px){#a11y{position:relative;left:auto;bottom:auto;width:calc(100% - 36px);margin:8px auto;z-index:150}#a11y-btn{width:auto;height:40px;border-radius:999px;display:flex;gap:7px;padding:5px 12px;box-shadow:none;font-size:.8rem}#a11y-btn::after{content:"Reading options"}#a11y-btn svg{width:24px;height:24px}#a11y-panel{top:48px;bottom:auto}}',
     '@media print{#a11y{display:none}}'
   ].join('\n');
   var st=document.createElement('style');st.id='a11y-css';st.textContent=css;document.head.appendChild(st);
@@ -97,7 +98,8 @@
         '<p class="st">Reads the text you have selected, or the whole page.</p></fieldset>'+
       '<button type="button" class="all" data-a="reset">Reset all</button>'+
       '</div>';
-    document.body.appendChild(box);
+    var main=document.querySelector('main');
+    if(main)main.parentNode.insertBefore(box,main);else document.body.appendChild(box);
 
     var btn=box.querySelector('#a11y-btn'),panel=box.querySelector('#a11y-panel'),sizeOut=box.querySelector('#a11y-size');
     var q=function(a){return box.querySelector('[data-a="'+a+'"]');};
